@@ -1,0 +1,4 @@
+list: $:/config/ViewTemplateTitleFilters/system $:/community/recipes/config/ViewTemplateTitleFilters/caption $:/config/ViewTemplateTitleFilters/default
+tags: 
+title: $:/tags/ViewTemplateTitleFilter
+type: text/vnd.tiddlywiki
