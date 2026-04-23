@@ -4,6 +4,37 @@ tags: $:/tags/Stylesheet
 title: $:/community/recipes/stylesheet
 type: text/vnd.tiddlywiki
 
+/* Recipe index tag filter */
+.tc-recipe-filter {
+    margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+}
+.tc-recipe-tag-btn {
+    padding: 0.2em 0.75em;
+    border-radius: 2em;
+    border: 1px solid <<colour primary>>;
+    color: <<colour primary>>;
+    font-size: 0.85em;
+}
+.tc-recipe-tag-active {
+    background: <<colour primary>>;
+    color: <<colour page-background>>;
+}
+
+/* Ingredient 'used in' panel */
+.tc-recipe-ingredient-uses {
+    margin-top: 1.5em;
+    padding-top: 0.75em;
+    border-top: 1px solid <<colour tiddler-border>>;
+    font-size: 0.9em;
+}
+.tc-recipe-ingredient-uses ul {
+    margin: 0.4em 0 0;
+    padding-left: 1.5em;
+}
+
 /* Recipe metadata strip */
 .tc-recipe-meta {
     margin: 0.25em 0 1.25em;

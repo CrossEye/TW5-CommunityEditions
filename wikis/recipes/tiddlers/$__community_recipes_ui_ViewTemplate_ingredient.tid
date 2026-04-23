@@ -1,0 +1,15 @@
+list-after: $:/community/recipes/ui/ViewTemplate/recipe-meta
+tags: $:/tags/ViewTemplate
+title: $:/community/recipes/ui/ViewTemplate/ingredient
+
+\whitespace trim
+<%if [<currentTiddler>backlinks[]tag[Recipe]] %>
+<div class="tc-recipe-ingredient-uses">
+<strong>Used in:</strong>
+<ul>
+<$list filter="[<currentTiddler>backlinks[]tag[Recipe]sort[title]]">
+<li><$link/></li>
+</$list>
+</ul>
+</div>
+<% endif %>

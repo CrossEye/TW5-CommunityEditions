@@ -3,8 +3,22 @@ title: Recipe
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$list filter="[tag[Recipe]!is[system]sort[title]]" emptyMessage="No recipes yet.  Use the ''New Recipe'' button to add your first.">
-
-* <$link/>
-
+<$let activeTag={{$:/state/community/recipes/filter-tag}}>
+<div class="tc-recipe-filter">
+<$list filter="[tag[Recipe]!is[system]tags[]!match[Recipe]!prefix[$:/]sort[]]" variable="cat">
+<$button class={{{ [<cat>match<activeTag>then[tc-btn-invisible tc-recipe-tag-btn tc-recipe-tag-active]else[tc-btn-invisible tc-recipe-tag-btn]] }}}>
+<$action-setfield $tiddler="$:/state/community/recipes/filter-tag" text={{{ [<cat>match<activeTag>then[]else<cat>] }}}/>
+<<cat>>
+</$button>
 </$list>
+</div>
+<%if [<activeTag>match[]] %>
+<$list filter="[tag[Recipe]!is[system]sort[title]]" emptyMessage="No recipes yet.  Use the ''New Recipe'' button to add your first.">
+* <$link/>
+</$list>
+<% else %>
+<$list filter="[tag[Recipe]!is[system]tag<activeTag>sort[title]]" emptyMessage={{{ [<activeTag>addprefix[No recipes tagged ']addsuffix['.]] }}}>
+* <$link/>
+</$list>
+<% endif %>
+</$let>
