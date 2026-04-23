@@ -1,0 +1,11 @@
+caption: New Recipe
+description: Create a new recipe
+list-after: $:/core/ui/Buttons/home
+tags: $:/tags/PageControls
+title: $:/community/recipes/ui/Buttons/new-recipe
+
+\whitespace trim
+<$button class="tc-btn-invisible" tooltip="New recipe" aria-label="new recipe">
+<$action-sendmessage $message="tm-new-tiddler" tags="Recipe" text={{{ [[$:/community/recipes/templates/new-recipe]get[text]] }}}/>
+{{$:/core/images/new-button}}
+</$button>

@@ -1,0 +1,16 @@
+list-after: $:/core/ui/ViewTemplate/tags
+tags: $:/tags/ViewTemplate
+title: $:/community/recipes/ui/ViewTemplate/recipe-meta
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<%if [all[current]tag[Recipe]] %>
+<div class="tc-recipe-meta">
+<%if [all[current]has[source]] %>
+<div class="tc-recipe-source"><a class="tc-tiddlylink-external" href={{{ [all[current]get[source]] }}} rel="noopener noreferrer" target="_blank">View original source</a></div>
+<% endif %>
+<%if [all[current]has[servings]] %>
+<div class="tc-recipe-servings">Servings: <$view field="servings"/></div>
+<% endif %>
+</div>
+<% endif %>

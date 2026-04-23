@@ -1,0 +1,10 @@
+caption: Recipes
+title: Recipe
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$list filter="[tag[Recipe]!is[system]sort[title]]" emptyMessage="No recipes yet.  Use the ''New Recipe'' button to add your first.">
+
+* <$link/>
+
+</$list>
