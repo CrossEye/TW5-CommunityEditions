@@ -1,2 +1,3 @@
 node_modules/
 wikis/*/output/
+wikis/*/tiddlers/$__StoryList*.tid
