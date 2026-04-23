@@ -1,0 +1,18 @@
+subtitle: {{$:/state/community/recipes/modal-recipe}}
+title: $:/community/recipes/ui/SplitView
+
+\whitespace trim
+<$let recipe={{$:/state/community/recipes/modal-recipe}}
+     ingreds={{{ [<recipe>get[text]splitregexp[!! Ingredients]last[]splitregexp[!! ]first[]] }}}
+     steps={{{ [<recipe>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]] }}}>
+<div class="tc-recipe-split">
+<div class="tc-recipe-split-left">
+<strong>Ingredients</strong>
+<$transclude $variable="ingreds" $mode="block"/>
+</div>
+<div class="tc-recipe-split-right">
+<strong>Steps</strong>
+<$transclude $variable="steps" $mode="block"/>
+</div>
+</div>
+</$let>

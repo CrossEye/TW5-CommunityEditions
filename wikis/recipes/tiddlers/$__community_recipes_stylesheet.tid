@@ -1,0 +1,84 @@
+created: 20260423020204937
+modified: 20260423020213871
+tags: $:/tags/Stylesheet
+title: $:/community/recipes/stylesheet
+type: text/vnd.tiddlywiki
+
+/* Recipe metadata strip */
+.tc-recipe-meta {
+    margin: 0.25em 0 1.25em;
+    font-size: 0.9em;
+    color: <<colour muted-foreground>>;
+}
+.tc-recipe-source { margin-right: 1.5em; }
+
+/* Split view */
+.tc-recipe-split {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 2em;
+    max-height: 75vh;
+}
+.tc-recipe-split-left,
+.tc-recipe-split-right {
+    overflow-y: auto;
+    padding-right: 0.5em;
+}
+.tc-recipe-split-left strong,
+.tc-recipe-split-right strong {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+    border-bottom: 1px solid <<colour tiddler-border>>;
+    padding-bottom: 0.25em;
+}
+
+/* Step-by-step view — tighter split height to leave room for header and nav */
+.tc-stepview-split {
+    max-height: calc(75vh - 8em);
+}
+
+/* Step-by-step view */
+.tc-stepview-header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.tc-stepview-progress {
+    color: <<colour muted-foreground>>;
+    margin-top: 0.25em;
+    font-size: 0.9em;
+}
+.tc-step {
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    border-left: 3px solid transparent;
+    opacity: 0.6;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 0.4em;
+    transition: all 0.15s ease;
+}
+.tc-step p { margin: 0; }
+.tc-step-active {
+    opacity: 1;
+    font-size: 1.15em;
+    border-left-color: <<colour primary>>;
+    background: <<colour tiddler-background>>;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    padding: 0.75em 1em;
+    margin: 0.4em 0;
+}
+.tc-stepview-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid <<colour tiddler-border>>;
+    color: <<colour muted-foreground>>;
+    font-size: 0.9em;
+}

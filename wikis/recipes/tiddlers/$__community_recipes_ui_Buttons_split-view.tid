@@ -1,0 +1,14 @@
+caption: Split view
+description: View ingredients and steps side by side
+list-before: $:/core/ui/Buttons/close
+tags: $:/tags/ViewToolbar
+title: $:/community/recipes/ui/Buttons/split-view
+
+\whitespace trim
+<%if [all[current]tag[Recipe]] %>
+<$button class="tc-btn-invisible" tooltip="Ingredients and steps side by side">
+<$action-setfield $tiddler="$:/state/community/recipes/modal-recipe" text=<<currentTiddler>>/>
+<$action-sendmessage $message="tm-modal" $param="$:/community/recipes/ui/SplitView"/>
+{{$:/core/images/list-bullet}}
+</$button>
+<% endif %>

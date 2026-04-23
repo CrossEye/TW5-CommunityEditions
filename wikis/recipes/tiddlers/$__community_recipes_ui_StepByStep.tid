@@ -1,0 +1,56 @@
+subtitle: {{$:/state/community/recipes/modal-recipe}}
+title: $:/community/recipes/ui/StepByStep
+
+\whitespace trim
+<$let recipe={{$:/state/community/recipes/modal-recipe}}
+     ingreds={{{ [<recipe>get[text]splitregexp[!! Ingredients]last[]splitregexp[!! ]first[]] }}}
+     stepIdx={{$:/state/community/recipes/step-index}}
+     stepCount={{{ [<recipe>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]count[]] }}}>
+
+<div class="tc-stepview-header">
+<div class="tc-stepview-progress">Step&#32;<<stepIdx>>&#32;of&#32;<<stepCount>></div>
+</div>
+
+<div class="tc-recipe-split tc-stepview-split">
+<div class="tc-recipe-split-left">
+<strong>Ingredients</strong>
+<$transclude $variable="ingreds" $mode="block"/>
+</div>
+<div class="tc-recipe-split-right">
+<$list filter="[<recipe>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]]" variable="stepText" counter="stepNum">
+<%if [<stepNum>match<stepIdx>] %>
+<$button class="tc-step tc-step-active tc-btn-invisible">
+<$action-setfield $tiddler="$:/state/community/recipes/step-index" text=<<stepNum>>/>
+<$transclude $variable="stepText" $mode="block"/>
+</$button>
+<% else %>
+<$button class="tc-step tc-btn-invisible">
+<$action-setfield $tiddler="$:/state/community/recipes/step-index" text=<<stepNum>>/>
+<$transclude $variable="stepText" $mode="block"/>
+</$button>
+<% endif %>
+</$list>
+</div>
+</div>
+
+<div class="tc-stepview-nav">
+<%if [<stepIdx>!match[1]] %>
+<$button>
+<$action-setfield $tiddler="$:/state/community/recipes/step-index" text={{{ [<stepIdx>subtract[1]] }}}/>
+← Previous
+</$button>
+<% else %>
+<span></span>
+<% endif %>
+<span><<stepIdx>>&#32;/&#32;<<stepCount>></span>
+<%if [<stepIdx>!match<stepCount>] %>
+<$button>
+<$action-setfield $tiddler="$:/state/community/recipes/step-index" text={{{ [<stepIdx>add[1]] }}}/>
+Next →
+</$button>
+<% else %>
+<span></span>
+<% endif %>
+</div>
+
+</$let>
