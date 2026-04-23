@@ -1,13 +1,15 @@
 created: 20260423000523285
-modified: 20260423010108428
-tags: Recipe $:/community/recipes/demo
+modified: 20260423225542029
+tags: Recipe $:/community/recipes/demo TableOfContents Main
 title: Some Recipe
 type: text/vnd.tiddlywiki
 
 !! Ingredients
 
-* 7 cups sugar
-* 17 ou tabasco
+* 7 cups [[sugar]]
+* 17 oz [[tabasco]]
+* 4 cups chopped [[onion]]
+* 1 gallon [[horseradish]]
 
 !! Steps
 
