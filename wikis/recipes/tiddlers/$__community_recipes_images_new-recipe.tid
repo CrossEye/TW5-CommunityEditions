@@ -1,0 +1,11 @@
+title: $:/community/recipes/images/new-recipe
+tags: $:/tags/Image
+
+\parameters (size:"22pt")
+<svg width=<<size>> height=<<size>> class="tc-image-button tc-image-new-recipe" viewBox="0 0 128 128">
+<path fill-rule="evenodd" d="M14,4 Q4,4 4,14 L4,114 Q4,124 14,124 L114,124 Q124,124 124,114 L124,14 Q124,4 114,4 Z M10,38 L10,118 L118,118 L118,38 Z"/>
+<rect x="14" y="60" width="50" height="6" rx="3"/>
+<rect x="14" y="76" width="38" height="6" rx="3"/>
+<rect x="85" y="66" width="10" height="44" rx="5"/>
+<rect x="68" y="83" width="44" height="10" rx="5"/>
+</svg>

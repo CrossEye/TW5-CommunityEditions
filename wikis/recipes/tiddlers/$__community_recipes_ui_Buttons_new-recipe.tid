@@ -7,5 +7,5 @@ title: $:/community/recipes/ui/Buttons/new-recipe
 \whitespace trim
 <$button class="tc-btn-invisible" tooltip="New recipe" aria-label="new recipe">
 <$action-sendmessage $message="tm-new-tiddler" tags="Recipe" text={{{ [[$:/community/recipes/templates/new-recipe]get[text]] }}}/>
-{{$:/core/images/new-button}}
+{{$:/community/recipes/images/new-recipe}}
 </$button>

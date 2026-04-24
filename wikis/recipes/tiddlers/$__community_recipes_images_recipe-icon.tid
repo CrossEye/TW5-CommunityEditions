@@ -1,0 +1,25 @@
+created: 20260424034830218
+modified: 20260424034830218
+tags: $:/tags/Image
+title: $:/community/recipes/images/recipe-icon
+type: text/vnd.tiddlywiki
+
+\parameters (size:"22pt")
+<svg width=<<size>> height=<<size>> class="tc-image-button tc-image-recipe-icon" viewBox="0 0 128 128">
+<rect x="18" y="16" width="92" height="96" rx="8" fill="#fffcf7"/>
+<path d="M26,16 Q18,16 18,24 L18,52 L110,52 L110,24 Q110,16 102,16 Z" fill="#e06820"/>
+<rect x="18" y="16" width="92" height="96" rx="8" fill="none" stroke="#e06820" stroke-width="4"/>
+<g stroke="white" stroke-linecap="round" fill="none" stroke-width="4.5">
+<line x1="52" y1="22" x2="52" y2="50"/>
+<line x1="46" y1="22" x2="46" y2="34"/>
+<line x1="58" y1="22" x2="58" y2="34"/>
+<path d="M46,34 Q52,41 58,34"/>
+</g>
+<g stroke="white" stroke-linecap="round" fill="none">
+<line x1="76" y1="22" x2="76" y2="50" stroke-width="4.5"/>
+<path d="M76,22 Q88,28 76,42" stroke-width="4"/>
+</g>
+<line x1="30" y1="72" x2="98" y2="72" stroke="#c8905c" stroke-width="4" stroke-linecap="round"/>
+<line x1="30" y1="86" x2="98" y2="86" stroke="#c8905c" stroke-width="4" stroke-linecap="round"/>
+<line x1="30" y1="100" x2="76" y2="100" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+</svg>
