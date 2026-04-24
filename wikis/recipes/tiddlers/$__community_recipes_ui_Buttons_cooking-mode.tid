@@ -6,26 +6,25 @@ tags: $:/tags/ViewToolbar
 title: $:/community/recipes/ui/Buttons/cooking-mode
 
 \whitespace trim
-<$let cookState={{{ [$:/state/community/recipes/cooking-mode]text[] }}}>
+<$let cookState={{{ [[$:/state/community/recipes/cooking-mode]get[text]] }}}>
 <%if [<cookState>match<currentTiddler>] %>
 <$button class=<<tv-config-toolbar-class>> tooltip="Exit cooking mode" aria-label="exit cooking mode">
 <$action-setfield $tiddler="$:/state/sidebar"
-  text={{{ [$:/state/community/recipes/cooking-save/sidebar]text[]else[yes] }}}/>
+  text={{{ [[$:/state/community/recipes/cooking-save/sidebar]get[text]else[yes]] }}}/>
 <$action-setfield $tiddler="$:/StoryList"
-  $field="list" $value={{{ [$:/state/community/recipes/cooking-save/story]text[] }}}/>
+  list={{{ [[$:/state/community/recipes/cooking-save/story]get[text]] }}}/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=""/>
 {{$:/core/images/storyview-zoomin}}
 </$button>
 <% else %>
 <$button class=<<tv-config-toolbar-class>> tooltip="Enter cooking mode" aria-label="enter cooking mode">
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-save/sidebar"
-  text={{{ [$:/state/sidebar]text[]else[yes] }}}/>
+  text={{{ [[$:/state/sidebar]get[text]else[yes]] }}}/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-save/story"
   text={{{ [[$:/StoryList]get[list]] }}}/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=<<currentTiddler>>/>
 <$action-setfield $tiddler="$:/state/sidebar" text="no"/>
-<$action-setfield $tiddler="$:/StoryList"
-  $field="list" $value={{{ [<currentTiddler>addprefix[[]addprefix[[]addsuffix[]]addsuffix[]] }}}/>
+<$action-setfield $tiddler="$:/StoryList" list={{{ [<currentTiddler>format:titlelist[]] }}}/>
 {{$:/core/images/storyview-zoomin}}
 </$button>
 <% endif %>
