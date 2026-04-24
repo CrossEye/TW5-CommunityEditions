@@ -58,6 +58,34 @@ type: text/vnd.tiddlywiki
     padding-bottom: 0.25em;
 }
 
+/* Ingredients toggle button — hidden on wide screens, shown via media query on phones */
+.tc-recipe-ingr-toggle {
+    display: none;
+}
+
+/* Phone layout (<600px): single-column, ingredients collapsible */
+@media (max-width: 599px) {
+    .tc-recipe-split {
+        grid-template-columns: 1fr;
+    }
+    .tc-recipe-ingr-panel {
+        display: none;
+        margin-bottom: 1em;
+    }
+    .tc-recipe-ingr-panel.tc-recipe-ingr-visible {
+        display: block;
+    }
+    .tc-recipe-ingr-toggle {
+        display: inline-block;
+        font-size: 0.85em;
+        border: 1px solid <<colour primary>>;
+        border-radius: 1em;
+        padding: 0.15em 0.6em;
+        color: <<colour primary>>;
+        white-space: nowrap;
+    }
+}
+
 /* Step-by-step view */
 .tc-stepview-header {
     text-align: center;

@@ -2,16 +2,18 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 
 \whitespace trim
 <$let stepState={{{ [[$:/state/community/recipes/step/]addsuffix<currentTiddler>] }}}
+     ingrState={{{ [[$:/state/community/recipes/ingr/]addsuffix<currentTiddler>] }}}
      ingreds={{{ [<currentTiddler>get[text]splitregexp[!! Ingredients]last[]splitregexp[!! ]first[]] }}}
      stepCount={{{ [<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]count[]] }}}>
 <$set name="stepIdx" tiddler=<<stepState>> field="text" emptyValue="1">
+<$set name="ingrVisible" tiddler=<<ingrState>> field="text" emptyValue="hide">
 
 <div class="tc-stepview-header">
 <div class="tc-stepview-progress">Step&#32;<<stepIdx>>&#32;of&#32;<<stepCount>></div>
 </div>
 
 <div class="tc-recipe-split">
-<div class="tc-recipe-split-left">
+<div class={{{ [<ingrVisible>match[show]then[tc-recipe-split-left tc-recipe-ingr-panel tc-recipe-ingr-visible]else[tc-recipe-split-left tc-recipe-ingr-panel]] }}}>
 <strong>Ingredients</strong>
 <$transclude $variable="ingreds" $mode="block"/>
 </div>
@@ -35,6 +37,10 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 <span></span>
 <% endif %>
 <span><<stepIdx>>&#32;/&#32;<<stepCount>></span>
+<$button class="tc-btn-invisible tc-recipe-ingr-toggle">
+<$action-setfield $tiddler=<<ingrState>> text={{{ [<ingrVisible>match[show]then[hide]else[show]] }}}/>
+<%if [<ingrVisible>match[show]] %>▴&#32;Ingredients<% else %>▾&#32;Ingredients<% endif %>
+</$button>
 <%if [<stepIdx>!match<stepCount>] %>
 <$button>
 <$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>add[1]] }}}/>
@@ -45,5 +51,6 @@ Next →
 <% endif %>
 </div>
 
+</$set>
 </$set>
 </$let>
