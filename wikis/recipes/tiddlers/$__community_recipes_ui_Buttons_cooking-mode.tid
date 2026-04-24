@@ -1,0 +1,32 @@
+caption: Cooking Mode
+condition: [<currentTiddler>tag[Recipe]]
+description: Enter or exit focused cooking mode
+list-before: $:/core/ui/Buttons/close
+tags: $:/tags/ViewToolbar
+title: $:/community/recipes/ui/Buttons/cooking-mode
+
+\whitespace trim
+<$let cookState={{{ [$:/state/community/recipes/cooking-mode]text[] }}}>
+<%if [<cookState>match<currentTiddler>] %>
+<$button class=<<tv-config-toolbar-class>> tooltip="Exit cooking mode" aria-label="exit cooking mode">
+<$action-setfield $tiddler="$:/state/sidebar"
+  text={{{ [$:/state/community/recipes/cooking-save/sidebar]text[]else[yes] }}}/>
+<$action-setfield $tiddler="$:/StoryList"
+  $field="list" $value={{{ [$:/state/community/recipes/cooking-save/story]text[] }}}/>
+<$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=""/>
+{{$:/core/images/storyview-zoomin}}
+</$button>
+<% else %>
+<$button class=<<tv-config-toolbar-class>> tooltip="Enter cooking mode" aria-label="enter cooking mode">
+<$action-setfield $tiddler="$:/state/community/recipes/cooking-save/sidebar"
+  text={{{ [$:/state/sidebar]text[]else[yes] }}}/>
+<$action-setfield $tiddler="$:/state/community/recipes/cooking-save/story"
+  text={{{ [[$:/StoryList]get[list]] }}}/>
+<$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=<<currentTiddler>>/>
+<$action-setfield $tiddler="$:/state/sidebar" text="no"/>
+<$action-setfield $tiddler="$:/StoryList"
+  $field="list" $value={{{ [<currentTiddler>addprefix[[]addprefix[[]addsuffix[]]addsuffix[]] }}}/>
+{{$:/core/images/storyview-zoomin}}
+</$button>
+<% endif %>
+</$let>
