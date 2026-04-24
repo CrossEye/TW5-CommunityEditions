@@ -1,5 +1,5 @@
 caption: Cooking Mode
-condition: [<currentTiddler>tag[Recipe]]
+condition: [<currentTiddler>tag[Recipe]] [[$:/state/community/recipes/cooking-mode]get[text]!is[blank]]
 description: Enter or exit focused cooking mode
 list-before: $:/core/ui/Buttons/close
 tags: $:/tags/ViewToolbar
@@ -7,7 +7,7 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
 
 \whitespace trim
 <$let cookState={{{ [[$:/state/community/recipes/cooking-mode]get[text]] }}}>
-<%if [<cookState>match<currentTiddler>] %>
+<%if [<cookState>!is[blank]] %>
 <$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Exit cooking mode" aria-label="exit cooking mode">
 <$action-setfield $tiddler="$:/state/sidebar"
   text={{{ [[$:/state/community/recipes/cooking-save/sidebar]get[text]else[yes]] }}}/>
