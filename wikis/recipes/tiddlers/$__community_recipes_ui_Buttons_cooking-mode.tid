@@ -11,8 +11,12 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
 <$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Exit cooking mode" aria-label="exit cooking mode">
 <$action-setfield $tiddler="$:/state/sidebar"
   text={{{ [[$:/state/community/recipes/cooking-save/sidebar]get[text]else[yes]] }}}/>
+<%if [<currentTiddler>match<cookState>] %>
 <$action-setfield $tiddler="$:/StoryList"
   list={{{ [[$:/state/community/recipes/cooking-save/story]get[text]] }}}/>
+<% else %>
+<$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+<% endif %>
 <$action-sendmessage $message="tm-navigate" $param=<<cookState>>/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=""/>
 {{$:/core/images/storyview-zoomin}}
