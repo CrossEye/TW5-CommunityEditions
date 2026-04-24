@@ -43,17 +43,11 @@ type: text/vnd.tiddlywiki
 }
 .tc-recipe-source { margin-right: 1.5em; }
 
-/* Split view */
+/* Recipe body layout */
 .tc-recipe-split {
     display: grid;
     grid-template-columns: 5fr 7fr;
     gap: 2em;
-    max-height: 75vh;
-}
-.tc-recipe-split-left,
-.tc-recipe-split-right {
-    overflow-y: auto;
-    padding-right: 0.5em;
 }
 .tc-recipe-split-left strong,
 .tc-recipe-split-right strong {
@@ -62,11 +56,6 @@ type: text/vnd.tiddlywiki
     font-size: 1.1em;
     border-bottom: 1px solid <<colour tiddler-border>>;
     padding-bottom: 0.25em;
-}
-
-/* Step-by-step view — tighter split height to leave room for header and nav */
-.tc-stepview-split {
-    max-height: calc(75vh - 8em);
 }
 
 /* Step-by-step view */
@@ -92,7 +81,6 @@ type: text/vnd.tiddlywiki
     margin-bottom: 0.4em;
     transition: all 0.15s ease;
 }
-.tc-step p { margin: 0; }
 .tc-step-active {
     opacity: 1;
     font-size: 1.15em;

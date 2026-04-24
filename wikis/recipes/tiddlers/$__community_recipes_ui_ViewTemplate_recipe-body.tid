@@ -1,0 +1,49 @@
+title: $:/community/recipes/ui/ViewTemplate/recipe-body
+
+\whitespace trim
+<$let stepState={{{ [[$:/state/community/recipes/step/]addsuffix<currentTiddler>] }}}
+     ingreds={{{ [<currentTiddler>get[text]splitregexp[!! Ingredients]last[]splitregexp[!! ]first[]] }}}
+     stepCount={{{ [<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]count[]] }}}>
+<$set name="stepIdx" tiddler=<<stepState>> field="text" emptyValue="1">
+
+<div class="tc-stepview-header">
+<div class="tc-stepview-progress">Step&#32;<<stepIdx>>&#32;of&#32;<<stepCount>></div>
+</div>
+
+<div class="tc-recipe-split">
+<div class="tc-recipe-split-left">
+<strong>Ingredients</strong>
+<$transclude $variable="ingreds" $mode="block"/>
+</div>
+<div class="tc-recipe-split-right">
+<$list filter="[<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]]" variable="stepText" counter="stepNum">
+<$button class={{{ [<stepNum>match<stepIdx>then[tc-step tc-step-active tc-btn-invisible]else[tc-step tc-btn-invisible]] }}}>
+<$action-setfield $tiddler=<<stepState>> text=<<stepNum>>/>
+<$transclude $variable="stepText" $mode="inline"/>
+</$button>
+</$list>
+</div>
+</div>
+
+<div class="tc-stepview-nav">
+<%if [<stepIdx>!match[1]] %>
+<$button>
+<$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>subtract[1]] }}}/>
+← Previous
+</$button>
+<% else %>
+<span></span>
+<% endif %>
+<span><<stepIdx>>&#32;/&#32;<<stepCount>></span>
+<%if [<stepIdx>!match<stepCount>] %>
+<$button>
+<$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>add[1]] }}}/>
+Next →
+</$button>
+<% else %>
+<span></span>
+<% endif %>
+</div>
+
+</$set>
+</$let>
