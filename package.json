@@ -4,7 +4,7 @@
   "private": true,
   "description": "TiddlyWiki community editions",
   "scripts": {
-    "start": "tiddlywiki wikis/recipes --listen",
+    "start": "tiddlywiki wikis/recipes --listen host=0.0.0.0",
     "build": "tiddlywiki wikis/recipes --build index"
   },
   "devDependencies": {

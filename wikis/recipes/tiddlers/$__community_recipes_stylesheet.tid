@@ -45,6 +45,7 @@ type: text/vnd.tiddlywiki
 
 /* Recipe body layout */
 .tc-recipe-split {
+    clear: both;
     display: grid;
     grid-template-columns: 5fr 7fr;
     gap: 2em;
@@ -58,32 +59,36 @@ type: text/vnd.tiddlywiki
     padding-bottom: 0.25em;
 }
 
-/* Ingredients toggle button — hidden on wide screens, shown via media query on phones */
+/* Ingredients toggle button — cooking-mode only; visual styling kept here */
 .tc-recipe-ingr-toggle {
     display: none;
+    font-size: 0.85em;
+    border: 1px solid <<colour primary>>;
+    border-radius: 1em;
+    padding: 0.15em 0.6em;
+    color: <<colour primary>>;
+    white-space: nowrap;
 }
 
-/* Phone layout (<600px): single-column, ingredients collapsible */
+/* Phone layout (<600px): single-column; ingredients always visible in normal mode */
 @media (max-width: 599px) {
     .tc-recipe-split {
         grid-template-columns: 1fr;
     }
-    .tc-recipe-ingr-panel {
-        display: none;
-        margin-bottom: 1em;
-    }
-    .tc-recipe-ingr-panel.tc-recipe-ingr-visible {
-        display: block;
-    }
-    .tc-recipe-ingr-toggle {
-        display: inline-block;
-        font-size: 0.85em;
-        border: 1px solid <<colour primary>>;
-        border-radius: 1em;
-        padding: 0.15em 0.6em;
-        color: <<colour primary>>;
-        white-space: nowrap;
-    }
+}
+
+/* About block and photo */
+.tc-recipe-about {
+    margin-bottom: 1.5em;
+}
+.tc-recipe-photo {
+    float: right;
+    margin: 0 0 0.75em 1.5em;
+    max-width: 40%;
+}
+.tc-recipe-photo img {
+    max-width: 100%;
+    border-radius: 4px;
 }
 
 /* Step-by-step view */
@@ -96,6 +101,11 @@ type: text/vnd.tiddlywiki
     margin-top: 0.25em;
     font-size: 0.9em;
 }
+.tc-step-num {
+    font-weight: bold;
+    margin-right: 0.2em;
+}
+
 .tc-step {
     display: block;
     width: 100%;
@@ -142,6 +152,25 @@ type: text/vnd.tiddlywiki
     display: none;
 }
 .tc-tiddler-controls button:not(.tc-recipe-cooking-mode-btn) {
+    display: none;
+}
+.tc-hide-sidebar-btn,
+.tc-show-sidebar-btn {
+    display: none;
+}
+@media (max-width: 599px) {
+    .tc-recipe-ingr-panel {
+        display: none;
+        margin-bottom: 1em;
+    }
+    .tc-recipe-ingr-panel.tc-recipe-ingr-visible {
+        display: block;
+    }
+    .tc-recipe-ingr-toggle {
+        display: inline-block;
+    }
+}
+.tc-recipe-about {
     display: none;
 }
 .tc-recipe-split {

@@ -1,6 +1,10 @@
 title: $:/community/recipes/templates/new-recipe
 type: text/vnd.tiddlywiki
 
+!! About
+
+//(Optional: origin, serving suggestions, tips. Delete this section if unused.)//
+
 !! Ingredients
 
 *
