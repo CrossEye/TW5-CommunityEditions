@@ -13,6 +13,7 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
   text={{{ [[$:/state/community/recipes/cooking-save/sidebar]get[text]else[yes]] }}}/>
 <$action-setfield $tiddler="$:/StoryList"
   list={{{ [[$:/state/community/recipes/cooking-save/story]get[text]] }}}/>
+<$action-sendmessage $message="tm-navigate" $param=<<cookState>>/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=""/>
 {{$:/core/images/storyview-zoomin}}
 </$button>
