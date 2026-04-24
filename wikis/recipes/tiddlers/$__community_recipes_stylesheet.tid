@@ -137,7 +137,7 @@ type: text/vnd.tiddlywiki
     padding-top: 1em;
     border-top: 1px solid <<colour tiddler-border>>;
     color: <<colour muted-foreground>>;
-    font-size: 0.9em;
+    font-size: 1.125em;
     position: sticky;
     bottom: 0;
     background: <<colour tiddler-background>>;

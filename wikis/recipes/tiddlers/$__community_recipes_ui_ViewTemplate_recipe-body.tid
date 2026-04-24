@@ -43,12 +43,11 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 <%if [<stepIdx>!match[1]] %>
 <$button>
 <$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>subtract[1]] }}}/>
-← Previous
+Previous
 </$button>
 <% else %>
 <span></span>
 <% endif %>
-<span><<stepIdx>>&#32;/&#32;<<stepCount>></span>
 <$button class="tc-btn-invisible tc-recipe-ingr-toggle">
 <$action-setfield $tiddler=<<ingrState>> text={{{ [<ingrVisible>match[show]then[hide]else[show]] }}}/>
 <%if [<ingrVisible>match[show]] %>▴&#32;Ingredients<% else %>▾&#32;Ingredients<% endif %>
@@ -56,7 +55,7 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 <%if [<stepIdx>!match<stepCount>] %>
 <$button>
 <$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>add[1]] }}}/>
-Next →
+Next
 </$button>
 <% else %>
 <span></span>
