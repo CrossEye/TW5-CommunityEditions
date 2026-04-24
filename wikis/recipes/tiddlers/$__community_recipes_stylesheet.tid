@@ -166,5 +166,9 @@ type: text/vnd.tiddlywiki
     margin: 0 !important;
     border-radius: 0;
     box-shadow: none;
+    min-height: 100vh;
+}
+body {
+    background-color: <<colour tiddler-background>>;
 }
 </$list>
