@@ -128,4 +128,23 @@ type: text/vnd.tiddlywiki
     border-top: 1px solid <<colour tiddler-border>>;
     color: <<colour muted-foreground>>;
     font-size: 0.9em;
+    position: sticky;
+    bottom: 0;
+    background: <<colour tiddler-background>>;
+    z-index: 10;
+    padding-bottom: 0.75em;
 }
+
+/* Cooking-mode active: hide distractions, boost legibility */
+<$list filter="[[$:/state/community/recipes/cooking-mode]get[text]!is[blank]]">
+.tc-subtitle,
+.tc-tags-wrapper {
+    display: none;
+}
+.tc-tiddler-controls button:not(.tc-recipe-cooking-mode-btn) {
+    display: none;
+}
+.tc-recipe-split {
+    font-size: 1.15em;
+}
+</$list>

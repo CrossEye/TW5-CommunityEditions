@@ -8,7 +8,7 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
 \whitespace trim
 <$let cookState={{{ [[$:/state/community/recipes/cooking-mode]get[text]] }}}>
 <%if [<cookState>match<currentTiddler>] %>
-<$button class=<<tv-config-toolbar-class>> tooltip="Exit cooking mode" aria-label="exit cooking mode">
+<$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Exit cooking mode" aria-label="exit cooking mode">
 <$action-setfield $tiddler="$:/state/sidebar"
   text={{{ [[$:/state/community/recipes/cooking-save/sidebar]get[text]else[yes]] }}}/>
 <$action-setfield $tiddler="$:/StoryList"
@@ -17,7 +17,7 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
 {{$:/core/images/storyview-zoomin}}
 </$button>
 <% else %>
-<$button class=<<tv-config-toolbar-class>> tooltip="Enter cooking mode" aria-label="enter cooking mode">
+<$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Enter cooking mode" aria-label="enter cooking mode">
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-save/sidebar"
   text={{{ [[$:/state/sidebar]get[text]else[yes]] }}}/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-save/story"
