@@ -146,5 +146,16 @@ type: text/vnd.tiddlywiki
 }
 .tc-recipe-split {
     font-size: 1.15em;
+    padding-bottom: 4em;
+}
+.tc-stepview-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.75em 1.5em;
+    margin-top: 0;
+    border-top: 1px solid <<colour tiddler-border>>;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.08);
 }
 </$list>
