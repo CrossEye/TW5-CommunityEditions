@@ -7,14 +7,22 @@ type: text/vnd.tiddlywiki
 \define check-all-recipes()
 <$list filter="[field:demo[yes]tag[Recipe]!title[Basic Pancakes]]" variable="t">
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="yes"/>
-<$list filter="[<t>get[photo]!is[blank]]" variable="p">
-<$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<p>] }}} text="yes"/>
-</$list>
 </$list>
 \end
 \define uncheck-all-recipes()
 <$list filter="[field:demo[yes]tag[Recipe]!title[Basic Pancakes]]" variable="t">
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="no"/>
+</$list>
+\end
+\define check-all-recipe-photos()
+<$list filter="[field:demo[yes]tag[Recipe]!title[Basic Pancakes]]" variable="t">
+<$list filter="[<t>get[photo]!is[blank]]" variable="p">
+<$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<p>] }}} text="yes"/>
+</$list>
+</$list>
+\end
+\define uncheck-all-recipe-photos()
+<$list filter="[field:demo[yes]tag[Recipe]!title[Basic Pancakes]]" variable="t">
 <$list filter="[<t>get[photo]!is[blank]]" variable="p">
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<p>] }}} text="no"/>
 </$list>
@@ -23,14 +31,22 @@ type: text/vnd.tiddlywiki
 \define check-all-ingredients()
 <$list filter="[field:demo[yes]tag[Ingredient]]" variable="t">
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="yes"/>
-<$list filter="[<t>get[photo]!is[blank]]" variable="p">
-<$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<p>] }}} text="yes"/>
-</$list>
 </$list>
 \end
 \define uncheck-all-ingredients()
 <$list filter="[field:demo[yes]tag[Ingredient]]" variable="t">
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="no"/>
+</$list>
+\end
+\define check-all-ingredient-photos()
+<$list filter="[field:demo[yes]tag[Ingredient]]" variable="t">
+<$list filter="[<t>get[photo]!is[blank]]" variable="p">
+<$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<p>] }}} text="yes"/>
+</$list>
+</$list>
+\end
+\define uncheck-all-ingredient-photos()
+<$list filter="[field:demo[yes]tag[Ingredient]]" variable="t">
 <$list filter="[<t>get[photo]!is[blank]]" variable="p">
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<p>] }}} text="no"/>
 </$list>
@@ -51,21 +67,17 @@ type: text/vnd.tiddlywiki
 
 <table class="tc-remove-demo-table">
 <thead><tr>
-<th><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipes" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipes>> uncheckactions=<<uncheck-all-recipes>>/></th>
-<th>Recipe</th>
+<th>Name</th>
+<th><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipes" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipes>> uncheckactions=<<uncheck-all-recipes>>/> Recipe</th>
+<th><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipe-photos" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipe-photos>> uncheckactions=<<uncheck-all-recipe-photos>>/> Photo</th>
 </tr></thead>
 <tbody>
 <$list filter="[field:demo[yes]tag[Recipe]!title[Basic Pancakes]sort[title]]" variable="recipeTitle">
 <tr>
-<td><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<recipeTitle>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
 <td><$link to=<<recipeTitle>>/></td>
+<td><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<recipeTitle>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
+<td><$list filter="[<recipeTitle>get[photo]!is[blank]]" variable="photoTitle"><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<photoTitle>] }}} field="text" checked="yes" unchecked="no" default="yes"/></$list></td>
 </tr>
-<$list filter="[<recipeTitle>get[photo]!is[blank]]" variable="photoTitle">
-<tr>
-<td><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<photoTitle>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
-<td><$link to=<<photoTitle>>/></td>
-</tr>
-</$list>
 </$list>
 </tbody>
 </table>
@@ -76,21 +88,17 @@ type: text/vnd.tiddlywiki
 
 <table class="tc-remove-demo-table">
 <thead><tr>
-<th><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredients" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredients>> uncheckactions=<<uncheck-all-ingredients>>/></th>
-<th>Ingredient</th>
+<th>Name</th>
+<th><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredients" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredients>> uncheckactions=<<uncheck-all-ingredients>>/> Ingredient</th>
+<th><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredient-photos" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredient-photos>> uncheckactions=<<uncheck-all-ingredient-photos>>/> Photo</th>
 </tr></thead>
 <tbody>
 <$list filter="[field:demo[yes]tag[Ingredient]sort[title]]" variable="t">
 <tr>
-<td><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
 <td><$link to=<<t>>/></td>
+<td><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
+<td><$list filter="[<t>get[photo]!is[blank]]" variable="photoTitle"><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<photoTitle>] }}} field="text" checked="yes" unchecked="no" default="yes"/></$list></td>
 </tr>
-<$list filter="[<t>get[photo]!is[blank]]" variable="photoTitle">
-<tr>
-<td><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<photoTitle>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
-<td><$link to=<<photoTitle>>/></td>
-</tr>
-</$list>
 </$list>
 </tbody>
 </table>
@@ -131,5 +139,6 @@ You may also choose to remove the sample categories:
 <$action-deletetiddler $filter="[[mae-mu-TkzdkVn1AyA-unsplash.jpg]] -[[$:/state/community/recipes/remove-demo/Basic Pancakes]field:text[no]then[mae-mu-TkzdkVn1AyA-unsplash.jpg]]"/>
 <$action-deletetiddler $filter="[[Basic Pancakes]] -[[$:/state/community/recipes/remove-demo/Basic Pancakes]field:text[no]then[Basic Pancakes]]"/>
 <$action-deletetiddler $filter="[prefix[$:/state/community/recipes/remove-demo/]] [prefix[$:/state/community/recipes/remove-demo-section/]]"/>
+<$action-sendmessage $message="tm-close-tiddler" $param="$:/community/recipes/ui/RemoveDemoContent"/>
 Remove Selected Items
 </$button>
