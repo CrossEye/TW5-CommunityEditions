@@ -23,7 +23,37 @@ type: text/vnd.tiddlywiki
     color: <<colour page-background>>;
 }
 
-/* Ingredient 'used in' panel */
+/* Ingredient photo (float left, mirroring recipe's float right) */
+.tc-ingredient-photo {
+    float: left;
+    margin: 0 1.5em 0.75em 0;
+    max-width: 35%;
+}
+.tc-ingredient-photo img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.tc-ingredient-clear {
+    clear: both;
+}
+
+/* Alias notice — shown when viewing an alias tiddler */
+.tc-ingredient-alias-notice {
+    margin: 0 0 1em;
+    padding: 0.4em 0.9em;
+    border-left: 3px solid <<colour primary>>;
+    color: <<colour muted-foreground>>;
+    font-style: italic;
+}
+
+/* "Also known as" line on canonical ingredient */
+.tc-ingredient-aliases {
+    margin-top: 0.25em;
+    font-size: 0.9em;
+    color: <<colour muted-foreground>>;
+}
+
+/* Ingredient/used-in footer panel */
 .tc-recipe-ingredient-uses {
     margin-top: 1.5em;
     padding-top: 0.75em;
@@ -33,6 +63,14 @@ type: text/vnd.tiddlywiki
 .tc-recipe-ingredient-uses ul {
     margin: 0.4em 0 0;
     padding-left: 1.5em;
+}
+
+@media (max-width: 599px) {
+    .tc-ingredient-photo {
+        float: none;
+        max-width: 100%;
+        margin: 0 0 1em;
+    }
 }
 
 /* Recipe metadata strip */

@@ -1,0 +1,20 @@
+title: $:/community/recipes/ui/ViewTemplate/ingredient-body
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<% if [all[current]has[alias-of]] %>
+<div class="tc-ingredient-alias-notice">
+<$let canonical={{{ [all[current]get[alias-of]] }}}>
+Another name for <$link to=<<canonical>>/>.</$let>
+</div>
+<% else %>
+<% if [all[current]has[photo]] %>
+<$let photoTitle={{{ [all[current]get[photo]] }}}>
+<div class="tc-ingredient-photo">
+<$transclude $tiddler=<<photoTitle>> $mode="block"/>
+</div>
+</$let>
+<% endif %>
+<$transclude $tiddler=<<currentTiddler>> $field="text" $mode="block"/>
+<div class="tc-ingredient-clear"></div>
+<% endif %>

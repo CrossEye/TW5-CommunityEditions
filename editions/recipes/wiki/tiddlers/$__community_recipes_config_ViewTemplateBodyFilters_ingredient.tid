@@ -1,0 +1,6 @@
+list-before: $:/config/ViewTemplateBodyFilters/default
+tags: $:/tags/ViewTemplateBodyFilter
+title: $:/community/recipes/config/ViewTemplateBodyFilters/ingredient
+type: text/vnd.tiddlywiki
+
+[<currentTiddler>tag[Ingredient]then[$:/community/recipes/ui/ViewTemplate/ingredient-body]]
