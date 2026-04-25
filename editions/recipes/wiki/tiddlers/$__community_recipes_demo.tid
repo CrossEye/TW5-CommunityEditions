@@ -1,0 +1,4 @@
+caption: Demo content
+title: $:/community/recipes/demo
+
+Sample content included with the Recipe Edition.  Tiddlers with a `demo` field set to `yes` can be removed all at once via the toolbar button to reset the edition to empty.
