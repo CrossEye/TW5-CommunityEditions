@@ -4,8 +4,10 @@
   "private": true,
   "description": "TiddlyWiki community editions",
   "scripts": {
-    "start": "tiddlywiki wikis/recipes --listen host=0.0.0.0",
-    "build": "tiddlywiki wikis/recipes --build index"
+    "start": "tiddlywiki editions/recipes/wiki --listen host=0.0.0.0",
+    "build": "tiddlywiki editions/recipes/wiki --build index",
+    "fetch-recipe": "node .meta/sandbox/recipes/scripts/fetch-recipe.js",
+    "build-collection": "node .meta/sandbox/recipes/scripts/build-collection.js"
   },
   "devDependencies": {
     "tiddlywiki": "5.4.0"
