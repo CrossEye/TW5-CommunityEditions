@@ -1,0 +1,42 @@
+title: $:/plugins/EvidentlyCube/AutoComplete/history
+type: text/vnd.tiddlywiki
+
+* ''1.0.24'': Editing triggers now works with `TiddlyFlex` plugin/layout
+* ''1.0.23'': Plugin now works with `TiddlyFlex` plugin/layout
+* ''1.0.22'': Exposed variable `<editedField>` which allows to retrieve info on the field edited by the edit widget.
+* ''1.0.21'':
+** Fixed RSOD happening when opening a new window with the plugin installed. It was caused by TW being expanded with the ability to register multiple listeners for each widget event.
+* ''1.0.20'': Fix offset issue caused by previous update which doubled scrolling offsets
+* ''1.0.19'':
+** Registered triggers in the settings now display without any accidental parsing
+** Fix extraneous offset when using a theme that has left-top offsets/margins
+* ''1.0.18'':
+** Fixed RSOD in TW 5.3.0+ caused by new API not being supported
+** Fixed RSOD when earlier keyup causes the focus to be changed -- can be triggered by setting `sidebar-search` shortcut to the same key as manually triggering auto complete.
+* ''1.0.17'' -- Variable `editedTiddler` can now be used in //Suggestion Filter// and //Display Filter//
+* ''1.0.16'' -- The two `<p>` tags that were wrapping around the auto complete window have been reduced to a single `<p>` tag.
+* ''1.0.15'':
+** ''Code Mirror integration:'' No longer throws an exception when triggering completion in non-codemirror input when codemirror editor is opened
+** ''Code Mirror integration:'' Completion opens at the correct position even when window is scrolled
+** ''Code Mirror integration:'' No longer throws an exception when selecting an option with mouse in non-codemirror input when codemirror editor is opened
+* ''1.0.14'':
+** Fixed a bug where navigating through auto completion would still trigger TW's keyboard widgets eg. navigating auto completion in sidebar search would also change selected search result
+** The list of suggestion can now be scrolled down using the keyboard.
+* ''1.0.13'' -- Added caption to triggers to improve how they are displayed in the settings
+* ''1.0.12'' -- Various small fixes and tweaks to problems introduced between 1.0.9 and 1.0.11.
+* ''1.0.11'' -- This plugin now takes preference over `codemirror-autocomplete` and will prevent the code mirror Auto Complete from opening at the same time as this
+* ''1.0.10'' -- No longer crashes when using together with a Twitter plugin or any other plugin which delays the execution of the `startup` module
+* ''1.0.9'' -- Using mouse for Auto Complete now works in tiddlers opened in a separate window
+* ''1.0.8'' -- Auto Complete now works gracefully with `codemirror-closebrackets` plugin
+* ''1.0.7'' -- Auto Complete now only opens in the window in which it was invoked when using Side Editor plugin or just opening a tiddler in a new window
+* ''1.0.6'':
+** If you use Auto Complete in a text area that is scrolled, Auto Complete window will now be correctly positioned.
+** If you use framed editor but the main window was scrolled, Auto Complete window will now be correctly positioned
+** Fixed incorrect placeholder for description field
+** Changed the default trigger slightly
+* ''1.0.5'' -- Auto Complete now also opens in tiddlers opened in a new window
+* ''1.0.4'' -- Added `Transform Filter` option to triggers which allows transforming the suggestion before it is inserted (eg to insert a field value instead)
+* ''1.0.3'' -- Added compatibility with Streams - this plugin's Enter takes priority over Streams's Enter
+* ''1.0.2'' -- Upped version because issue
+* ''1.0.1'' -- Added `z-index` to CSS so the completion always (tries to) appear at the top
+* ''1.0.0'' -- Initial release
