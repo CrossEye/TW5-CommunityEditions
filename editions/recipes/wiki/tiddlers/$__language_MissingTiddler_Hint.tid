@@ -1,0 +1,6 @@
+created: 20260426031833757
+modified: 20260426031837406
+title: $:/language/MissingTiddler/Hint
+type: text/vnd.tiddlywiki
+
+<% if [tag[Ingredient]contains:aliases<currentTiddler>first[]] %><% else %><$let src={{{ [[$:/language/MissingTiddler/Hint]shadowsource[]] }}}><$transclude tiddler=<<src>> subtiddler="$:/language/MissingTiddler/Hint"/></$let><% endif %>

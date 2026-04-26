@@ -1,6 +1,6 @@
 created: 20260425205655150
 list-after: $:/core/ui/ViewTemplate/body
-modified: 20260425211831917
+modified: 20260426032430167
 tags: $:/tags/ViewTemplate
 title: $:/community/recipes/ui/ViewTemplate/ingredient
 type: text/vnd.tiddlywiki
@@ -26,9 +26,14 @@ Also known as: <$list filter="[all[tiddlers]field:alias-of<currentTiddler>sort[t
 <% endif %>
 <% endif %>
 <% if [all[current]!tag[Ingredient]] %>
+<% if [<currentTiddler>!is[tiddler]] %>
+<$list filter="[tag[Ingredient]contains:aliases<currentTiddler>first[]]">
+<h3>Alias of &nbsp; <$link/></h3>
+</$list>
+<% endif %>
 <% if [<currentTiddler>backlinks[]tag[Recipe]] %>
 <div class="tc-recipe-ingredient-uses">
-<strong>Used in:</strong>
+<h3>Used in:</h3>
 <ul>
 <$list filter="[<currentTiddler>backlinks[]tag[Recipe]sort[title]]">
 <li><$link/></li>
