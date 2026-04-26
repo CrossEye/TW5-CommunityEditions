@@ -1,3 +1,7 @@
 node_modules/
 wikis/*/output/
 wikis/*/tiddlers/$__StoryList*.tid
+editions/*/wiki/output/
+editions/*/wiki/tiddlers/$__Import.tid
+editions/*/wiki/tiddlers/$__StoryList.tid
+editions/*/wiki/tiddlers/$__palette.tid
