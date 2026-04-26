@@ -5,7 +5,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Garlic is a small, papery-skinned bulb that has carried more weight in the kitchen than almost any other ingredient. A member of the //Allium// family — alongside onions, leeks, shallots, and chives — it grows as a cluster of cloves wrapped together inside a thin white or purple skin. Crush a clove and the cell walls break, releasing the sulfur compound ''allicin'' and the unmistakable pungent aroma that signals: //something good is about to happen here//.\n\nGarlic has been cultivated for at least five thousand years. Egyptian pyramid builders ate it for strength; Roman soldiers carried it on campaigns; medieval Europeans hung it over doorways to ward off everything from plague to vampires. Today it appears in nearly every cuisine on earth, and most cuisines have their own preferred treatment — raw and pounded into Lebanese //toum//, slow-roasted into mellow sweetness, fermented into black garlic, or sliced paper-thin and crisped in oil for Italian pasta.\n\nThe texture and flavor of garlic depends entirely on how you cut it. ''Crushed'' garlic is the most pungent — all those broken cells releasing volatile compounds at once. ''Minced'' is sharp but a little gentler. ''Sliced'' is mellower still. ''Whole cloves'' simmered in a stew or roasted in their skins turn sweet, almost nutty, with no harshness at all. Choose your cut based on what you want from it: a hot, sharp note, or a soft background warmth.",
     "photo": "Garlic (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "garlic"
   },
   {
     "title": "Garlic (photo)",
@@ -21,7 +22,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Salt is the oldest seasoning in human cooking, and arguably the most important. Chemically it is sodium chloride — a simple crystalline compound mined from ancient seabeds or harvested from evaporated seawater — but its role in food goes far beyond making things taste salty. Salt suppresses bitterness, sharpens sweetness, draws out moisture, firms textures, preserves meats and vegetables, and amplifies the flavors that already exist in a dish. A pinch added to caramel makes it taste more like caramel; a generous handful in pasta water gives the noodles their proper savor; a light scatter on a sliced tomato turns water into juice.\n\nDifferent salts behave differently in the hand and on the food. ''Table salt'' is fine, dense, and often iodized — easy to over-pour, but reliable for baking where precise measurement matters. ''Kosher salt'' is coarser and flakier, pinches well between the fingers, and is the everyday salt of most professional kitchens. ''Sea salt'' ranges from soft, moist //fleur de sel// to crunchy //Maldon// flakes — finishing salts, used at the end to add bursts of texture and brightness rather than even seasoning. ''Rock salt'' from places like the Khewra mine in Pakistan (the source of pink Himalayan salt) is mineral-tinted and visually striking but functionally similar to other salts at the table.\n\nSalt's history is inseparable from the history of civilization. Roman soldiers were sometimes paid in it — the root of the word //salary//. Wars have been fought over salt mines, taxes on salt have toppled empires (Gandhi's 1930 Salt March was a turning point in Indian independence), and salt-cured fish and meats made long sea voyages, long winters, and trade across continents possible. For most of human history salt was precious; today it is so cheap and ubiquitous that the central skill in using it is restraint. The cook's most important question, asked again and again throughout the cooking of nearly any dish, is simply: //does this need more salt?//",
     "photo": "Salt (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "salt"
   },
   {
     "title": "Salt (photo)",
@@ -37,7 +39,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Butter is what happens when cream is agitated until its fat globules give up and stick together. Pour cream into a jar, shake it long enough, and you'll have butter — the same process that's been used for thousands of years, from the leather-bag churns of ancient nomads to the wooden plunger churns of farmhouse kitchens. The yellow color comes from beta-carotene in the grass the cows ate; the richness comes from the fat itself, which is roughly 80% of butter by weight, with the rest mostly water and milk solids.\n\nIn the kitchen, butter does an extraordinary number of jobs. It carries flavor (fat-soluble aromatics dissolve into it). It builds structure (creamed with sugar, it traps air for fluffy cakes). It enriches sauces (whisked into pan juices to make a //beurre monté//). It browns into ''nutty, caramel-toned beurre noisette'' when heated past the foaming stage — one of the small kitchen miracles. And it just tastes good, melting onto warm bread or toast in a way nothing else quite manages.\n\n''Salted'' butter has a longer shelf life and works for spreading and finishing; ''unsalted'' is the baker's choice because it lets you control the salt yourself. ''Cultured'' butter, made from cream fermented with lactic bacteria before churning (the European style), has a tangier, more complex flavor than the sweet-cream butter common in America. Whichever you choose, keep it cold for pastry work and at room temperature for spreading.",
     "photo": "Butter (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "butter"
   },
   {
     "title": "Butter (photo)",
@@ -53,7 +56,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "The onion is the workhorse of the kitchen. Slice one open and your eyes water — the onion's defense mechanism, sulfur compounds reacting with the air, was never aimed at you but at hungry rabbits. Cook it in a little fat over low heat and those same compounds break down into something miraculous: a deep, sweet, savory base that underlies an enormous swath of world cuisine. Almost no European, North African, Middle Eastern, Indian, or Latin American savory dish begins without one.\n\nThere are many onions and each has its job. ''Yellow onions'' are the all-purpose choice for stocks, stews, and sautés. ''White onions'' are sharper and crunchier, common in Mexican cooking. ''Sweet onions'' (Vidalia, Walla Walla) have a higher sugar content and milder bite, good raw on a burger or in a salad. ''Red onions'' are pungent raw, mellow when pickled or grilled, and add color to anything. ''Shallots'' are smaller, more refined cousins, with a slightly garlicky note.\n\nThe slow caramelization of onions — sliced thin, cooked in butter or oil over low heat for forty-five minutes or more, until they collapse into a sweet brown jam — is one of the great transformations in cooking. It cannot be rushed. //It cannot be rushed.// Plan accordingly, and use the time to chop everything else.",
     "photo": "Onion (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "Onions onion"
   },
   {
     "title": "Onion (photo)",
@@ -85,7 +89,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Paprika is ground dried pepper — specifically, varieties of //Capsicum annuum//, the same species that gives us bell peppers and chiles. It came to the Old World from the Americas after Columbus, and within a few centuries had settled into the cuisines of Hungary, Spain, the Balkans, and Morocco as if it had always been there. In Hungary especially, paprika is //the// national spice, present in everything from goulash to chicken paprikash to the bowls of red dust set out alongside salt and pepper at the table.\n\nNot all paprika is the same. ''Sweet paprika'' is the everyday red powder, mild and fruity, used as much for color as flavor. ''Hot paprika'' adds real heat, particularly the //Csípős// styles from Hungary. ''Smoked paprika'' (Spanish //pimentón//) is dried over oak fires, lending an unmistakable smoky depth — the secret weapon of Spanish chorizo, paella, and roasted potatoes. The smoked variety comes in sweet, bittersweet, and hot versions, and a tin of good //pimentón// is one of the highest-leverage purchases in spice cookery.\n\nLike most ground spices, paprika loses its punch within a year or so of grinding. Buy it in small quantities, store it away from light and heat, and replace it when it stops smelling vivid. Bloom it in oil at the start of cooking — never burn it, which turns it bitter — to get the most out of its color and flavor.",
     "photo": "Paprika (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "paprika"
   },
   {
     "title": "Paprika (photo)",
@@ -133,7 +138,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Water is the most overlooked ingredient in cooking — the silent partner that does more work than any spice or technique. It dissolves salt and sugar; conducts heat; suspends starches; carries aroma; tenderizes meat; makes dough cohere; turns rice into rice and pasta into pasta. Most of what we call cooking is, in some sense, the management of water — driving it off (roasting, frying), introducing it (boiling, steaming), or transforming it (reducing a sauce until what remains is concentrated flavor).\n\nTap water works for almost everything. The exceptions are mostly about minerals: very hard water can make beans tough and tea taste off, and very soft or distilled water can make bread dough sluggish (yeast wants some minerals to feed on). For most dishes, the water that comes out of your faucet is fine; for tea, coffee, and stocks where the water is the medium and not just a vehicle, filtering helps.\n\nIn recipes, ''hot water'' is not the same as ''boiling water'' which is not the same as ''simmering water''. Pay attention to the verb: //bring to a boil//, //reduce to a simmer//, //barely cover//. These small distinctions are the difference between a tender braise and a stringy one, between a fluffy rice and a sticky one. Water is not glamorous. It is also not optional.",
     "photo": "Water (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "water"
   },
   {
     "title": "Water (photo)",
@@ -165,7 +171,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "The egg is one of the most extraordinary ingredients in the kitchen. It can be the star of the dish (a perfect poached egg on toast) or the invisible structural element that holds everything else together (a custard, a soufflé, a meringue, a mayonnaise). It can scramble, fry, boil, poach, bake, cure, foam, emulsify, glaze, and bind. Few ingredients ask so little and give so much.\n\nA whole chicken egg is a small miracle of compartmentalized chemistry: the white is mostly water and protein; the yolk is fat, more protein, lecithin (a powerful natural emulsifier), and most of the egg's flavor and color. Each component does different things. ''Whites'' whip into a stiff foam that lifts soufflés and meringues. ''Yolks'' enrich custards and emulsify mayonnaise. ''Whole eggs'' bind meatballs, glaze pastry, scramble into breakfast, and provide structure to almost every cake.\n\nMost recipes assume large eggs (around 50g each). Fresher eggs work better for poaching (the white is thicker and holds together) but slightly older eggs are easier to peel after boiling (the air pocket between shell and white grows over time). Store eggs in the fridge with the pointed end down — the air pocket sits at the rounded end and keeps the yolk centered.",
     "photo": "Egg (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "Eggs egg eggs"
   },
   {
     "title": "Egg (photo)",
@@ -197,7 +204,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Olive oil is the fat at the heart of Mediterranean cooking — the cuisines of Italy, Greece, Spain, the Levant, and North Africa — and one of the oldest cultivated foods on earth. Olive trees were being pressed for their oil at least six thousand years ago, and the same basic process is used today: olives are crushed, the oil is separated from the pulp, and what flows out is bottled. The best of it tastes like grass, peppercorn, and sunshine.\n\nOlive oil comes in a hierarchy of quality. ''Extra virgin'' is the top grade — first cold-pressed, with no chemical processing and a free acidity below 0.8%. It tastes like olives. ''Virgin'' is similar but slightly higher in acidity. ''Refined'' or ''pure'' olive oil has been chemically processed to neutralize defects, with a small amount of virgin oil blended back in for flavor — fine for cooking but flat tasting. ''Light'' olive oil is just refined oil with no flavor at all.\n\nUse cheaper refined or pure olive oil for high-heat cooking, where the subtle flavors of extra virgin would be wasted anyway. Save the good ''extra virgin'' for finishing — drizzled over a finished dish, dressing a salad, dipping bread. Like wine, good olive oil expresses its place: a Tuscan oil tastes different from a Greek one, which tastes different from a Spanish or Lebanese. Worth tasting around.",
     "photo": "Olive Oil (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "[[Olive oil]]"
   },
   {
     "title": "Olive Oil (photo)",
@@ -213,7 +221,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Red onions are not really red so much as a deep magenta-purple, with the color concentrated in the outer rings and fading toward the center. They're sharper and more pungent than yellow onions when raw, but their bite mellows quickly with brief cooking, pickling, or even just a soak in cold water. Their color makes them a workhorse in any dish where appearance matters as much as flavor.\n\nThe classic uses are raw or barely-cooked: ''sliced thin onto a salad'', ''chopped fine into a salsa or pico de gallo'', ''quick-pickled in vinegar and a pinch of sugar'' for tacos and grain bowls, ''grilled in thick rings'' to top a burger. Pickled red onions in particular are one of those small kitchen projects that pays back enormously — twenty minutes of effort and you have a jar of bright pink rings that improves everything they touch for weeks.\n\nThe color is acid-sensitive. A splash of vinegar or lemon juice over sliced red onion brightens the magenta dramatically; long cooking turns them brown like any other onion. If you find raw red onion too sharp, soak the slices in cold water for ten minutes before using — it pulls out much of the harshness while keeping the color and crunch.",
     "photo": "Red Onions (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "[[red onions]]"
   },
   {
     "title": "Red Onions (photo)",
@@ -261,7 +270,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "''Vegetable oil'' is a vague but useful term — usually it means a refined neutral-flavored oil suitable for high-heat cooking, most often soybean, canola (rapeseed), corn, or sunflower, sometimes a blend. The oil is refined, bleached, and deodorized to remove any taste of the source plant, leaving behind a clear, mild fat that will heat to a high temperature without smoking and won't impose its flavor on the food.\n\nThis neutrality is exactly the point. When you're frying donuts or making mayonnaise or stir-frying broccoli, you generally don't want the oil to taste like anything — you want it to be a transparent medium for everything else. Olive oil in those situations is too assertive and too low-smoke-point; butter burns; coconut oil tastes like coconut. Vegetable oil gets out of the way.\n\nMost recipes that say ''vegetable oil'' will be perfectly happy with canola, sunflower, peanut, or grapeseed. Just keep it stored in a cool dark place — refined oils oxidize over time, and rancid oil tastes flat and slightly fishy. If a bottle has been open for more than six months and you're not sure, sniff it; if it smells off, it is.",
     "photo": "Vegetable Oil (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "[[Vegetable oil]] [[vegetable oil]]"
   },
   {
     "title": "Vegetable Oil (photo)",
@@ -277,7 +287,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Baking powder is one of those ingredients that gets confused with its cousin baking soda, and the difference matters. ''Baking soda'' (sodium bicarbonate) is a single chemical that needs an acid to activate — buttermilk, yogurt, lemon juice, cocoa, brown sugar. ''Baking powder'' is baking soda plus a powdered acid plus a little starch to keep them apart in the tin, all in one package — a complete leavening system that just needs liquid and heat to work.\n\nWhen you add baking powder to a wet batter, the acid and base meet and react, producing carbon dioxide bubbles that lift the batter as it bakes. ''Double-acting'' baking powder (the standard now) reacts twice: once when wetted and again when heated, giving your cake or pancake two chances to rise.\n\nBaking powder loses its potency over time, especially once opened. To test, drop a quarter teaspoon into a bit of hot water — fresh baking powder will fizz vigorously. If it just sort of bubbles weakly, replace it. A dead can of baking powder is a common cause of mysteriously flat cakes.",
     "photo": "Baking Powder (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "[[baking powder]]"
   },
   {
     "title": "Baking Powder (photo)",
@@ -293,7 +304,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Coriander is one of those ingredients with a split personality, partly because the same plant gives us two distinct things — and partly because half the world calls the leaves //cilantro// and the other half calls the seeds //coriander//, depending on whether you're in an American or British kitchen.\n\nThe ''leaves'' (//cilantro//, in American usage; //coriander leaves//, in British) are bright, citrusy, divisive — there's a well-documented genetic variation that makes the herb taste like soap to about 10% of people. Those who love it use it generously: scattered over Mexican tacos, Indian curries, Vietnamese pho, Thai salads. The leaves don't take heat well, so they go on at the very end.\n\nThe ''seeds'' are an entirely different flavor — warm, citrusy in a deeper way, nutty, slightly floral. Whole or ground, coriander seeds are a foundational spice in Indian, Middle Eastern, and North African cooking, central to garam masala, ras el hanout, and many curry blends. Toasting whole seeds in a dry pan before grinding releases their fragrance dramatically. Don't substitute one form for the other — the leaf and the seed taste nothing alike.",
     "photo": "Coriander (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "coriander"
   },
   {
     "title": "Coriander (photo)",
@@ -357,7 +369,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Cumin is the small, ridged seed of //Cuminum cyminum//, a relative of parsley and dill. It's one of the oldest cultivated spices, found in Egyptian tombs, mentioned in the Bible, and central to cuisines across an enormous swath of the world: Mexican, Indian, Persian, Moroccan, Lebanese, and Tex-Mex cooking would be unrecognizable without it. The flavor is warm, slightly bitter, earthy, with a hint of smoke — distinctive enough that one whiff in the kitchen tells you what's for dinner.\n\n''Whole cumin seeds'' release their flavor when toasted in a dry pan or bloomed in hot oil. ''Ground cumin'' is more convenient and disperses more evenly through a dish, but loses potency faster. Many Indian recipes start by toasting whole seeds and grinding them fresh, which gives a much brighter, more aromatic result than the powdered jar.\n\nA common kitchen trick: when a chili or curry tastes flat, the answer is often more cumin (and more salt). The earthy backbone it provides is what gives those dishes their distinctive depth. ''Bloom'' it in oil at the start of cooking, or toast it briefly and add it later — but don't let it burn, which makes it bitter.",
     "photo": "Ground Cumin (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "[[ground cumin]]"
   },
   {
     "title": "Ground Cumin (photo)",
@@ -389,7 +402,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "The lemon is a small, bright, indispensable fruit — sour enough to make you wince eaten plain, but transformative in nearly any dish that needs lifting. Citrus trees originated in southeast Asia and India, and the lemon as we know it is probably a hybrid of bitter orange, citron, and pomelo, refined over centuries of cultivation and spread along the trade routes to the Mediterranean, where it found its true home. Italian and Greek cooking would be unimaginable without it.\n\nA whole lemon offers the cook three distinct ingredients. ''Zest'' — the oily outer skin — carries the volatile aromatic oils and gives the most fragrance with no acidity. ''Juice'' provides the sharp acid, the balancing brightness, the //ping// that wakes up rich foods. ''Flesh'' (segments cut from the membranes, called //supremes//) shows up in salads and salsas. Plus the spent halves, which have a hundred small uses around the kitchen.\n\nLook for lemons that feel heavy for their size — that means more juice. The skin should be smooth and tight, not puckered. ''Meyer lemons'', a sweeter cross with mandarin orange, are wonderful but milder; for most recipes the standard ''Eureka'' or ''Lisbon'' lemon is what's expected. Roll firmly under your palm before juicing to break the membranes inside and maximize what comes out.",
     "photo": "Lemon (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "lemon lemons"
   },
   {
     "title": "Lemon (photo)",
@@ -405,7 +419,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Milk is the original liquid of mammalian life, and the cow's version — which makes up the great majority of what we drink — is one of the most-used ingredients in the kitchen. It's about 87% water, 4-5% lactose (milk sugar), 3-4% fat, and 3-4% protein. That tidy chemistry hides an extraordinary amount of versatility: milk drinks, cooks, ferments, foams, curdles, and transforms into hundreds of other foods.\n\nMost milk sold today is ''pasteurized'' (briefly heated to kill bacteria) and ''homogenized'' (mechanically processed so the cream doesn't rise to the top). It comes in fat percentages: ''whole'' (around 3.5%), ''2%'', ''1%'', and ''skim'' or ''nonfat''. For most cooking, whole milk gives the best results — the fat carries flavor and provides texture in custards, sauces, and baked goods. Skim milk works for drinking but tends to make things thin and slightly chalky.\n\nBeyond cow's milk, the kitchen now offers many alternatives: almond, oat, soy, coconut, and rice milks, each with different cooking properties. Oat milk foams well for coffee; soy milk handles heat better than most; coconut milk is its own ingredient with a strong flavor profile that suits Southeast Asian and Caribbean cooking.",
     "photo": "Milk (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "milk"
   },
   {
     "title": "Milk (photo)",
@@ -453,7 +468,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Soy sauce is one of the world's great fermented foods — a salty, umami-rich, dark brown liquid made from fermenting soybeans (often combined with wheat) with salt and a specialty mold called //Aspergillus oryzae//. The fermentation can take six months or more, during which the proteins break down into amino acids (especially glutamate, the source of umami) and the sugars caramelize into deep brown pigments. The result is a condiment that doesn't just add salt — it adds //flavor//.\n\nSoy sauce traditions vary across East Asia. ''Japanese shoyu'' is typically about half wheat and half soybean, which gives it a slightly sweet, balanced flavor; ''Chinese light (生抽)'' soy sauce is saltier and thinner, used in stir-fries; ''Chinese dark (老抽)'' is thicker and sweeter, used for color in braises; ''Korean ganjang'' includes a soup soy that's lighter and used differently. ''Tamari'' is a wheat-free Japanese variant, useful for gluten-free cooking and with a richer, less sharp flavor.\n\nA little goes a long way. Soy sauce can easily over-salt a dish, so taste before adding more salt. It's at its best when used at multiple stages — a splash at the start of a stir-fry to caramelize, another at the end for finishing. Look for naturally brewed soy sauces; the cheap chemically-hydrolyzed kind tastes harsh and one-dimensional.",
     "photo": "Soy Sauce (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "[[soy sauce]]"
   },
   {
     "title": "Soy Sauce (photo)",
@@ -469,7 +485,8 @@
     "type": "text/vnd.tiddlywiki",
     "text": "Sugar — by which most recipes mean ''white granulated sugar'' from sugarcane or sugar beet — is one of the most concentrated forms of sweetness in the kitchen and one of the most chemically active. It doesn't just sweeten: it caramelizes, browns, tenderizes (by interfering with gluten formation), preserves (by binding water that bacteria need), provides structure (in meringues and certain cakes), and feeds yeast in bread and beer.\n\nThe white granulated sugar most people use is sucrose, refined to about 99.9% purity. ''Caster sugar'' (British) or ''superfine sugar'' (American) is the same thing ground finer, useful in delicate cakes and meringues where larger crystals would not dissolve smoothly. ''Brown sugar'' is granulated sugar with molasses added back in, providing moisture and a deeper, almost butterscotch flavor — light and dark brown sugars differ in how much molasses they contain. ''Demerara'' and ''turbinado'' are coarser, less refined raw sugars.\n\nSugar's history is dark. The European sugar trade was built on slave labor in the Caribbean and Brazil, and the modern global trade still relies on hard, often poorly-paid agricultural work. None of that diminishes its central role in the kitchen — but it's worth knowing where it came from.",
     "photo": "Sugar (photo)",
-    "demo": "yes"
+    "demo": "yes",
+    "aliases": "sugar"
   },
   {
     "title": "Sugar (photo)",
