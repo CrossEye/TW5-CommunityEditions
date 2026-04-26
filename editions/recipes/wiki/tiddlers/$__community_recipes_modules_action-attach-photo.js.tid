@@ -1,0 +1,79 @@
+title: $:/community/recipes/modules/action-attach-photo.js
+type: application/javascript
+module-type: widget
+
+/*\
+Opens a file picker, reads the chosen image as base64, and writes it
+to the tiddler named by $photo.  If $state is also supplied, sets that
+tiddler's text field to the $photo title so wikitext can react.
+\*/
+
+"use strict";
+
+var Widget = require("$:/core/modules/widgets/widget.js").widget;
+
+var ActionAttachPhotoWidget = function(parseTreeNode, options) {
+	this.initialise(parseTreeNode, options);
+};
+ActionAttachPhotoWidget.prototype = new Widget();
+
+ActionAttachPhotoWidget.prototype.render = function(parent, nextSibling) {
+	this.computeAttributes();
+	this.execute();
+};
+
+ActionAttachPhotoWidget.prototype.execute = function() {
+	this.photoTitle = this.getAttribute("$photo");
+	this.stateTitle = this.getAttribute("$state");
+};
+
+ActionAttachPhotoWidget.prototype.invokeAction = function(triggeringWidget, event) {
+	var self = this;
+	var photoTitle = this.photoTitle;
+	var stateTitle = this.stateTitle;
+	if(!photoTitle) { return false; }
+
+	var input = document.createElement("input");
+	input.type = "file";
+	input.accept = "image/*";
+	input.style.cssText = "position:absolute;opacity:0;pointer-events:none;";
+	document.body.appendChild(input);
+
+	function cleanup() {
+		if(document.body.contains(input)) {
+			document.body.removeChild(input);
+		}
+	}
+
+	input.addEventListener("cancel", cleanup);
+	input.addEventListener("change", function() {
+		cleanup();
+		var file = input.files[0];
+		if(!file) { return; }
+		var reader = new FileReader();
+		reader.onload = function(e) {
+			var base64 = e.target.result.split(",")[1] || "";
+			self.wiki.addTiddler(new $tw.Tiddler({
+				title: photoTitle,
+				type: file.type,
+				text: base64
+			}));
+			if(stateTitle) {
+				self.wiki.addTiddler(new $tw.Tiddler({
+					title: stateTitle,
+					text: photoTitle
+				}));
+			}
+		};
+		reader.readAsDataURL(file);
+	});
+
+	input.click();
+	return true;
+};
+
+ActionAttachPhotoWidget.prototype.refresh = function() {
+	return false;
+};
+
+exports["action-attach-photo"] = ActionAttachPhotoWidget;

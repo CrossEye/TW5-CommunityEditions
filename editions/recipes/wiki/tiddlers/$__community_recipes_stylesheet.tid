@@ -171,16 +171,93 @@ type: text/vnd.tiddlywiki
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid <<colour tiddler-border>>;
     color: <<colour muted-foreground>>;
     font-size: 1.125em;
-    position: sticky;
-    bottom: 0;
     background: <<colour tiddler-background>>;
-    z-index: 10;
-    padding-bottom: 0.75em;
+}
+
+/* Photo section in edit templates */
+.tc-recipe-photo-edit-section {
+    margin: 0 0 1em;
+    padding: 0.75em 1em;
+    border: 1px solid <<colour tiddler-border>>;
+    border-radius: 4px;
+}
+.tc-recipe-photo-edit-section > strong {
+    display: block;
+    margin-bottom: 0.75em;
+}
+.tc-recipe-photo-edit-preview {
+    display: flex;
+    gap: 1em;
+}
+.tc-recipe-photo-preview-thumb {
+    flex: 0 0 120px;
+}
+.tc-recipe-photo-preview-thumb img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    display: block;
+}
+.tc-recipe-photo-edit-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    min-width: 0;
+}
+.tc-recipe-photo-or {
+    color: <<colour muted-foreground>>;
+    font-size: 0.9em;
+}
+.tc-recipe-photo-form {
+    margin-top: 0.75em;
+}
+.tc-recipe-photo-form-preview {
+    margin-bottom: 0.75em;
+}
+.tc-recipe-photo-form-preview img {
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.tc-recipe-photo-form-image-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    flex-wrap: wrap;
+    margin-bottom: 0.75em;
+}
+.tc-recipe-photo-form-image-row input {
+    flex: 1;
+    min-width: 150px;
+}
+.tc-recipe-photo-form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    margin-bottom: 0.5em;
+}
+.tc-recipe-photo-form-field label {
+    font-size: 0.85em;
+    color: <<colour muted-foreground>>;
+}
+.tc-recipe-photo-form-field input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.tc-recipe-photo-form-actions {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 0.75em;
+    justify-content: flex-end;
+}
+.tc-recipe-photo-save-btn {
+    background: <<colour primary>>;
+    color: <<colour page-background>>;
+    border-color: <<colour primary>>;
 }
 
 /* Cooking-mode active: hide distractions, boost legibility */
