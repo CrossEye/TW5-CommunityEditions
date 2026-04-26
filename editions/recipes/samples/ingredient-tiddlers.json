@@ -1,0 +1,498 @@
+[
+  {
+    "title": "Garlic",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Garlic is a small, papery-skinned bulb that has carried more weight in the kitchen than almost any other ingredient. A member of the //Allium// family — alongside onions, leeks, shallots, and chives — it grows as a cluster of cloves wrapped together inside a thin white or purple skin. Crush a clove and the cell walls break, releasing the sulfur compound ''allicin'' and the unmistakable pungent aroma that signals: //something good is about to happen here//.\n\nGarlic has been cultivated for at least five thousand years. Egyptian pyramid builders ate it for strength; Roman soldiers carried it on campaigns; medieval Europeans hung it over doorways to ward off everything from plague to vampires. Today it appears in nearly every cuisine on earth, and most cuisines have their own preferred treatment — raw and pounded into Lebanese //toum//, slow-roasted into mellow sweetness, fermented into black garlic, or sliced paper-thin and crisped in oil for Italian pasta.\n\nThe texture and flavor of garlic depends entirely on how you cut it. ''Crushed'' garlic is the most pungent — all those broken cells releasing volatile compounds at once. ''Minced'' is sharp but a little gentler. ''Sliced'' is mellower still. ''Whole cloves'' simmered in a stew or roasted in their skins turn sweet, almost nutty, with no harshness at all. Choose your cut based on what you want from it: a hot, sharp note, or a soft background warmth.",
+    "photo": "Garlic (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Garlic (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1612823711171-e296662098fa",
+    "photographer": "Joe Green",
+    "photo-source": "https://unsplash.com/photos/purple-and-white-garlic-lot-4LJYzvrxISI",
+    "demo": "yes"
+  },
+  {
+    "title": "Salt",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Salt is the oldest seasoning in human cooking, and arguably the most important. Chemically it is sodium chloride — a simple crystalline compound mined from ancient seabeds or harvested from evaporated seawater — but its role in food goes far beyond making things taste salty. Salt suppresses bitterness, sharpens sweetness, draws out moisture, firms textures, preserves meats and vegetables, and amplifies the flavors that already exist in a dish. A pinch added to caramel makes it taste more like caramel; a generous handful in pasta water gives the noodles their proper savor; a light scatter on a sliced tomato turns water into juice.\n\nDifferent salts behave differently in the hand and on the food. ''Table salt'' is fine, dense, and often iodized — easy to over-pour, but reliable for baking where precise measurement matters. ''Kosher salt'' is coarser and flakier, pinches well between the fingers, and is the everyday salt of most professional kitchens. ''Sea salt'' ranges from soft, moist //fleur de sel// to crunchy //Maldon// flakes — finishing salts, used at the end to add bursts of texture and brightness rather than even seasoning. ''Rock salt'' from places like the Khewra mine in Pakistan (the source of pink Himalayan salt) is mineral-tinted and visually striking but functionally similar to other salts at the table.\n\nSalt's history is inseparable from the history of civilization. Roman soldiers were sometimes paid in it — the root of the word //salary//. Wars have been fought over salt mines, taxes on salt have toppled empires (Gandhi's 1930 Salt March was a turning point in Indian independence), and salt-cured fish and meats made long sea voyages, long winters, and trade across continents possible. For most of human history salt was precious; today it is so cheap and ubiquitous that the central skill in using it is restraint. The cook's most important question, asked again and again throughout the cooking of nearly any dish, is simply: //does this need more salt?//",
+    "photo": "Salt (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Salt (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1518110925495-5fe2fda0442c",
+    "photographer": "Jason Tuinstra",
+    "photo-source": "https://unsplash.com/photos/brown-wooden-spoon-4OfaTz6SdYs",
+    "demo": "yes"
+  },
+  {
+    "title": "Butter",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Butter is what happens when cream is agitated until its fat globules give up and stick together. Pour cream into a jar, shake it long enough, and you'll have butter — the same process that's been used for thousands of years, from the leather-bag churns of ancient nomads to the wooden plunger churns of farmhouse kitchens. The yellow color comes from beta-carotene in the grass the cows ate; the richness comes from the fat itself, which is roughly 80% of butter by weight, with the rest mostly water and milk solids.\n\nIn the kitchen, butter does an extraordinary number of jobs. It carries flavor (fat-soluble aromatics dissolve into it). It builds structure (creamed with sugar, it traps air for fluffy cakes). It enriches sauces (whisked into pan juices to make a //beurre monté//). It browns into ''nutty, caramel-toned beurre noisette'' when heated past the foaming stage — one of the small kitchen miracles. And it just tastes good, melting onto warm bread or toast in a way nothing else quite manages.\n\n''Salted'' butter has a longer shelf life and works for spreading and finishing; ''unsalted'' is the baker's choice because it lets you control the salt yourself. ''Cultured'' butter, made from cream fermented with lactic bacteria before churning (the European style), has a tangier, more complex flavor than the sweet-cream butter common in America. Whichever you choose, keep it cold for pastry work and at room temperature for spreading.",
+    "photo": "Butter (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Butter (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d",
+    "photographer": "Sorin Gheorghita",
+    "photo-source": "https://unsplash.com/photos/sliced-cheese-on-clear-glass-plate-094mP_CBdpM",
+    "demo": "yes"
+  },
+  {
+    "title": "Onion",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "The onion is the workhorse of the kitchen. Slice one open and your eyes water — the onion's defense mechanism, sulfur compounds reacting with the air, was never aimed at you but at hungry rabbits. Cook it in a little fat over low heat and those same compounds break down into something miraculous: a deep, sweet, savory base that underlies an enormous swath of world cuisine. Almost no European, North African, Middle Eastern, Indian, or Latin American savory dish begins without one.\n\nThere are many onions and each has its job. ''Yellow onions'' are the all-purpose choice for stocks, stews, and sautés. ''White onions'' are sharper and crunchier, common in Mexican cooking. ''Sweet onions'' (Vidalia, Walla Walla) have a higher sugar content and milder bite, good raw on a burger or in a salad. ''Red onions'' are pungent raw, mellow when pickled or grilled, and add color to anything. ''Shallots'' are smaller, more refined cousins, with a slightly garlicky note.\n\nThe slow caramelization of onions — sliced thin, cooked in butter or oil over low heat for forty-five minutes or more, until they collapse into a sweet brown jam — is one of the great transformations in cooking. It cannot be rushed. //It cannot be rushed.// Plan accordingly, and use the time to chop everything else.",
+    "photo": "Onion (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Onion (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31",
+    "photographer": "Lars Blankers",
+    "photo-source": "https://unsplash.com/photos/brown-onion-lot-pmS8XSz5NU0",
+    "demo": "yes"
+  },
+  {
+    "title": "Carrots",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Wild carrots have grown across Europe and Asia for thousands of years, but the bright orange carrot most of us know is a relatively recent arrival — the result of selective breeding by Dutch growers in the 17th century, supposedly in honor of the House of Orange. Before then, carrots came mostly in purple, white, yellow, and red, and these heirloom colors are slowly returning to farmers' markets and supermarket shelves.\n\nThe carrot's superpower in the kitchen is sweetness. It's one of the highest-sugar root vegetables, which is why it caramelizes so beautifully when roasted or sautéed, and why it forms part of so many flavor bases — the French ''mirepoix'' (carrot, onion, celery), the Italian ''soffritto'', the Cajun ''holy trinity''. Cooked low and slow, carrot sweetness builds the foundation of stocks, stews, and braises without ever announcing itself.\n\nCarrots are happy raw too — grated into salads, cut into sticks for dipping, shaved into ribbons. The smaller and younger they are, the sweeter and more tender; the bigger and older, the woodier their core. For most uses, medium carrots are the right balance. And don't throw away the tops if they're fresh — carrot greens make a perfectly respectable pesto.",
+    "photo": "Carrots (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Carrots (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37",
+    "photographer": "K8",
+    "photo-source": "https://unsplash.com/photos/orange-carrots-on-green-grass-GHRT9j21m2M",
+    "demo": "yes"
+  },
+  {
+    "title": "Paprika",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Paprika is ground dried pepper — specifically, varieties of //Capsicum annuum//, the same species that gives us bell peppers and chiles. It came to the Old World from the Americas after Columbus, and within a few centuries had settled into the cuisines of Hungary, Spain, the Balkans, and Morocco as if it had always been there. In Hungary especially, paprika is //the// national spice, present in everything from goulash to chicken paprikash to the bowls of red dust set out alongside salt and pepper at the table.\n\nNot all paprika is the same. ''Sweet paprika'' is the everyday red powder, mild and fruity, used as much for color as flavor. ''Hot paprika'' adds real heat, particularly the //Csípős// styles from Hungary. ''Smoked paprika'' (Spanish //pimentón//) is dried over oak fires, lending an unmistakable smoky depth — the secret weapon of Spanish chorizo, paella, and roasted potatoes. The smoked variety comes in sweet, bittersweet, and hot versions, and a tin of good //pimentón// is one of the highest-leverage purchases in spice cookery.\n\nLike most ground spices, paprika loses its punch within a year or so of grinding. Buy it in small quantities, store it away from light and heat, and replace it when it stops smelling vivid. Bloom it in oil at the start of cooking — never burn it, which turns it bitter — to get the most out of its color and flavor.",
+    "photo": "Paprika (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Paprika (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1577563717655-919fc57789b4",
+    "photographer": "Volodymyr Hryshchenko",
+    "photo-source": "https://unsplash.com/photos/spoon-of-red-powder-tJBRqWigzso",
+    "demo": "yes"
+  },
+  {
+    "title": "Thyme",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Thyme is a low, woody Mediterranean herb with tiny leaves and a fragrance somewhere between mint and lemon and pine. It grows wild on the dry hillsides of Greece, the south of France, and most of the Levant; ancient Egyptians used it in embalming, Greeks burned it as incense, and medieval knights wore sprigs of it into battle as a symbol of courage. //Thymus// — its botanical name — comes from a Greek word meaning either ''to fumigate'' or ''courage'', depending on which etymology you trust.\n\nIn the kitchen thyme is patient and forgiving. Unlike basil or parsley, which fade in long cooking, thyme rewards time — its flavor deepens over slow braises and stews. A few sprigs tossed into a roasting chicken, a pot of beans, a tomato sauce; the leaves stripped and chopped fine into a vinaigrette or rubbed onto lamb before grilling. The classic French //bouquet garni//, the bundle of herbs that flavors stocks and broths, is built around thyme.\n\nFresh thyme has more brightness; dried thyme is more concentrated and earthy. Both work, in different contexts. To use fresh sprigs, run your fingers down the woody stem against the grain — the leaves strip off cleanly. The stems themselves can go straight into the pot and be fished out later. ''Lemon thyme'' is a fragrant variant worth seeking out, especially good with fish and chicken.",
+    "photo": "Thyme (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Thyme (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1625128143202-bd596f7639d4",
+    "photographer": "Ian Yates",
+    "photo-source": "https://unsplash.com/photos/green-grass-field-during-daytime-z6VJQR6-4SU",
+    "demo": "yes"
+  },
+  {
+    "title": "Tomato",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Botanically a fruit, culinarily a vegetable, and historically the source of considerable European panic — early Europeans suspected the tomato was poisonous, perhaps because of its botanical kinship to deadly nightshade — the tomato is now so foundational to so many cuisines that it's hard to imagine Italian, Mexican, Indian, or Middle Eastern food without it. And yet the tomato came to all of them from the Americas, where it had been cultivated by the Aztecs (//tomatl//) for centuries before Cortés.\n\nA great tomato is a //summer// thing. The supermarket tomato of January, picked green and gassed to ripen, is a sad echo of what a real tomato tastes like — heavy in the hand, fragrant at the stem, the skin so taut with juice it splits if you press too hard. If you can grow one, or buy from a farm in season, do; the difference is genuinely shocking. Out of season, a good can of San Marzano tomatoes will outperform a bad fresh one nearly every time.\n\nTomatoes are versatile to a degree few ingredients match. They make sauces (cooked down with onion and garlic), salads (with basil and mozzarella), soups (gazpacho or cream of tomato), sandwiches (BLT), and bases for nearly every kind of stew. The skin can be removed by scoring an X on the bottom and dunking briefly in boiling water. The seeds can be squeezed out for a less watery final dish. But for a perfect summer tomato, slice it, salt it, and stop.",
+    "photo": "Tomato (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Tomato (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1518977822534-7049a61ee0c2",
+    "photographer": "Lars Blankers",
+    "photo-source": "https://unsplash.com/photos/top-view-of-tomatoes-6Z7Ss9jlEL0",
+    "demo": "yes"
+  },
+  {
+    "title": "Water",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Water is the most overlooked ingredient in cooking — the silent partner that does more work than any spice or technique. It dissolves salt and sugar; conducts heat; suspends starches; carries aroma; tenderizes meat; makes dough cohere; turns rice into rice and pasta into pasta. Most of what we call cooking is, in some sense, the management of water — driving it off (roasting, frying), introducing it (boiling, steaming), or transforming it (reducing a sauce until what remains is concentrated flavor).\n\nTap water works for almost everything. The exceptions are mostly about minerals: very hard water can make beans tough and tea taste off, and very soft or distilled water can make bread dough sluggish (yeast wants some minerals to feed on). For most dishes, the water that comes out of your faucet is fine; for tea, coffee, and stocks where the water is the medium and not just a vehicle, filtering helps.\n\nIn recipes, ''hot water'' is not the same as ''boiling water'' which is not the same as ''simmering water''. Pay attention to the verb: //bring to a boil//, //reduce to a simmer//, //barely cover//. These small distinctions are the difference between a tender braise and a stringy one, between a fluffy rice and a sticky one. Water is not glamorous. It is also not optional.",
+    "photo": "Water (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Water (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1596107201016-6ec6eb3f59c1",
+    "photographer": "Joe Pregadio",
+    "photo-source": "https://unsplash.com/photos/person-pouring-water-on-white-ceramic-mug-A4Gy_rEdsdA",
+    "demo": "yes"
+  },
+  {
+    "title": "Cream Cheese",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Cream cheese is a soft, mild, spreadable fresh cheese made from a mixture of cream and milk, set with lactic bacteria and a little rennet, then drained until it reaches its characteristic dense, smooth texture. The American version most people know — Philadelphia, sold in silver-foil bricks — was developed in the 1870s as an attempt to make a richer, cheaper alternative to French Neufchâtel. It worked. It also made cheesecake what cheesecake is today.\n\nIn the kitchen, cream cheese is a multi-tool. It spreads on bagels, anchors cheesecake fillings, smooths out frostings (cream cheese frosting is the only correct topping for carrot cake or red velvet), thickens dips, melts into cream sauces, and holds together stuffed-pepper or stuffed-mushroom mixtures. Its tang is mild — much gentler than yogurt or sour cream — which makes it a good carrier for other flavors rather than a star in its own right.\n\n''Brick'' cream cheese (the firm kind in foil packets) is what most baking recipes assume; the ''whipped'' or ''spreadable'' kind sold in tubs has air and sometimes water added and won't behave the same way in a cheesecake. Always let it warm to room temperature before mixing — cold cream cheese clumps and fights the whisk, while soft cream cheese blends smooth.",
+    "photo": "Cream Cheese (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Cream Cheese (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1547920303-9befbe3decc7",
+    "photographer": "Gaelle Marcel",
+    "photo-source": "https://unsplash.com/photos/desert-food-on-plate-8t0Y_ovIIp8",
+    "demo": "yes"
+  },
+  {
+    "title": "Egg",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "The egg is one of the most extraordinary ingredients in the kitchen. It can be the star of the dish (a perfect poached egg on toast) or the invisible structural element that holds everything else together (a custard, a soufflé, a meringue, a mayonnaise). It can scramble, fry, boil, poach, bake, cure, foam, emulsify, glaze, and bind. Few ingredients ask so little and give so much.\n\nA whole chicken egg is a small miracle of compartmentalized chemistry: the white is mostly water and protein; the yolk is fat, more protein, lecithin (a powerful natural emulsifier), and most of the egg's flavor and color. Each component does different things. ''Whites'' whip into a stiff foam that lifts soufflés and meringues. ''Yolks'' enrich custards and emulsify mayonnaise. ''Whole eggs'' bind meatballs, glaze pastry, scramble into breakfast, and provide structure to almost every cake.\n\nMost recipes assume large eggs (around 50g each). Fresher eggs work better for poaching (the white is thicker and holds together) but slightly older eggs are easier to peel after boiling (the air pocket between shell and white grows over time). Store eggs in the fridge with the pointed end down — the air pocket sits at the rounded end and keeps the yolk centered.",
+    "photo": "Egg (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Egg (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1498654077810-12c21d4d6dc3",
+    "photographer": "Jakub Kapusnak",
+    "photo-source": "https://unsplash.com/photos/shallow-focus-photography-of-brown-eggs-Hj53USePB1E",
+    "demo": "yes"
+  },
+  {
+    "title": "Lemon Juice",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "A squeeze of lemon juice is one of the great cheap upgrades in cooking. It brightens what's dull, lifts what's heavy, balances what's too rich. A fish tasting muddy? Lemon. A soup that's missing something? Probably lemon. A dressing that needs a wake-up? Definitely lemon. The acid does the work — sharpening flavors, cutting through fat, providing the //ping// that turns a flat dish into an alive one.\n\nFresh lemon juice tastes nothing like the bottled kind. The bottled stuff is shelf-stable for a reason, and that reason involves heat treatment that flattens the volatile aromatic compounds that make a lemon taste like a lemon. If a recipe calls for lemon juice, squeeze a real lemon — it takes thirty seconds and the difference is enormous. (Save the spent halves; rubbed on stained cutting boards, they help clean.)\n\nThe juice and the zest are different ingredients with different jobs. Juice provides acidity and a watery sourness; zest is the oily outer layer of the peel, packed with aromatic oils and almost no acidity. A recipe that calls for both is using two distinct flavors. When using only juice, roll the lemon firmly under your palm before cutting — it loosens the membranes and yields more juice.",
+    "photo": "Lemon Juice (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Lemon Juice (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1606943932434-2f21e1c54ef2",
+    "photographer": "Compagnons",
+    "photo-source": "https://unsplash.com/photos/yellow-juice-in-clear-glass-jar-7_sh64mY-v8",
+    "demo": "yes"
+  },
+  {
+    "title": "Olive Oil",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Olive oil is the fat at the heart of Mediterranean cooking — the cuisines of Italy, Greece, Spain, the Levant, and North Africa — and one of the oldest cultivated foods on earth. Olive trees were being pressed for their oil at least six thousand years ago, and the same basic process is used today: olives are crushed, the oil is separated from the pulp, and what flows out is bottled. The best of it tastes like grass, peppercorn, and sunshine.\n\nOlive oil comes in a hierarchy of quality. ''Extra virgin'' is the top grade — first cold-pressed, with no chemical processing and a free acidity below 0.8%. It tastes like olives. ''Virgin'' is similar but slightly higher in acidity. ''Refined'' or ''pure'' olive oil has been chemically processed to neutralize defects, with a small amount of virgin oil blended back in for flavor — fine for cooking but flat tasting. ''Light'' olive oil is just refined oil with no flavor at all.\n\nUse cheaper refined or pure olive oil for high-heat cooking, where the subtle flavors of extra virgin would be wasted anyway. Save the good ''extra virgin'' for finishing — drizzled over a finished dish, dressing a salad, dipping bread. Like wine, good olive oil expresses its place: a Tuscan oil tastes different from a Greek one, which tastes different from a Spanish or Lebanese. Worth tasting around.",
+    "photo": "Olive Oil (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Olive Oil (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5",
+    "photographer": "Roberta Sorge",
+    "photo-source": "https://unsplash.com/photos/clear-glass-cruet-bottle-uOBApnN_K7w",
+    "demo": "yes"
+  },
+  {
+    "title": "Red Onions",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Red onions are not really red so much as a deep magenta-purple, with the color concentrated in the outer rings and fading toward the center. They're sharper and more pungent than yellow onions when raw, but their bite mellows quickly with brief cooking, pickling, or even just a soak in cold water. Their color makes them a workhorse in any dish where appearance matters as much as flavor.\n\nThe classic uses are raw or barely-cooked: ''sliced thin onto a salad'', ''chopped fine into a salsa or pico de gallo'', ''quick-pickled in vinegar and a pinch of sugar'' for tacos and grain bowls, ''grilled in thick rings'' to top a burger. Pickled red onions in particular are one of those small kitchen projects that pays back enormously — twenty minutes of effort and you have a jar of bright pink rings that improves everything they touch for weeks.\n\nThe color is acid-sensitive. A splash of vinegar or lemon juice over sliced red onion brightens the magenta dramatically; long cooking turns them brown like any other onion. If you find raw red onion too sharp, soak the slices in cold water for ten minutes before using — it pulls out much of the harshness while keeping the color and crunch.",
+    "photo": "Red Onions (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Red Onions (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb",
+    "photographer": "Abhishek Hajare",
+    "photo-source": "https://unsplash.com/photos/red-onion-on-brown-wooden-table-D9h2-RxM1rE",
+    "demo": "yes"
+  },
+  {
+    "title": "Red Pepper",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "The ''red pepper'' is the fully ripened form of what starts as a green bell pepper — same plant, same fruit, just left longer on the vine. The waiting transforms it: green peppers are vegetal and slightly bitter; red ones are notably sweet, with two or three times the vitamin C and a fuller, richer flavor. (Yellow and orange are intermediate stages of the same color shift.)\n\nRed peppers shine in cooking when their sweetness is concentrated. Roasted under a broiler until the skin blackens and slips off, they become silken and intensely flavorful — a base for romesco, ajvar, muhammara, and a hundred Mediterranean and Middle Eastern dips and spreads. Sliced raw they add crunch and color to salads. Stuffed with rice and meat and baked, they become a meal in themselves. Diced fine into a //sofrito//, they melt into the foundation of countless stews.\n\nNote that //red pepper// can also mean ''ground dried chili pepper'' — and which one a recipe means depends on context. When the recipe calls for a single red pepper, slicing or roasting, it's the bell pepper. When it calls for a teaspoon of red pepper, it's the dried-chili kind, closer to cayenne or red pepper flakes.",
+    "photo": "Red Pepper (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Red Pepper (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1669524943640-44a43585ee88",
+    "photographer": "Kostiantyn Vierkieiev",
+    "photo-source": "https://unsplash.com/photos/a-red-bell-pepper-Z-PEYENQDgM",
+    "demo": "yes"
+  },
+  {
+    "title": "Spring Onions",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Spring onions — also called scallions or green onions, depending on where you live — are slim, mild, and useful in roughly the way a raincoat is useful: not glamorous, never the star, but a quiet improvement over not having one. They're harvested young, before the bulb has had time to swell, which keeps the flavor gentle. The whole plant is edible: the white base is sharper and stands up to cooking, the dark green tops are milder and best raw or barely warmed.\n\nIn East Asian cooking — Chinese, Korean, Japanese, Vietnamese — spring onions are everywhere. Sliced thin and scattered over noodles, dumplings, congee, fried rice. Pounded into ginger-scallion sauce. Charred whole over flame for a smoky garnish. They're the standard finishing herb the way parsley is in much of European cooking, and they'd belong in nearly any savory dish from Beijing to Bangkok.\n\nTo prepare, trim the root end and any wilted dark tops, then slice. For maximum visual punch, slice thin and on a sharp diagonal. They keep about a week in the fridge, ideally with the roots in a glass of water like cut flowers — they'll actually keep growing, giving you a small renewable supply.",
+    "photo": "Spring Onions (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Spring Onions (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1602769515559-e15133a7e992",
+    "photographer": "Christopher Previte",
+    "photo-source": "https://unsplash.com/photos/green-and-white-vegetable-on-brown-wooden-table-7CcXR5wIhEY",
+    "demo": "yes"
+  },
+  {
+    "title": "Vegetable Oil",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "''Vegetable oil'' is a vague but useful term — usually it means a refined neutral-flavored oil suitable for high-heat cooking, most often soybean, canola (rapeseed), corn, or sunflower, sometimes a blend. The oil is refined, bleached, and deodorized to remove any taste of the source plant, leaving behind a clear, mild fat that will heat to a high temperature without smoking and won't impose its flavor on the food.\n\nThis neutrality is exactly the point. When you're frying donuts or making mayonnaise or stir-frying broccoli, you generally don't want the oil to taste like anything — you want it to be a transparent medium for everything else. Olive oil in those situations is too assertive and too low-smoke-point; butter burns; coconut oil tastes like coconut. Vegetable oil gets out of the way.\n\nMost recipes that say ''vegetable oil'' will be perfectly happy with canola, sunflower, peanut, or grapeseed. Just keep it stored in a cool dark place — refined oils oxidize over time, and rancid oil tastes flat and slightly fishy. If a bottle has been open for more than six months and you're not sure, sniff it; if it smells off, it is.",
+    "photo": "Vegetable Oil (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Vegetable Oil (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1666694890835-ed9a5068b413",
+    "photographer": "Seval Torun",
+    "photo-source": "https://unsplash.com/photos/a-table-with-food-and-a-bottle-OH8xbnh6BJE",
+    "demo": "yes"
+  },
+  {
+    "title": "Baking Powder",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Baking powder is one of those ingredients that gets confused with its cousin baking soda, and the difference matters. ''Baking soda'' (sodium bicarbonate) is a single chemical that needs an acid to activate — buttermilk, yogurt, lemon juice, cocoa, brown sugar. ''Baking powder'' is baking soda plus a powdered acid plus a little starch to keep them apart in the tin, all in one package — a complete leavening system that just needs liquid and heat to work.\n\nWhen you add baking powder to a wet batter, the acid and base meet and react, producing carbon dioxide bubbles that lift the batter as it bakes. ''Double-acting'' baking powder (the standard now) reacts twice: once when wetted and again when heated, giving your cake or pancake two chances to rise.\n\nBaking powder loses its potency over time, especially once opened. To test, drop a quarter teaspoon into a bit of hot water — fresh baking powder will fizz vigorously. If it just sort of bubbles weakly, replace it. A dead can of baking powder is a common cause of mysteriously flat cakes.",
+    "photo": "Baking Powder (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Baking Powder (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1606854428501-629ffe478e1f",
+    "photographer": "Simona Sergi",
+    "photo-source": "https://unsplash.com/photos/2-brown-ceramic-cups-on-brown-wooden-table-R-fwI12D5cw",
+    "demo": "yes"
+  },
+  {
+    "title": "Coriander",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Coriander is one of those ingredients with a split personality, partly because the same plant gives us two distinct things — and partly because half the world calls the leaves //cilantro// and the other half calls the seeds //coriander//, depending on whether you're in an American or British kitchen.\n\nThe ''leaves'' (//cilantro//, in American usage; //coriander leaves//, in British) are bright, citrusy, divisive — there's a well-documented genetic variation that makes the herb taste like soap to about 10% of people. Those who love it use it generously: scattered over Mexican tacos, Indian curries, Vietnamese pho, Thai salads. The leaves don't take heat well, so they go on at the very end.\n\nThe ''seeds'' are an entirely different flavor — warm, citrusy in a deeper way, nutty, slightly floral. Whole or ground, coriander seeds are a foundational spice in Indian, Middle Eastern, and North African cooking, central to garam masala, ras el hanout, and many curry blends. Toasting whole seeds in a dry pan before grinding releases their fragrance dramatically. Don't substitute one form for the other — the leaf and the seed taste nothing alike.",
+    "photo": "Coriander (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Coriander (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1528613526328-8c19bd037322",
+    "photographer": "Swapnil Dwivedi",
+    "photo-source": "https://unsplash.com/photos/brown-wooden-spoon-filled-with-seeds-mK2fnT6frE0",
+    "demo": "yes"
+  },
+  {
+    "title": "Egg Yolks",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "The egg yolk is the engine of the egg — bright orange-yellow, fatty, rich, and packed with ''lecithin'', a phospholipid that's one of nature's most powerful emulsifiers. That last property is the reason yolks can hold together a smooth mayonnaise from oil and acid, or stop a hollandaise from breaking, or turn cream into custard. Lecithin is the diplomatic envoy that gets fat and water to talk to each other.\n\nRecipes call for yolks alone (not whole eggs) when they want richness and color without the structural protein of the white. Custards and ice creams use yolks for silkiness; pasta dough often uses extra yolks for tenderness and color; lemon curd is essentially yolks plus sugar plus lemon plus butter, cooked carefully into a glossy spread. The trick in all of these is ''temperature control'' — yolks scramble at around 65°C, so you have to warm them slowly (often by ''tempering'' with a splash of hot liquid before adding them to the pot).\n\nWhen a recipe leaves you with extra whites, save them. Frozen in an ice cube tray (one white per cube), they'll keep for months and be ready for meringues, financiers, or amaretti when the moment comes.",
+    "photo": "Egg Yolks (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Egg Yolks (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1610328466269-1f36faad83c1",
+    "photographer": "Jonathan Cooper",
+    "photo-source": "https://unsplash.com/photos/sunny-side-up-egg-on-black-plate-Bl2PZj_TgpE",
+    "demo": "yes"
+  },
+  {
+    "title": "Extra Virgin Olive Oil",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Extra virgin olive oil is the top grade in the olive oil hierarchy — the first cold-pressed run from freshly milled olives, with a free acidity below 0.8%, no chemical processing, and a flavor that runs from grassy and peppery to buttery and fruity depending on the variety, the region, and the season. The peppery tickle at the back of the throat after a sip of good ''EVOO'' is a sign of high polyphenol content — the same compounds responsible for many of olive oil's celebrated health benefits.\n\n''Use it raw.'' This is the fundamental rule. The volatile aromatic compounds that make extra virgin olive oil taste extraordinary are damaged by high heat, so frying with the expensive stuff is a waste. Save it for finishing: drizzled over a salad, swirled into hummus, poured over warm beans, dipped with bread, spooned over a roasted fish at the moment it leaves the pan. For high-heat cooking, use refined olive oil or another neutral oil and save the good bottle for the table.\n\nLike wine, extra virgin olive oil is a place-of-origin product. Tuscan oils tend to be bold and grassy; Ligurian oils softer and butterier; Greek oils round and golden; Spanish oils fruity. Spanish //arbequina// and Italian //frantoio// are good starting varieties to taste. Look for a harvest date on the bottle (not just a use-by date), buy in dark glass or tin, and use within a year of opening.",
+    "photo": "Extra Virgin Olive Oil (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Extra Virgin Olive Oil (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1707827914998-0d56ee13c161",
+    "photographer": "Boglárka Salamon",
+    "photo-source": "https://unsplash.com/photos/a-bottle-of-liquid-with-a-lemon-on-a-table-VX5wTA89548",
+    "demo": "yes"
+  },
+  {
+    "title": "Ground Cinnamon",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Cinnamon is the dried inner bark of trees in the //Cinnamomum// family, rolled and curled into the familiar quills as it dries. Ground cinnamon is just those quills powdered. The spice has been traded for at least four thousand years — Egyptian embalmers used it; Roman emperors burned it as incense; medieval Europeans paid extraordinary sums for it because the trade route was controlled by Venetian and Arab middlemen who refused to disclose where it came from. Whole wars were fought over it.\n\nTwo main types are sold today, and they taste meaningfully different. ''Cassia'' cinnamon (the most common in American supermarkets) is bold, slightly bitter, intensely cinnamon-y — what you grew up tasting in cinnamon rolls and apple pie. ''Ceylon'' or ''true'' cinnamon (the standard in Mexico, the UK, and much of Europe) is more delicate, softer, faintly citrusy. Mexican cooking generally calls for Ceylon; American baking typically uses cassia, often without specifying.\n\nIn savory cooking, cinnamon shows up in Moroccan tagines, Persian rice dishes, Mexican mole, Indian biryani — almost always paired with meat. In sweet cooking it's in everything from horchata to Greek baklava to Swedish cinnamon buns. It loses fragrance quickly once ground, so buy in small quantities and replace yearly. For maximum flavor, grind whole sticks in a coffee mill kept for spices.",
+    "photo": "Ground Cinnamon (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Ground Cinnamon (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1636972955024-3b01f2236b01",
+    "photographer": "Angelo Pantazis",
+    "photo-source": "https://unsplash.com/photos/a-bowl-of-nuts-and-cinnamon-sticks-on-a-table-wXrrmCgqnaI",
+    "demo": "yes"
+  },
+  {
+    "title": "Ground Cumin",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Cumin is the small, ridged seed of //Cuminum cyminum//, a relative of parsley and dill. It's one of the oldest cultivated spices, found in Egyptian tombs, mentioned in the Bible, and central to cuisines across an enormous swath of the world: Mexican, Indian, Persian, Moroccan, Lebanese, and Tex-Mex cooking would be unrecognizable without it. The flavor is warm, slightly bitter, earthy, with a hint of smoke — distinctive enough that one whiff in the kitchen tells you what's for dinner.\n\n''Whole cumin seeds'' release their flavor when toasted in a dry pan or bloomed in hot oil. ''Ground cumin'' is more convenient and disperses more evenly through a dish, but loses potency faster. Many Indian recipes start by toasting whole seeds and grinding them fresh, which gives a much brighter, more aromatic result than the powdered jar.\n\nA common kitchen trick: when a chili or curry tastes flat, the answer is often more cumin (and more salt). The earthy backbone it provides is what gives those dishes their distinctive depth. ''Bloom'' it in oil at the start of cooking, or toast it briefly and add it later — but don't let it burn, which makes it bitter.",
+    "photo": "Ground Cumin (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Ground Cumin (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1640958899534-de127bd95979",
+    "photographer": "Gabriel Mihalcea",
+    "photo-source": "https://unsplash.com/photos/a-pile-of-dog-food-sitting-on-top-of-a-white-table-so44zQ1MMpQ",
+    "demo": "yes"
+  },
+  {
+    "title": "Icing Sugar",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Icing sugar — also called ''confectioners' sugar'' or ''powdered sugar'' — is just regular granulated sugar ground to a fine powder, with a small amount of cornstarch added to prevent caking. The result is a sugar that dissolves almost instantly, with no detectable graininess, which makes it the right choice for any application where you don't want to feel the crystals.\n\nThe classic uses are all about texture. ''Royal icing'' for piping cookies; ''glazes'' for donuts and Bundt cakes; ''buttercream'' frostings, where it's beaten with butter until pale and fluffy; ''dustings'' over fresh berries, brownies, French toast, and the tops of soft cookies, where it gives the visual signal of //this is a treat//. It's also the base for fondants and meringue powders.\n\nSift it before using, especially if it's been sitting a while — humidity will cause it to clump and a few stubborn lumps will survive any amount of beating. And it's not interchangeable with granulated sugar in baking; the cornstarch and the much finer texture change how the sugar behaves in batters and doughs.",
+    "photo": "Icing Sugar (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Icing Sugar (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1673791031093-eb8eefa60083",
+    "photographer": "Immo Wegmann",
+    "photo-source": "https://unsplash.com/photos/a-spoon-filled-with-sugar-on-top-of-a-table-_d4HkdoGEng",
+    "demo": "yes"
+  },
+  {
+    "title": "Lemon",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "The lemon is a small, bright, indispensable fruit — sour enough to make you wince eaten plain, but transformative in nearly any dish that needs lifting. Citrus trees originated in southeast Asia and India, and the lemon as we know it is probably a hybrid of bitter orange, citron, and pomelo, refined over centuries of cultivation and spread along the trade routes to the Mediterranean, where it found its true home. Italian and Greek cooking would be unimaginable without it.\n\nA whole lemon offers the cook three distinct ingredients. ''Zest'' — the oily outer skin — carries the volatile aromatic oils and gives the most fragrance with no acidity. ''Juice'' provides the sharp acid, the balancing brightness, the //ping// that wakes up rich foods. ''Flesh'' (segments cut from the membranes, called //supremes//) shows up in salads and salsas. Plus the spent halves, which have a hundred small uses around the kitchen.\n\nLook for lemons that feel heavy for their size — that means more juice. The skin should be smooth and tight, not puckered. ''Meyer lemons'', a sweeter cross with mandarin orange, are wonderful but milder; for most recipes the standard ''Eureka'' or ''Lisbon'' lemon is what's expected. Roll firmly under your palm before juicing to break the membranes inside and maximize what comes out.",
+    "photo": "Lemon (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Lemon (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1568569350062-ebfa3cb195df",
+    "photographer": "Han Lahandoe",
+    "photo-source": "https://unsplash.com/photos/two-lemons-y_spQMQTFjs",
+    "demo": "yes"
+  },
+  {
+    "title": "Milk",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Milk is the original liquid of mammalian life, and the cow's version — which makes up the great majority of what we drink — is one of the most-used ingredients in the kitchen. It's about 87% water, 4-5% lactose (milk sugar), 3-4% fat, and 3-4% protein. That tidy chemistry hides an extraordinary amount of versatility: milk drinks, cooks, ferments, foams, curdles, and transforms into hundreds of other foods.\n\nMost milk sold today is ''pasteurized'' (briefly heated to kill bacteria) and ''homogenized'' (mechanically processed so the cream doesn't rise to the top). It comes in fat percentages: ''whole'' (around 3.5%), ''2%'', ''1%'', and ''skim'' or ''nonfat''. For most cooking, whole milk gives the best results — the fat carries flavor and provides texture in custards, sauces, and baked goods. Skim milk works for drinking but tends to make things thin and slightly chalky.\n\nBeyond cow's milk, the kitchen now offers many alternatives: almond, oat, soy, coconut, and rice milks, each with different cooking properties. Oat milk foams well for coffee; soy milk handles heat better than most; coconut milk is its own ingredient with a strong flavor profile that suits Southeast Asian and Caribbean cooking.",
+    "photo": "Milk (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Milk (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1517448931760-9bf4414148c5",
+    "photographer": "Kim Leary",
+    "photo-source": "https://unsplash.com/photos/clear-drinking-glass-with-white-liquid-p3ViLmVgVJ4",
+    "demo": "yes"
+  },
+  {
+    "title": "Red Chilli",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "A red chilli is, simply, a chili pepper that has been left on the plant to fully ripen — the same fruit that started green, just allowed more time. The capsaicin (the chemical that makes chilies spicy) is concentrated mostly in the pith and seeds; capsaicin is the same in green and red, but red chilies generally taste sweeter and rounder because of the natural sugars that develop with ripening.\n\n''Red chilli'' is a vague label — it can mean anything from a mild Italian Fresno to a fiery Thai bird's eye to a smoky chipotle. When a recipe calls for one without specifying, it usually means a medium-heat fresh red chili, finger-length, like a Fresno or a red jalapeño. If yours is hotter or milder, adjust accordingly. The heat sits mainly in the seeds and white pith, both of which can be removed for a milder dish — though much of the flavor lives there too.\n\nCapsaicin is fat-soluble, not water-soluble. This is why a glass of water doesn't help when you've eaten too much chili — but milk, yogurt, or a piece of bread can. It's also why chilies bloom their flavor properly when sautéed in oil at the start of cooking, where the heat compounds disperse evenly through the dish rather than concentrating into single fiery bites.",
+    "photo": "Red Chilli (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Red Chilli (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1599987662084-97832741bfa2",
+    "photographer": "Hari Krishnan",
+    "photo-source": "https://unsplash.com/photos/red-chili-on-white-surface-7Tec2ehoaZw",
+    "demo": "yes"
+  },
+  {
+    "title": "Rocket",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "''Rocket'' (the British name) and ''arugula'' (the American one) are the same plant: //Eruca sativa//, a peppery green leaf in the mustard family. The flavor is unmistakable — sharp, almost mustardy, with a light bitterness — and a single handful tossed into a salad changes the whole character of the bowl. Italian cuisine has been using it for centuries (often called //rucola//), and a few sprigs over a thin-crust pizza after baking is one of the great Italian moves.\n\nRocket is happiest raw. Its bite mellows but doesn't disappear when wilted briefly into hot pasta or warm grain salads. Pair it with rich, salty things — prosciutto, parmesan shavings, soft-boiled eggs, lemon, olive oil — where the pepperiness cuts through and balances. It also makes an excellent pesto in place of basil, especially with walnuts and pecorino instead of pine nuts and parmesan.\n\nTwo main varieties are sold: ''wild rocket'', with smaller, more deeply lobed leaves and a stronger flavor, and ''salad'' or ''cultivated rocket'', with larger smoother leaves and a milder taste. Either works in most recipes; wild rocket holds up better when added to warm dishes. It wilts fast in the fridge, so buy it close to using.",
+    "photo": "Rocket (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Rocket (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1603496987335-2cb9e257215d",
+    "photographer": "Dr Muhammad Amer",
+    "photo-source": "https://unsplash.com/photos/green-leaves-on-white-ceramic-plate-wxHq7eBBWZI",
+    "demo": "yes"
+  },
+  {
+    "title": "Soy Sauce",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Soy sauce is one of the world's great fermented foods — a salty, umami-rich, dark brown liquid made from fermenting soybeans (often combined with wheat) with salt and a specialty mold called //Aspergillus oryzae//. The fermentation can take six months or more, during which the proteins break down into amino acids (especially glutamate, the source of umami) and the sugars caramelize into deep brown pigments. The result is a condiment that doesn't just add salt — it adds //flavor//.\n\nSoy sauce traditions vary across East Asia. ''Japanese shoyu'' is typically about half wheat and half soybean, which gives it a slightly sweet, balanced flavor; ''Chinese light (生抽)'' soy sauce is saltier and thinner, used in stir-fries; ''Chinese dark (老抽)'' is thicker and sweeter, used for color in braises; ''Korean ganjang'' includes a soup soy that's lighter and used differently. ''Tamari'' is a wheat-free Japanese variant, useful for gluten-free cooking and with a richer, less sharp flavor.\n\nA little goes a long way. Soy sauce can easily over-salt a dish, so taste before adding more salt. It's at its best when used at multiple stages — a splash at the start of a stir-fry to caramelize, another at the end for finishing. Look for naturally brewed soy sauces; the cheap chemically-hydrolyzed kind tastes harsh and one-dimensional.",
+    "photo": "Soy Sauce (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Soy Sauce (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1562158147-1b1bf404cba1",
+    "photographer": "Luigi Pozzoli",
+    "photo-source": "https://unsplash.com/photos/sushi-near-dip-rwLTQ7eyBx0",
+    "demo": "yes"
+  },
+  {
+    "title": "Sugar",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Sugar — by which most recipes mean ''white granulated sugar'' from sugarcane or sugar beet — is one of the most concentrated forms of sweetness in the kitchen and one of the most chemically active. It doesn't just sweeten: it caramelizes, browns, tenderizes (by interfering with gluten formation), preserves (by binding water that bacteria need), provides structure (in meringues and certain cakes), and feeds yeast in bread and beer.\n\nThe white granulated sugar most people use is sucrose, refined to about 99.9% purity. ''Caster sugar'' (British) or ''superfine sugar'' (American) is the same thing ground finer, useful in delicate cakes and meringues where larger crystals would not dissolve smoothly. ''Brown sugar'' is granulated sugar with molasses added back in, providing moisture and a deeper, almost butterscotch flavor — light and dark brown sugars differ in how much molasses they contain. ''Demerara'' and ''turbinado'' are coarser, less refined raw sugars.\n\nSugar's history is dark. The European sugar trade was built on slave labor in the Caribbean and Brazil, and the modern global trade still relies on hard, often poorly-paid agricultural work. None of that diminishes its central role in the kitchen — but it's worth knowing where it came from.",
+    "photo": "Sugar (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Sugar (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1610219171722-87b3f4170557",
+    "photographer": "Mathilde Langevin",
+    "photo-source": "https://unsplash.com/photos/white-ceramic-mugs-on-white-table-Q5xjxSfs1Lk",
+    "demo": "yes"
+  },
+  {
+    "title": "Walnuts",
+    "tags": "Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Walnuts are the rich, slightly bitter, deeply flavored nut from the //Juglans// genus — most commonly the English walnut (//J. regia//), grown extensively in California, Chile, and China. They've been cultivated since at least 7000 BCE; archaeologists have found them in the ruins of ancient Persia, where the tree may have originated, and they spread along trade routes to become a staple across Eurasia.\n\nIn the kitchen, walnuts pull double duty as a savory and a sweet ingredient. On the savory side: chopped into salads with goat cheese and pear, ground into Levantine //muhammara// dip, blended into walnut-and-yogurt sauces (the Georgian //bazha//), pressed into walnut oil for finishing. On the sweet side: studded through brownies, baked into walnut-and-date cakes, candied for ice cream, soaked in honey and folded into baklava.\n\nToasting walnuts before using them transforms their flavor entirely — the slight bitterness of raw walnuts gives way to a warm, almost buttery depth. Toast them at 175°C (350°F) for 8-10 minutes, watching closely; they go from golden to burnt fast. Walnuts also go rancid faster than most nuts because of their high oil content, so store them in the fridge or freezer if you don't use them quickly.",
+    "photo": "Walnuts (photo)",
+    "demo": "yes"
+  },
+  {
+    "title": "Walnuts (photo)",
+    "type": "image/jpeg",
+    "_canonical_uri": "https://images.unsplash.com/photo-1626023873533-f5cc77cc2458",
+    "photographer": "Pranjall Kumar",
+    "photo-source": "https://unsplash.com/photos/brown-and-black-round-fruits-in-black-container-vKXtTK3ues0",
+    "demo": "yes"
+  }
+]

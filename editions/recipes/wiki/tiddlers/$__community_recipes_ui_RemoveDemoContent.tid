@@ -1,6 +1,6 @@
 caption: Remove Sample Content
 created: 20260425154726123
-modified: 20260425160710987
+modified: 20260426001325778
 title: $:/community/recipes/ui/RemoveDemoContent
 type: text/vnd.tiddlywiki
 
@@ -123,10 +123,6 @@ You may also choose to remove the sample categories:
 </$list>
 </tbody>
 </table>
-
----
-
-<$checkbox tiddler="$:/state/community/recipes/remove-demo/Basic Pancakes" field="text" checked="yes" unchecked="no" default="yes"/> Also remove the built-in example recipe and its photo ([[Basic Pancakes]])
 
 ---
 
