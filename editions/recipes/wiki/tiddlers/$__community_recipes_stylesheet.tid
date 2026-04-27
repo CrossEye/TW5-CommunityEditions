@@ -37,27 +37,16 @@ type: text/vnd.tiddlywiki
     clear: both;
 }
 
-/* Alias notice — shown when viewing an alias tiddler */
-.tc-ingredient-alias-notice {
-    margin: 0 0 1em;
-    padding: 0.4em 0.9em;
-    border-left: 3px solid <<colour primary>>;
-    color: <<colour muted-foreground>>;
-    font-style: italic;
-}
-
 /* "Also known as" line on canonical ingredient */
 .tc-ingredient-aliases {
     margin-top: 0.25em;
-    font-size: 0.9em;
+    font-size: 1.08em;
     color: <<colour muted-foreground>>;
 }
 
 /* Ingredient/used-in footer panel */
 .tc-recipe-ingredient-uses {
-    margin-top: 1.5em;
-    padding-top: 0.75em;
-    border-top: 1px solid <<colour tiddler-border>>;
+    margin-top: 0.75em;
     font-size: 0.9em;
 }
 .tc-recipe-ingredient-uses ul {

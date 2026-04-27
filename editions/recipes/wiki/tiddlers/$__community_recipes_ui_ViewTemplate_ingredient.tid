@@ -7,22 +7,22 @@ type: text/vnd.tiddlywiki
 
 \whitespace trim
 <% if [all[current]tag[Ingredient]] %>
-<% if [all[current]!has[alias-of]] %>
-<% if [all[tiddlers]field:alias-of<currentTiddler>] %>
+<% if [<currentTiddler>has[aliases]] %>
+<hr/>
 <div class="tc-ingredient-aliases">
-Also known as: <$list filter="[all[tiddlers]field:alias-of<currentTiddler>sort[title]]" join=", "><$link/></$list>
+Also known as:&nbsp;<$list filter="[<currentTiddler>get[aliases]enlist-input[]sort[]]" join=", "><$link/></$list>
 </div>
 <% endif %>
-<% if [<currentTiddler>backlinks[]tag[Recipe]] [all[tiddlers]field:alias-of<currentTiddler>backlinks[]tag[Recipe]] %>
+<% if [<currentTiddler>backlinks[]tag[Recipe]] [<currentTiddler>get[aliases]enlist-input[]backlinks[]tag[Recipe]] %>
+<hr/>
 <div class="tc-recipe-ingredient-uses">
 <h3>Recipes using <span class="ingredient">&nbsp;<$view field="title"/></span>:</h3>
 <ul>
-<$list filter="[<currentTiddler>backlinks[]tag[Recipe]] [all[tiddlers]field:alias-of<currentTiddler>backlinks[]tag[Recipe]] +[sort[title]]">
+<$list filter="[<currentTiddler>backlinks[]tag[Recipe]] [<currentTiddler>get[aliases]enlist-input[]backlinks[]tag[Recipe]] +[sort[title]]">
 <li><$link/></li>
 </$list>
 </ul>
 </div>
-<% endif %>
 <% endif %>
 <% endif %>
 <% if [all[current]!tag[Ingredient]] %>
