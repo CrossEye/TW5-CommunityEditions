@@ -1,0 +1,12 @@
+caption: Writing your own
+tags: [[Tidbits: About]]
+title: Tidbits: Writing your own
+type: text/vnd.tiddlywiki
+
+The "New Recipe" ( {{$:/community/recipes/ui/Buttons/new-recipe}} ) button in the page controls creates a draft with the section headings prefilled.
+
+The Photo section in the edit view lets you upload an image or paste an external URL, plus credit the photographer, source URL, and source name (e.g. Unsplash, TheMealDB).  Save commits the photo and links it from the recipe; Cancel discards everything.
+
+When you type `[[` while editing, the AutoComplete plugin suggests existing ingredient names — pick one to keep your links consistent.  For case or spelling variants of a canonical ingredient, add the variant to its `aliases` field.  You can also use the standard wiki-link syntax to display one form and link to another, such as `3 cloves [[garlic|Garlic]]`.
+
+To create an ingredient, just tag any tiddler with `Ingredient` — no special template needed.  Tidbits renders the photo, description, and "Used in" list automatically.

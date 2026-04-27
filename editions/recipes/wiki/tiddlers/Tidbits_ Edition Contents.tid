@@ -1,0 +1,14 @@
+caption: Edition Contents
+tags: [[Tidbits: About]]
+title: Tidbits: Edition Contents
+type: text/vnd.tiddlywiki
+
+<%if [field:demo[yes]] %>
+
+This wiki contains example recipes and ingredients, each marked with a `demo: yes` field.  They show off the conventions and give you something to read while you get oriented.  When you're ready to start your own, [[Remove sample content|$:/community/recipes/ui/RemoveDemoContent]] lets you pick which categories, recipes, and ingredients to remove and which to keep.
+
+<%else%>
+
+This empty edition does not include any sample recipes or ingredients.  If you'd like some for reference, you can download them from [[the community editions site|https://recipes.community.example.com/sample-data.json]] and drag the file onto the wiki.
+
+<%endif%>

@@ -1,0 +1,6 @@
+caption: Getting started
+tags: [[Tidbits: About]]
+title: Tidbits: Getting started
+type: text/vnd.tiddlywiki
+
+Use the "New Recipe" button (in the page toolbar on the right) to create your first recipe<%if [field:demo[yes]] %>, or clone one of the demos to see the conventions in action<% endif %>.  The template prefills the conventional sections so you can focus on the content.  Read on for the details of recipe structure, the reading and cooking views, and how to customize the wiki for yourself.

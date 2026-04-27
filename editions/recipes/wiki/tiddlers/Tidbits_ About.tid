@@ -1,0 +1,14 @@
+caption: About
+list: [[Tidbits: Intro]] [[Tidbits: Getting started]] [[Tidbits: Conventions]] [[Tidbits: Reading and cooking]] [[Tidbits: Writing your own]] [[Tidbits: Edition Contents]] [[Tidbits: Customizing]]
+tags: TableOfContents
+title: Tidbits: About
+type: text/vnd.tiddlywiki
+
+<% if [[$:/SiteTitle]get[text]!is[blank]] %>
+{{$:/community/recipes/images/tidbits-logo}}
+<% endif %>
+
+<$list filter="[enlist{!!list}]">
+<h2>{{!!caption}}</h2>
+<$transclude $mode="block"/>
+</$list>

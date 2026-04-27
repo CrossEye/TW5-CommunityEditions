@@ -1,0 +1,10 @@
+caption: Customizing
+tags: [[Tidbits: About]]
+title: Tidbits: Customizing
+type: text/vnd.tiddlywiki
+
+Standard TiddlyWiki settings — site title, subtitle, animation speed, username, default tiddlers — live in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/core/ui/ControlPanel/Info"/><$action-setfield $tiddler="$:/state/tab--2112689675" text="$:/core/ui/ControlPanel/Basics"/><$action-navigate $to="$:/ControlPanel"/>Basics tab</$button> of the Control Panel's Info section.
+
+Setting [[$:/SiteTitle]] overrides the tidbits logo at the top of this page.  Setting [[$:/DefaultTiddlers]] picks which tiddlers open at startup — for example, you might remove this [[Tidbits: About]] page and instead show your favourites with `[tag[Favorite]]`, or just `[[TableOfContents]]`.
+
+For deeper changes, the entire edition's CSS lives in `$:/community/recipes/stylesheet`, and the view, edit, and button templates live under `$:/community/recipes/ui/`.  Relink (rename safety) and AutoComplete (write-time suggestions) are bundled — drop in additional plugins using TiddlyWiki's standard plugin import.

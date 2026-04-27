@@ -1,0 +1,13 @@
+caption: Reading and cooking
+tags: [[Tidbits: About]]
+title: Tidbits: Reading and cooking
+type: text/vnd.tiddlywiki
+
+Tidbits shows recipe metadata and photo at the top, with ingredients and steps below.
+
+The toolbar's cooking-mode button ( <$button class="tc-btn-invisible" tooltip="Cooking mode on" aria-label="enter cooking mode">{{$:/community/recipes/images/cooking-mode-icon}}</$button> ) hides chrome and shows only the ingredients and steps.  It boosts the font size and pins the step nav to the bottom of the viewport.  On phones the ingredients column collapses to a toggle in the nav.  The off button ( <$button class="tc-btn-invisible" tooltip="Cooking mode off" aria-label="exit cooking mode">{{$:/community/recipes/images/cooking-mode-off-icon}}</$button> ) returns to the main mode.
+
+Search and tag filtering work as in any TiddlyWiki.  Click an ingredient name in any recipe to see what else uses it.
+
+One platform note: TiddlyWiki can't reliably prevent your phone from sleeping while you cook.  If you're having issues, use your device's "stay awake" setting, or cast the wiki to a tablet on a stand.  Cooking-mode screen-wake works when the wiki is served over `HTTPS` or `localhost`; on `file://` it works only in some desktop browsers, not on phones.
+

@@ -1,0 +1,6 @@
+caption: Photos
+tags: [[Tidbits: Conventions]]
+title: Tidbits: Photos
+type: text/vnd.tiddlywiki
+
+A recipe's or ingredient's `photo` field names a separate tiddler titled `<Title> (photo)`.  The photo tiddler holds either embedded image data or a `_canonical_uri` pointing to an external image.

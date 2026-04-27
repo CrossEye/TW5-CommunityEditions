@@ -1,0 +1,10 @@
+caption: Conventions
+list: [[Tidbits: Recipes]] [[Tidbits: Photos]] [[Tidbits: Extra fields]]
+tags: [[Tidbits: About]]
+title: Tidbits: Conventions
+type: text/vnd.tiddlywiki
+
+<$list filter="[enlist{!!list}]">
+<h3>{{!!caption}}</h3>
+<$transclude $mode="block"/>
+</$list>
