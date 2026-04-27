@@ -1,0 +1,72 @@
+title: $:/community/recipes/modules/wake-lock.js
+type: application/javascript
+module-type: startup
+
+/*\
+Holds a Screen Wake Lock while $:/state/community/recipes/cooking-mode
+is non-empty, so the device's screen stays awake during cooking.
+
+The lock is released automatically when the user exits cooking mode,
+when the page is hidden (browsers always release on visibility loss),
+or when the OS reclaims it (low battery, etc.).  When the page becomes
+visible again and cooking mode is still active, the lock is re-
+requested.
+
+Requires HTTPS or localhost; degrades silently when the API is
+unavailable.
+\*/
+
+"use strict";
+
+exports.name = "community-recipes-wake-lock";
+exports.platforms = ["browser"];
+exports.after = ["startup"];
+exports.synchronous = true;
+
+var STATE_TITLE = "$:/state/community/recipes/cooking-mode";
+
+exports.startup = function() {
+	if(!("wakeLock" in navigator)) { return; }
+
+	var wakeLock = null;
+
+	function isCooking() {
+		var t = $tw.wiki.getTiddler(STATE_TITLE);
+		return !!(t && t.fields.text && t.fields.text.length > 0);
+	}
+
+	function acquire() {
+		if(wakeLock || !isCooking()) { return; }
+		navigator.wakeLock.request("screen").then(function(lock) {
+			// User may have exited cooking mode while the request was pending
+			if(!isCooking()) {
+				lock.release();
+				return;
+			}
+			wakeLock = lock;
+			lock.addEventListener("release", function() {
+				if(wakeLock === lock) { wakeLock = null; }
+			});
+		}).catch(function(err) {
+			console.warn("Cooking-mode wake lock request failed:", err);
+		});
+	}
+
+	function release() {
+		if(!wakeLock) { return; }
+		var lock = wakeLock;
+		wakeLock = null;
+		lock.release().catch(function() {});
+	}
+
+	$tw.wiki.addEventListener("change", function(changes) {
+		if(!$tw.utils.hop(changes, STATE_TITLE)) { return; }
+		if(isCooking()) { acquire(); } else { release(); }
+	});
+
+	document.addEventListener("visibilitychange", function() {
+		if(document.visibilityState === "visible" && isCooking()) {
+			acquire();
+		}
+	});
+};
