@@ -1,0 +1,19 @@
+title: $:/community/recipes/procedures/toHoursAndMinutes
+tags: $:/tags/community/recipes/procedure
+type: text/vnd.tiddlywiki
+
+\procedure toHoursAndMinutes()
+\whitespace trim
+<$let total={{{ [<field-value>add[0]] }}}
+      h={{{ [<total>divide[60]floor[]] }}}
+      m={{{ [<total>remainder[60]] }}}>
+<%if [<h>match[0]] %>
+<<m>>&nbsp;minute<%if [<m>!match[1]] %>s<%endif%>
+<%else%>
+<<h>>&nbsp;hour<%if [<h>!match[1]] %>s<%endif%>
+<%if [<m>!match[0]] %>
+&nbsp;<<m>>&nbsp;minute<%if [<m>!match[1]] %>s<%endif%>
+<%endif%>
+<%endif%>
+</$let>
+\end

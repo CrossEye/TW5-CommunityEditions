@@ -1,0 +1,7 @@
+title: $:/community/recipes/extra-fields/oven-temp
+tags: $:/tags/community/recipes/extra-field
+field-name: oven-temp
+caption: Oven
+list-after: $:/community/recipes/extra-fields/cook-time
+type: text/vnd.tiddlywiki
+

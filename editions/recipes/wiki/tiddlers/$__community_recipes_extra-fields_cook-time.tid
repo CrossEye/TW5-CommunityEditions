@@ -1,0 +1,8 @@
+title: $:/community/recipes/extra-fields/cook-time
+tags: $:/tags/community/recipes/extra-field
+field-name: cook-time
+caption: Cook time
+list-after: $:/community/recipes/extra-fields/prep-time
+type: text/vnd.tiddlywiki
+
+<<toHoursAndMinutes>>

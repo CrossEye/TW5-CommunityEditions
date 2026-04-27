@@ -2,6 +2,6 @@ title: $:/community/recipes/extra-fields/servings
 tags: $:/tags/community/recipes/extra-field
 field-name: servings
 caption: Servings
-list-after: $:/community/recipes/extra-fields/source
+list-after: $:/community/recipes/extra-fields/oven-temp
 type: text/vnd.tiddlywiki
 

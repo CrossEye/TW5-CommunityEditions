@@ -11,10 +11,10 @@ type: text/vnd.tiddlywiki
 <$let fieldName={{{ [<extraFieldConfig>get[field-name]] }}}
       caption={{{ [<extraFieldConfig>get[caption]] }}}
       bodyText={{{ [<extraFieldConfig>get[text]] }}}>
-<%if [<currentTiddler>has<fieldName>] %>
+<%if [<currentTiddler>get<fieldName>!is[blank]] %>
 <$let field-value={{{ [<currentTiddler>get<fieldName>] }}}>
 <div class="tc-recipe-extra-field">
-<span class="tc-recipe-extra-field-caption"><<caption>></span>: <%if [<bodyText>!is[blank]] %><$transclude tiddler=<<extraFieldConfig>>/><%else%><<extra-field-default>><%endif%>
+<span class="tc-recipe-extra-field-caption"><<caption>></span>:&nbsp;<%if [<bodyText>!is[blank]] %><$transclude tiddler=<<extraFieldConfig>>/><%else%><<extra-field-default>><%endif%>
 </div>
 </$let>
 <%endif%>
