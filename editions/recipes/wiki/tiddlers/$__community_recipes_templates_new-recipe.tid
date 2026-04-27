@@ -1,9 +1,11 @@
 created: 20260426134034993
-modified: 20260426134131006
+modified: 20260427163723409
 title: $:/community/recipes/templates/new-recipe
 type: text/vnd.tiddlywiki
 
-<!-- (Origin, serving suggestions, tips. Delete this section if unused.) -->
+<!-- Add metadata (prep time, servings, oven temp, source URL) using the field list below the body editor. -->
+
+<!-- Origin, serving suggestions, tips. Delete this section if unused. -->
 
 !! About
 

@@ -1,0 +1,43 @@
+title: $:/community/recipes/ControlPanel/Recipes
+tags: $:/tags/ControlPanel
+caption: Recipes
+type: text/vnd.tiddlywiki
+
+! Recipes
+
+Configure how the recipe edition behaves.
+
+!! Extra fields
+
+These fields appear in the metadata strip at the top of each recipe view, and are routed to a placeholder-aware editor in the field list when you author a recipe.  Edit a row to change its caption, placeholder hint, or display template; remove a row to drop the field from the strip and the editor cascade.
+
+<table class="tc-recipe-extra-fields-table">
+<thead>
+<tr><th>Field name</th><th>Caption</th><th>Placeholder</th><th></th></tr>
+</thead>
+<tbody>
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/extra-field]]" variable="extraField">
+<tr>
+<td><$text text={{{ [<extraField>get[field-name]] }}}/></td>
+<td><$text text={{{ [<extraField>get[caption]] }}}/></td>
+<td><$text text={{{ [<extraField>get[placeholder]] }}}/></td>
+<td>
+<$button class="tc-btn-invisible">
+<$action-sendmessage $message="tm-edit-tiddler" $param=<<extraField>>/>
+edit
+</$button>
+&nbsp;
+<$button class="tc-btn-invisible">
+<$action-deletetiddler $tiddler=<<extraField>>/>
+remove
+</$button>
+</td>
+</tr>
+</$list>
+</tbody>
+</table>
+
+<$button>
+<$action-sendmessage $message="tm-new-tiddler" title="$:/community/recipes/extra-fields/new-field" tags="$:/tags/community/recipes/extra-field" field-name="" caption="" placeholder=""/>
+Add a new field
+</$button>

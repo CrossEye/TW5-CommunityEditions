@@ -1,8 +1,9 @@
-title: $:/community/recipes/extra-fields/oven-temp
-tags: $:/tags/community/recipes/extra-field
-field-name: oven-temp
 caption: Oven
+created: 20260427164104275
+field-name: oven-temp
 list-after: $:/community/recipes/extra-fields/cook-time
-placeholder: 350<<deg F>>
+modified: 20260427164128246
+placeholder: 425°F -or- 350<<deg F>>
+tags: $:/tags/community/recipes/extra-field
+title: $:/community/recipes/extra-fields/oven-temp
 type: text/vnd.tiddlywiki
-
