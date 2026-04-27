@@ -2,6 +2,7 @@ title: $:/community/recipes/extra-fields/source
 tags: $:/tags/community/recipes/extra-field
 field-name: source
 caption: Source
+placeholder: https://...
 type: text/vnd.tiddlywiki
 
 <a class="tc-tiddlylink-external" href=<<field-value>> rel="noopener noreferrer" target="_blank">View original</a>

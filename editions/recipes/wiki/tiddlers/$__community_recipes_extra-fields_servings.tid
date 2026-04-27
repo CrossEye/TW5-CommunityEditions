@@ -3,5 +3,6 @@ tags: $:/tags/community/recipes/extra-field
 field-name: servings
 caption: Servings
 list-after: $:/community/recipes/extra-fields/oven-temp
+placeholder: 4
 type: text/vnd.tiddlywiki
 

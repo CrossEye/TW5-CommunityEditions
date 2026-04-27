@@ -3,5 +3,6 @@ tags: $:/tags/community/recipes/extra-field
 field-name: yield
 caption: Yield
 list-after: $:/community/recipes/extra-fields/servings
+placeholder: 12 cookies
 type: text/vnd.tiddlywiki
 

@@ -1,0 +1,13 @@
+created: 20260427162643281
+modified: 20260427163046409
+title: $:/community/recipes/ui/EditTemplate/fieldEditor/extra-field
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<$let configPlaceholder={{{ [all[shadows+tiddlers]tag[$:/tags/community/recipes/extra-field]field-name<currentField>get[placeholder]] }}}>
+<%if [<configPlaceholder>!is[blank]] %>
+<$edit-text tiddler=<<currentTiddler>> field=<<currentField>> tag="input" default="" class="tc-edit-texteditor tc-edit-fieldeditor" placeholder=<<configPlaceholder>>  tabindex={{$:/config/EditTabIndex}} cancelPopups="yes"/>
+<%else%>
+<$edit-text tiddler=<<currentTiddler>> field=<<currentField>> tag="input" default="" class="tc-edit-texteditor tc-edit-fieldeditor" placeholder={{$:/language/EditTemplate/Fields/Add/Value/Placeholder}} tabindex={{$:/config/EditTabIndex}} cancelPopups="yes"/>
+<%endif%>
+</$let>

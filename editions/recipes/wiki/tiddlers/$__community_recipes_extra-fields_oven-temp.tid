@@ -3,5 +3,6 @@ tags: $:/tags/community/recipes/extra-field
 field-name: oven-temp
 caption: Oven
 list-after: $:/community/recipes/extra-fields/cook-time
+placeholder: 350<<deg F>>
 type: text/vnd.tiddlywiki
 

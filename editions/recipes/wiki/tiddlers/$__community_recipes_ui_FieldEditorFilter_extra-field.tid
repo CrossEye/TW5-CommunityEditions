@@ -1,0 +1,8 @@
+created: 20260427162513016
+list-before: $:/config/FieldEditorFilters/default
+modified: 20260427162513016
+tags: $:/tags/FieldEditorFilter
+title: $:/community/recipes/ui/FieldEditorFilter/extra-field
+type: text/vnd.tiddlywiki
+
+[all[shadows+tiddlers]tag[$:/tags/community/recipes/extra-field]field-name<currentField>first[]] :and[[$:/community/recipes/ui/EditTemplate/fieldEditor/extra-field]]

@@ -3,6 +3,7 @@ tags: $:/tags/community/recipes/extra-field
 field-name: prep-time
 caption: Prep time
 list-after: $:/community/recipes/extra-fields/source
+placeholder: 40
 type: text/vnd.tiddlywiki
 
 <<toHoursAndMinutes>>
