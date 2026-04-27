@@ -129,6 +129,15 @@ type: text/vnd.tiddlywiki
     border-radius: 4px;
 }
 
+/* Photographer / source attribution beneath a photo */
+.tc-recipe-photo-caption {
+    margin-top: 0.25em;
+    font-size: 0.8em;
+    line-height: 1.2;
+    color: <<colour muted-foreground>>;
+    text-align: center;
+}
+
 /* Step-by-step view */
 .tc-stepview-header {
     text-align: center;

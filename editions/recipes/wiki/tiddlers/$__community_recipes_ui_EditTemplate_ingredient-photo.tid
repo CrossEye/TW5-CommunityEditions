@@ -15,6 +15,7 @@ type: text/vnd.tiddlywiki
       urlState={{{ [<formBase>addsuffix[url]] }}}
       photographerState={{{ [<formBase>addsuffix[photographer]] }}}
       photoSourceState={{{ [<formBase>addsuffix[photo-source]] }}}
+      sourceNameState={{{ [<formBase>addsuffix[photo-source-name]] }}}
       formOpen={{{ [<openState>get[text]] }}}
       formWorkingPhoto={{{ [<workingPhotoState>get[text]] }}}>
 <div class="tc-recipe-photo-edit-section">
@@ -37,6 +38,10 @@ type: text/vnd.tiddlywiki
 <label>Photo source</label>
 <$edit-text tiddler=<<photoSourceState>> field="text" placeholder="URL or publication" default="" tag="input"/>
 </div>
+<div class="tc-recipe-photo-form-field">
+<label>Source name</label>
+<$edit-text tiddler=<<sourceNameState>> field="text" placeholder="e.g. Unsplash, TheMealDB" default="" tag="input"/>
+</div>
 <div class="tc-recipe-photo-form-actions">
 <$button>
 <$action-deletetiddler $filter="[prefix<formBase>]"/>
@@ -44,14 +49,14 @@ Cancel
 </$button>
 <$button class="tc-recipe-photo-save-btn">
 <%if [<formWorkingPhoto>!is[blank]] %>
-<$action-setfield $tiddler=<<formWorkingPhoto>> photographer={{{ [<photographerState>get[text]] }}} photo-source={{{ [<photoSourceState>get[text]] }}}/>
+<$action-setfield $tiddler=<<formWorkingPhoto>> photographer={{{ [<photographerState>get[text]] }}} photo-source={{{ [<photoSourceState>get[text]] }}} photo-source-name={{{ [<sourceNameState>get[text]] }}}/>
 <%if [<urlState>get[text]!is[blank]] %>
 <$action-setfield $tiddler=<<formWorkingPhoto>> _canonical_uri={{{ [<urlState>get[text]] }}} type="image/jpeg"/>
 <%endif%>
 <$action-setfield $tiddler=<<draftTitle>> photo=<<formWorkingPhoto>>/>
 <%else%>
 <%if [<urlState>get[text]!is[blank]] %>
-<$action-setfield $tiddler=<<newPhotoTitle>> _canonical_uri={{{ [<urlState>get[text]] }}} type="image/jpeg" photographer={{{ [<photographerState>get[text]] }}} photo-source={{{ [<photoSourceState>get[text]] }}}/>
+<$action-setfield $tiddler=<<newPhotoTitle>> _canonical_uri={{{ [<urlState>get[text]] }}} type="image/jpeg" photographer={{{ [<photographerState>get[text]] }}} photo-source={{{ [<photoSourceState>get[text]] }}} photo-source-name={{{ [<sourceNameState>get[text]] }}}/>
 <$action-setfield $tiddler=<<draftTitle>> photo=<<newPhotoTitle>>/>
 <%endif%>
 <%endif%>
@@ -71,6 +76,7 @@ Save
 <$action-setfield $tiddler=<<workingPhotoState>> text=<<photoTitle>>/>
 <$action-setfield $tiddler=<<photographerState>> text={{{ [<photoTitle>get[photographer]] }}}/>
 <$action-setfield $tiddler=<<photoSourceState>> text={{{ [<photoTitle>get[photo-source]] }}}/>
+<$action-setfield $tiddler=<<sourceNameState>> text={{{ [<photoTitle>get[photo-source-name]] }}}/>
 <$action-setfield $tiddler=<<urlState>> text={{{ [<photoTitle>get[_canonical_uri]] }}}/>
 Change photo
 </$button>

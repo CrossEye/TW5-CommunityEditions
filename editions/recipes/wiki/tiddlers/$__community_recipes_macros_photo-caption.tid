@@ -1,0 +1,15 @@
+tags: $:/tags/Global
+title: $:/community/recipes/macros/photo-caption
+
+\procedure photo-caption(photo)
+\whitespace trim
+<$let photographer={{{ [<photo>get[photographer]] }}}
+      photoSource={{{ [<photo>get[photo-source]] }}}
+      sourceName={{{ [<photo>get[photo-source-name]] }}}>
+<%if [<photographer>!is[blank]] %>
+<div class="tc-recipe-photo-caption">
+<%if [<sourceName>!is[blank]] %><<photographer>>&#32;on&#32;<a class="tc-tiddlylink-external" href=<<photoSource>> target="_blank" rel="noopener noreferrer"><<sourceName>></a><%elseif [<photoSource>!is[blank]] %><a class="tc-tiddlylink-external" href=<<photoSource>> target="_blank" rel="noopener noreferrer"><<photographer>></a><%else%><<photographer>><%endif%>
+</div>
+<%endif%>
+</$let>
+\end

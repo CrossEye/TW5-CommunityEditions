@@ -16,6 +16,7 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 <%if [<photoTiddler>!is[blank]] %>
 <div class="tc-recipe-photo">
 <$transclude $tiddler=<<photoTiddler>> $mode="block"/>
+<$transclude $variable="photo-caption" photo=<<photoTiddler>>/>
 </div>
 <% endif %>
 <%if [<aboutContent>!is[blank]] %>

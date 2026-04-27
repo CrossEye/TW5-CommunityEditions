@@ -12,6 +12,7 @@ Another name for <$link to=<<canonical>>/>.</$let>
 <$let photoTitle={{{ [all[current]get[photo]] }}}>
 <div class="tc-ingredient-photo">
 <$transclude $tiddler=<<photoTitle>> $mode="block"/>
+<$transclude $variable="photo-caption" photo=<<photoTitle>>/>
 </div>
 </$let>
 <% endif %>
