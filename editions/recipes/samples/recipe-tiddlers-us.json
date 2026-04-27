@@ -7,7 +7,7 @@
   },
   {
     "title": "Teriyaki Chicken Casserole",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Chicken",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Teriyaki Chicken Casserole (photo)",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Chicken Handi",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Chicken",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Chicken Handi (photo)",
@@ -48,7 +48,7 @@
   },
   {
     "title": "Tandoori chicken",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Chicken Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Tandoori chicken (photo)",
@@ -67,7 +67,7 @@
   },
   {
     "title": "Vegetarian Shakshuka",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Vegetarian Shakshuka (photo)",
@@ -87,7 +87,7 @@
   },
   {
     "title": "Vegetarian Chilli",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian Vegan",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Vegetarian Chilli (photo)",
@@ -107,7 +107,7 @@
   },
   {
     "title": "Vegetarian Casserole",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian Vegan",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Vegetarian Casserole (photo)",
@@ -128,7 +128,7 @@
   },
   {
     "title": "Vegan Lasagna",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian Vegan",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Vegan Lasagna (photo)",
@@ -149,7 +149,7 @@
   },
   {
     "title": "Vegan Chocolate Cake",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian Vegan Chocolate Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Vegan Chocolate Cake (photo)",
@@ -170,7 +170,7 @@
   },
   {
     "title": "Vegan banh mi",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian Vegan",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Vegan banh mi (photo)",
@@ -190,7 +190,7 @@
   },
   {
     "title": "Turkish lahmacun",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Beef",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Turkish lahmacun (photo)",
@@ -211,7 +211,7 @@
   },
   {
     "title": "Algerian Carrots",
-    "tags": "Recipe Side",
+    "tags": "Recipe Side Vegetarian Vegan",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Algerian Carrots (photo)",
@@ -231,7 +231,7 @@
   },
   {
     "title": "Falafel Pita Sandwich with Tahini Sauce",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian Vegan",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Falafel Pita Sandwich with Tahini Sauce (photo)",
@@ -248,7 +248,7 @@
   },
   {
     "title": "Rogaliki (Polish Croissant Cookies)",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Rogaliki (Polish Croissant Cookies) (photo)",
@@ -269,7 +269,7 @@
   },
   {
     "title": "Carrot Cake",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Carrot Cake (photo)",
@@ -291,7 +291,7 @@
   },
   {
     "title": "Pistachio Kunafa Chocolate Cake and Cupcakes",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian Chocolate",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Pistachio Kunafa Chocolate Cake and Cupcakes (photo)",
@@ -313,7 +313,7 @@
   },
   {
     "title": "Salted Caramel Cheescake",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Salted Caramel Cheescake (photo)",
@@ -335,7 +335,7 @@
   },
   {
     "title": "Walnut, date & honey cake",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Walnut, date & honey cake (photo)",
@@ -356,7 +356,7 @@
   },
   {
     "title": "Baklava with spiced nuts, ricotta & chocolate",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian Chocolate",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Baklava with spiced nuts, ricotta & chocolate (photo)",
@@ -377,7 +377,7 @@
   },
   {
     "title": "Cashew Ghoriba Biscuits",
-    "tags": "Recipe Dessert",
+    "tags": "Recipe Dessert Vegetarian",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Cashew Ghoriba Biscuits (photo)",
@@ -398,7 +398,7 @@
   },
   {
     "title": "Sesame Cucumber Salad",
-    "tags": "Recipe Salad",
+    "tags": "Recipe Salad Vegetarian Vegan Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Sesame Cucumber Salad (photo)",
@@ -414,7 +414,7 @@
   },
   {
     "title": "Warm roast asparagus salad",
-    "tags": "Recipe Salad",
+    "tags": "Recipe Salad Pork",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Warm roast asparagus salad (photo)",
@@ -435,7 +435,7 @@
   },
   {
     "title": "Honey Teriyaki Salmon",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Seafood Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Honey Teriyaki Salmon (photo)",
@@ -452,7 +452,7 @@
   },
   {
     "title": "Cajun spiced fish tacos",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Seafood",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Cajun spiced fish tacos (photo)",
@@ -470,7 +470,7 @@
   },
   {
     "title": "Portuguese fish stew (Caldeirada de peixe)",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Seafood",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Portuguese fish stew (Caldeirada de peixe) (photo)",
@@ -490,7 +490,7 @@
   },
   {
     "title": "Callaloo and SaltFish",
-    "tags": "Recipe Side",
+    "tags": "Recipe Side Seafood Pork",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Callaloo and SaltFish (photo)",
@@ -510,7 +510,7 @@
   },
   {
     "title": "Provençal Omelette Cake",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Provençal Omelette Cake (photo)",
@@ -531,7 +531,7 @@
   },
   {
     "title": "Salmon Eggs Eggs Benedict",
-    "tags": "Recipe Breakfast",
+    "tags": "Recipe Breakfast Seafood Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Salmon Eggs Eggs Benedict (photo)",
@@ -551,7 +551,7 @@
   },
   {
     "title": "Roast aubergine with goat's cheese & toasted flatbread",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Vegetarian",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Roast aubergine with goat's cheese & toasted flatbread (photo)",
@@ -572,7 +572,7 @@
   },
   {
     "title": "Beef and Mustard Pie",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Beef Favorite",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Beef and Mustard Pie (photo)",
@@ -593,7 +593,7 @@
   },
   {
     "title": "Beef Lo Mein",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Beef",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Beef Lo Mein (photo)",
@@ -613,7 +613,7 @@
   },
   {
     "title": "Cassava pizza",
-    "tags": "Recipe Main",
+    "tags": "Recipe Main Pork",
     "type": "text/vnd.tiddlywiki",
     "demo": "yes",
     "photo": "Cassava pizza (photo)",
@@ -628,7 +628,7 @@
     "title": "Basic Pancakes",
     "photo": "Basic Pancakes (photo)",
     "source": "",
-    "tags": "Recipe Breakfast",
+    "tags": "Recipe Breakfast Vegetarian Favorite",
     "type": "text/vnd.tiddlywiki",
     "text": "!! About\n\nFew foods carry as much quiet joy as a stack of pancakes. Golden, tender, faintly crisp at the edges and pillowy at the center, they manage to feel simultaneously humble and celebratory — the kind of thing that turns an ordinary Tuesday morning into something worth getting out of bed for. A drizzle of maple syrup, a pat of butter melting into the top, the faint steam rising from the plate: pancakes don't ask much of you, and in return they give a great deal.\n\nThe pancake is ancient. Versions of it appear in nearly every food culture on earth — the French crêpe, the Russian blini, the Ethiopian injera, the Japanese okonomiyaki. The basic idea is nearly as old as cooking itself: grain ground to flour, mixed with liquid, cooked on a hot flat surface. Roman writings mention a thin wheat cake sweetened with honey; Ötzi the Iceman, the 5,300-year-old glacier mummy, had einkorn wheat in his stomach that may well have been eaten as a kind of flatcake. Shrove Tuesday (Pancake Day) in Britain has been a reason to cook them since at least the 15th century, a way to use up butter and eggs before the Lenten fast.\n\nThe American breakfast pancake — thick, leavened with baking powder, eaten in stacks — is a more recent invention, a product of the 19th century when chemical leaveners became widely available. But it adapted quickly into a beloved ritual: lazy weekend mornings, diner counters, school fundraisers. This recipe is that classic version, straightforward enough to make from memory once you've done it a few times, reliable enough to anchor the morning every time.\n\n!! Ingredients\n\n* 1 cup [[flour]]\n* 2 teaspoons [[baking powder]]\n* 1 tablespoon [[sugar]]\n* 1/2 teaspoon [[salt]]\n* 1 cup [[milk]]\n* 1 [[egg]]\n* 2 tablespoons [[butter]], melted\n\n!! Steps\n\n# Whisk together the [[flour]], [[baking powder]], [[sugar]], and [[salt]] in a large bowl.\n# In a separate bowl, combine the [[milk]], [[egg]], and melted [[butter]].\n# Pour the wet ingredients into the dry and stir until just combined — a few lumps are fine.\n# Heat a lightly buttered skillet over medium heat.\n# Pour about 1/4 cup of batter per pancake onto the skillet.\n# Cook until bubbles form on the surface and the edges look set, about 2 minutes.\n# Flip and cook for another 1–2 minutes until golden brown.\n# Serve hot with toppings of your choice.",
     "demo": "yes",
