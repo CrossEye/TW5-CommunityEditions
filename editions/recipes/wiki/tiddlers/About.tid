@@ -1,5 +1,5 @@
 created: 20250318115542936
-modified: 20260426234500000
+modified: 20260427031717133
 tags: TableOfContents
 title: About
 type: text/vnd.tiddlywiki
@@ -8,9 +8,10 @@ type: text/vnd.tiddlywiki
 
 This is a recipe wiki — a TiddlyWiki edition tuned for storing, browsing, and cooking from your own recipes.  If TiddlyWiki itself is new to you, the [[main TiddlyWiki documentation|https://tiddlywiki.com/]] covers the basics of [[tiddlers|https://tiddlywiki.com/#Tiddlers]], [[tags|https://tiddlywiki.com/#Tagging]], and [[fields|https://tiddlywiki.com/#TiddlerFields]].  This page describes only what's specific to the recipe edition.
 
+
 !! Conventions
 
-A recipe is a tiddler tagged `Recipe`, usually plus a category tag like `Breakfast` or `Main`.  Categories are just tags — add a new one by typing it into the tag box in the edit mode of any recipe.  If you want that category to appear in the table of contents, open that tag itself, and add to *it* the tag "TableOfContents".
+A recipe is a tiddler tagged `Recipe`, usually plus a category tag like `Breakfast` or `Main`.  Categories are just tags — add a new one by typing it into the tag box in the edit mode of any recipe.  If you want that category to appear in the table of contents, open that tag itself, and add to //the Tag tiddler// the tag "TableOfContents".
 
 The recipe body follows three section headings:
 
@@ -29,7 +30,7 @@ The story, context, or notes.
 
 The reading and cooking views look for these headings to lay things out. A recipe that ignores the convention still renders — it just loses the split layout and step navigation.
 
-Ingredients are inline wiki links.  Each link creates an ingredient tiddler implicitly; the backlinks then tell you which recipes use it. Canonical ingredient tiddlers carry the `Ingredient` tag and an extended description. They may also list lowercase or plural variants in an `aliases` field, so `[[garlic]]` in a recipe still resolves to the canonical `Garlic` page even when the linked title is missing.
+Ingredients are written as inline wiki links.  Each link creates an ingredient tiddler implicitly; the backlinks then tell you which recipes use it. Canonical ingredient tiddlers carry the `Ingredient` tag and an extended description. They may also list lowercase or plural variants in an `aliases` field, so `[[garlic]]` in a recipe still links easily to the canonical `Garlic` page even when the linked title is missing.
 
 A recipe's `photo` field names a separate tiddler titled `<Recipe Title> (photo)`.  The photo tiddler holds either embedded image data or a `_canonical_uri` pointing to an external image.  Ingredient photos follow the same pattern.
 
@@ -38,21 +39,29 @@ Edition-specific templates, styling, and logic all live under `$:/community/reci
 
 !! Reading and cooking
 
-The default view shows ingredients on the left and steps on the right, with the active step emphasized.  Click any step to focus it; use the Previous / Next bar at the bottom to walk through.
 
-The toolbar's cooking-mode button hides chrome, boosts the font size, and pins the step nav to the bottom of the viewport.  On phones the ingredients column collapses to a toggle in the nav.  Press the same button again to exit.
+The default view shows recipe information and photo at the top, with ingredients and steps below that.
+
+The toolbar's cooking-mode button ( <$button class="tc-btn-invisible" tooltip="Cooking Mode on" aria-label="cooking-mode=on">{{$:/community/recipes/images/cooking-mode-icon}}</$button> ) hides chrome, showing only the the ingredients and steps.  It boosts the font size and pins the step nav to the bottom of the viewport.  On phones the ingredients column collapses to a toggle in the nav.  The cooking-mode off button ( <$button class="tc-btn-invisible" tooltip="Cooking mode off" aria-label="cooking-">{{$:/community/recipes/images/cooking-mode-off-icon}}</$button> ) returns to the main mode.
 
 Search and tag filtering work as in any TiddlyWiki.  Click an ingredient name in any recipe to see what else uses it.
 
-One platform note: TiddlyWiki can't reliably prevent your phone from sleeping while you cook.  If you're having issues, use your device's "stay awake" setting, or cast the wiki to a tablet on a stand.  Cooking-mode screen-wake works when the wiki is served over `HTTPS` or `localhost`; on `file://` it works only in some desktop browsers, not on phones.
+One platform note: TiddlyWiki can't reliably prevent your phone from sleeping while you cook.  If you're having issues, use your device's "stay awake" setting, or cast the wiki to a tablet on a stand.  Cooking-mode screen-wake works when the wiki is served over `HTTPS` or `localhost`; when served over `file://` it works only in some desktop browsers, not on phones.
 
-!! Writing your own
+
+!! Writing your own recipes
 
 The "New Recipe" ( {{$:/community/recipes/ui/Buttons/new-recipe}} ) button in the page controls creates a draft with the section headings prefilled.
 
 The Photo section in the edit view lets you upload an image or paste an external URL, plus credit the photographer, the source URL, and the source's name (e.g. Unsplash, TheMealDB).  Save commits the photo and links it from the recipe; Cancel discards everything.
 
-When you type `[[` while editing, the AutoComplete plugin suggests existing ingredient names — pick one to keep your links canonical. For case or spelling variants of a canonical ingredient, add the variant to its `aliases` field.
+When you type `[[` while editing, the AutoComplete plugin suggests existing ingredient names — when possible, pick one to keep your links consistent.  For case or spelling variants of a canonical ingredient, add the variant to its `aliases` field.  You can also use the usual TiddlyWiki links syntax to display one version of a name and link to another, such as `3 cloves [[garlic|Garlic]]`.
+
+
+!! Writing your own ingredients
+
+Ingredients are plain tiddlers that have been tagged with "Ingredient".  No special templates are needed.  The same photo mechanism applies here.  If you have multiple variants of the same ingredient, you can add an `aliases` field, and add the variants here.  For instance, if your ingredient is `Eggs`, you might have an `aliases` field  with entries such as `Egg` and `eggs`.  
+
 
 !! Extending
 
