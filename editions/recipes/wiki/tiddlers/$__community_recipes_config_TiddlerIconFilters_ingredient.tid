@@ -1,0 +1,5 @@
+list-before: $:/config/TiddlerIconFilters/default
+tags: $:/tags/TiddlerIconFilter
+title: $:/community/recipes/config/TiddlerIconFilters/ingredient
+
+[<currentTiddler>tag[Ingredient]then[$:/community/recipes/images/ingredient-icon]]

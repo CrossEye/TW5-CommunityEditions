@@ -267,6 +267,14 @@ type: text/vnd.tiddlywiki
 .tc-tiddler-controls button:not(.tc-recipe-cooking-mode-btn) {
     display: none;
 }
+/* Exit-cook-mode button is alone in the toolbar — sized to roughly match
+   the tiddler title icon (TW core sets that to 0.9em of the surrounding
+   titlebar font, and our toolbar button inherits the same context).
+   Selector specificity must beat TW's "button svg.tc-image-button" rule. */
+.tc-recipe-cooking-mode-btn svg.tc-image-cooking-mode-off-icon {
+    width: 1em;
+    height: 1em;
+}
 .tc-hide-sidebar-btn,
 .tc-show-sidebar-btn {
     display: none;

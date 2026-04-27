@@ -1,0 +1,18 @@
+tags: $:/tags/Image
+title: $:/community/recipes/images/cooking-mode-off-icon
+type: text/vnd.tiddlywiki
+
+\parameters (size:"22pt")
+<svg width=<<size>> height=<<size>> class="tc-image-button tc-image-cooking-mode-off-icon" viewBox="0 0 128 128" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="64" cy="64" r="58" fill="none"/>
+<g fill="none" transform="translate(64 64) scale(0.7) translate(-64 -64)">
+<path d="M 42 42 C 47 34 37 22 42 14"/>
+<path d="M 64 44 C 69 36 59 24 64 16"/>
+<path d="M 86 42 C 91 34 81 22 86 14"/>
+<path d="M 16 56 L 112 56 L 112 70 L 16 70 Z"/>
+<path d="M 26 70 L 30 110 Q 30 116 36 116 L 92 116 Q 98 116 98 110 L 102 70"/>
+<path d="M 14 76 Q 4 76 4 84 Q 4 92 14 92"/>
+<path d="M 114 76 Q 124 76 124 84 Q 124 92 114 92"/>
+</g>
+<line x1="23" y1="23" x2="105" y2="105" stroke-width="11"/>
+</svg>

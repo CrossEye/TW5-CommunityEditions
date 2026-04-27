@@ -19,7 +19,7 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
 <% endif %>
 <$action-sendmessage $message="tm-navigate" $param=<<cookState>>/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=""/>
-{{$:/core/images/storyview-zoomin}}
+{{$:/community/recipes/images/cooking-mode-off-icon}}
 </$button>
 <% else %>
 <$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Enter cooking mode" aria-label="enter cooking mode">
@@ -30,7 +30,7 @@ title: $:/community/recipes/ui/Buttons/cooking-mode
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-mode" text=<<currentTiddler>>/>
 <$action-setfield $tiddler="$:/state/sidebar" text="no"/>
 <$action-setfield $tiddler="$:/StoryList" list={{{ [<currentTiddler>format:titlelist[]] }}}/>
-{{$:/core/images/storyview-zoomin}}
+{{$:/community/recipes/images/cooking-mode-icon}}
 </$button>
 <% endif %>
 </$let>
