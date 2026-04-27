@@ -1,17 +1,23 @@
 created: 20250318115542936
-modified: 20260427031717133
 tags: TableOfContents
 title: About
 type: text/vnd.tiddlywiki
 
 {{$:/community/recipes/images/tidbits-logo}}
 
-This is a recipe wiki — a TiddlyWiki edition tuned for storing, browsing, and cooking from your own recipes.  If TiddlyWiki itself is new to you, the [[main TiddlyWiki documentation|https://tiddlywiki.com/]] covers the basics of [[tiddlers|https://tiddlywiki.com/#Tiddlers]], [[tags|https://tiddlywiki.com/#Tagging]], and [[fields|https://tiddlywiki.com/#TiddlerFields]].  This page describes only what's specific to the recipe edition.
+Tidbits is a recipe wiki — a TiddlyWiki edition tuned for storing, browsing, and cooking from your own recipes.  If TiddlyWiki itself is new to you, the [[main TiddlyWiki documentation|https://tiddlywiki.com/]] covers the basics of [[tiddlers|https://tiddlywiki.com/#Tiddlers]], [[tags|https://tiddlywiki.com/#Tagging]], and [[fields|https://tiddlywiki.com/#TiddlerFields]].  This page describes only what's specific to the recipe edition.
+
+
+!! Getting started
+
+Use the "New Recipe" button (in the page toolbar on the right) to create your first recipe<%if [field:demo[yes]] %>, or clone one of the demos to see the conventions in action<% endif %>.  The template prefills the conventional sections so you can focus on the content.  Read on for the details of recipe structure, the reading and cooking views, and how to customize the wiki for yourself.
 
 
 !! Conventions
 
-A recipe is a tiddler tagged `Recipe`, usually plus a category tag like `Breakfast` or `Main`.  Categories are just tags — add a new one by typing it into the tag box in the edit mode of any recipe.  If you want that category to appear in the table of contents, open that tag itself, and add to //the Tag tiddler// the tag "TableOfContents".
+!!! Recipes
+
+A recipe is a tiddler tagged `Recipe`, usually plus a category tag like `Breakfast` or `Main`.  Categories are just tags — add a new one by typing it into the tag box in edit mode.  If you want a category to appear in the table of contents, open the tag tiddler itself and tag //it// with `TableOfContents`.
 
 The recipe body follows three section headings:
 
@@ -28,66 +34,62 @@ The story, context, or notes.
 # Second step.
 ```
 
-The reading and cooking views look for these headings to lay things out. A recipe that ignores the convention still renders — it just loses the split layout and step navigation.
+Tidbits looks for these headings to lay things out.  A recipe that ignores the convention still renders — it just loses the split layout and step navigation.
 
-Ingredients are written as inline wiki links.  Each link creates an ingredient tiddler implicitly; the backlinks then tell you which recipes use it. Canonical ingredient tiddlers carry the `Ingredient` tag and an extended description. They may also list lowercase or plural variants in an `aliases` field, so `[[garlic]]` in a recipe still links easily to the canonical `Garlic` page even when the linked title is missing.
+Ingredients are written as inline wiki links.  Each link creates an ingredient tiddler implicitly; the backlinks then tell you which recipes use it.  Canonical ingredient tiddlers carry the `Ingredient` tag and an extended description, and may list lowercase or plural variants in an `aliases` field — so `[[garlic]]` in a recipe still lets you navigate to the canonical `Garlic` page even when the linked title is missing.
 
-A recipe's `photo` field names a separate tiddler titled `<Recipe Title> (photo)`.  The photo tiddler holds either embedded image data or a `_canonical_uri` pointing to an external image.  Ingredient photos follow the same pattern.
+!!! Photos
 
-Recipes can also carry extra metadata fields like `servings`, `prep-time`, and `oven-temp` — whichever ones are set render in a strip above the body.  The registered list (and how each is displayed) is configurable in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/><$action-navigate $to="$:/ControlPanel"/>Recipes tab</$button> of the Control Panel.
+A recipe's or ingredient's `photo` field names a separate tiddler titled `<Title> (photo)`.  The photo tiddler holds either embedded image data or a `_canonical_uri` pointing to an external image.
+
+!!! Extra fields
+
+Recipes can carry extra metadata fields like `servings`, `prep-time`, and `oven-temp` — whichever ones are set render in a strip above the body.  The registered list (and how each is displayed) is configurable in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/><$action-navigate $to="$:/ControlPanel"/>Recipes tab</$button> of the Control Panel.
 
 Edition-specific templates, styling, and logic all live under `$:/community/recipes/`.
 
 
 !! Reading and cooking
 
+Tidbits shows recipe metadata and photo at the top, with ingredients and steps below.
 
-The default view shows recipe information and photo at the top, with ingredients and steps below that.
-
-The toolbar's cooking-mode button ( <$button class="tc-btn-invisible" tooltip="Cooking Mode on" aria-label="cooking-mode=on">{{$:/community/recipes/images/cooking-mode-icon}}</$button> ) hides chrome, showing only the the ingredients and steps.  It boosts the font size and pins the step nav to the bottom of the viewport.  On phones the ingredients column collapses to a toggle in the nav.  The cooking-mode off button ( <$button class="tc-btn-invisible" tooltip="Cooking mode off" aria-label="cooking-">{{$:/community/recipes/images/cooking-mode-off-icon}}</$button> ) returns to the main mode.
+The toolbar's cooking-mode button ( <$button class="tc-btn-invisible" tooltip="Cooking mode on" aria-label="enter cooking mode">{{$:/community/recipes/images/cooking-mode-icon}}</$button> ) hides chrome and shows only the ingredients and steps.  It boosts the font size and pins the step nav to the bottom of the viewport.  On phones the ingredients column collapses to a toggle in the nav.  The off button ( <$button class="tc-btn-invisible" tooltip="Cooking mode off" aria-label="exit cooking mode">{{$:/community/recipes/images/cooking-mode-off-icon}}</$button> ) returns to the main mode.
 
 Search and tag filtering work as in any TiddlyWiki.  Click an ingredient name in any recipe to see what else uses it.
 
-One platform note: TiddlyWiki can't reliably prevent your phone from sleeping while you cook.  If you're having issues, use your device's "stay awake" setting, or cast the wiki to a tablet on a stand.  Cooking-mode screen-wake works when the wiki is served over `HTTPS` or `localhost`; when served over `file://` it works only in some desktop browsers, not on phones.
+One platform note: TiddlyWiki can't reliably prevent your phone from sleeping while you cook.  If you're having issues, use your device's "stay awake" setting, or cast the wiki to a tablet on a stand.  Cooking-mode screen-wake works when the wiki is served over `HTTPS` or `localhost`; on `file://` it works only in some desktop browsers, not on phones.
 
 
-!! Writing your own recipes
+!! Writing your own
 
 The "New Recipe" ( {{$:/community/recipes/ui/Buttons/new-recipe}} ) button in the page controls creates a draft with the section headings prefilled.
 
-The Photo section in the edit view lets you upload an image or paste an external URL, plus credit the photographer, the source URL, and the source's name (e.g. Unsplash, TheMealDB).  Save commits the photo and links it from the recipe; Cancel discards everything.
+The Photo section in the edit view lets you upload an image or paste an external URL, plus credit the photographer, source URL, and source name (e.g. Unsplash, TheMealDB).  Save commits the photo and links it from the recipe; Cancel discards everything.
 
-When you type `[[` while editing, the AutoComplete plugin suggests existing ingredient names — when possible, pick one to keep your links consistent.  For case or spelling variants of a canonical ingredient, add the variant to its `aliases` field.  You can also use the usual TiddlyWiki links syntax to display one version of a name and link to another, such as `3 cloves [[garlic|Garlic]]`.
+When you type `[[` while editing, the AutoComplete plugin suggests existing ingredient names — pick one to keep your links consistent.  For case or spelling variants of a canonical ingredient, add the variant to its `aliases` field.  You can also use the standard wiki-link syntax to display one form and link to another, such as `3 cloves [[garlic|Garlic]]`.
 
+To create an ingredient, just tag any tiddler with `Ingredient` — no special template needed.  Tidbits renders the photo, description, and "Used in" list automatically.
 
-!! Writing your own ingredients
-
-Ingredients are plain tiddlers that have been tagged with "Ingredient".  No special templates are needed.  The same photo mechanism applies here.  If you have multiple variants of the same ingredient, you can add an `aliases` field, and add the variants here.  For instance, if your ingredient is `Eggs`, you might have an `aliases` field  with entries such as `Egg` and `eggs`.  
-
-
-!! Extending
-
-* ''Categories'' — just tag a recipe with a new word.
-* ''Styling'' — `$:/community/recipes/stylesheet` holds the entire edition's CSS in one tiddler.
-* ''Templates'' — view, edit, and button templates live under `$:/community/recipes/ui/`.
-* ''Plugins'' — Relink (rename safety) and AutoComplete (write-time suggestions) are bundled.  Drop in others using TiddlyWiki's standard plugin import.
 
 <%if [field:demo[yes]] %>
 
 !! Sample content
 
-This wiki contains example recipes and ingredients, each marked with a `demo: yes` field.  They show off the conventions and give you something to read while you get oriented.  When you're ready to start your own, [[Remove sample content|$:/community/recipes/ui/RemoveDemoContent]] lets you pick which categories, recipes, and ingredients to keep and which to remove.
+This wiki contains example recipes and ingredients, each marked with a `demo: yes` field.  They show off the conventions and give you something to read while you get oriented.  When you're ready to start your own, [[Remove sample content|$:/community/recipes/ui/RemoveDemoContent]] lets you pick which categories, recipes, and ingredients to remove and which to keep.
 
 <%else%>
 
-!! Empty Edition
+!! Empty edition
 
-This empty edition does not include any sample recipes or ingredients.  If you would like to add some for reference, you can download them from [[the community editions site|https://recipes.community.example.com/sample-data.json]] and drag the resulting file onto this wiki.
-
+This empty edition does not include any sample recipes or ingredients.  If you'd like some for reference, you can download them from [[the community editions site|https://recipes.community.example.com/sample-data.json]] and drag the file onto the wiki.
 
 <%endif%>
 
-!! Getting started
 
-Use the "New Recipe" button  ( {{$:/community/recipes/ui/Buttons/new-recipe}} -- in the page toolbar on the right)<%if [field:demo[yes]] %> or clone an existing demo one<% endif %> to create your first recipe.  The template prefills the conventional sections, so you can focus on the content.
+!! Customizing
 
+Standard TiddlyWiki settings — site title, subtitle, animation speed, username, default tiddlers — live in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/core/ui/ControlPanel/Info"/><$action-setfield $tiddler="$:/state/tab--2112689675" text="$:/core/ui/ControlPanel/Basics"/><$action-navigate $to="$:/ControlPanel"/>Basics tab</$button> of the Control Panel's Info section.
+
+Setting [[$:/SiteTitle]] overrides the tidbits logo at the top of this page.  Setting [[$:/DefaultTiddlers]] picks which tiddlers open at startup — for example, you might remove this [[About]] page and instead show your favourites with `[tag[Favorite]]`, or just `[[TableOfContents]]`.
+
+For deeper changes, the entire edition's CSS lives in `$:/community/recipes/stylesheet`, and the view, edit, and button templates live under `$:/community/recipes/ui/`.  Relink (rename safety) and AutoComplete (write-time suggestions) are bundled — drop in additional plugins using TiddlyWiki's standard plugin import.
