@@ -3,14 +3,22 @@ tags: $:/tags/ViewTemplate
 title: $:/community/recipes/ui/ViewTemplate/recipe-meta
 type: text/vnd.tiddlywiki
 
+\import [tag[$:/tags/community/recipes/procedure]]
 \whitespace trim
 <%if [all[current]tag[Recipe]] %>
 <div class="tc-recipe-meta">
-<%if [all[current]has[source]] %>
-<div class="tc-recipe-source"><a class="tc-tiddlylink-external" href={{{ [all[current]get[source]] }}} rel="noopener noreferrer" target="_blank">View original source</a></div>
-<% endif %>
-<%if [all[current]has[servings]] %>
-<div class="tc-recipe-servings">Servings: <$view field="servings"/></div>
-<% endif %>
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/extra-field]]" variable="extraFieldConfig">
+<$let fieldName={{{ [<extraFieldConfig>get[field-name]] }}}
+      caption={{{ [<extraFieldConfig>get[caption]] }}}
+      bodyText={{{ [<extraFieldConfig>get[text]] }}}>
+<%if [<currentTiddler>has<fieldName>] %>
+<$let field-value={{{ [<currentTiddler>get<fieldName>] }}}>
+<div class="tc-recipe-extra-field">
+<span class="tc-recipe-extra-field-caption"><<caption>></span>: <%if [<bodyText>!is[blank]] %><$transclude tiddler=<<extraFieldConfig>>/><%else%><<extra-field-default>><%endif%>
+</div>
+</$let>
+<%endif%>
+</$let>
+</$list>
 </div>
 <% endif %>

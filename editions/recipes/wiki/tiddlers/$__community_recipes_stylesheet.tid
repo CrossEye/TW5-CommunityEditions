@@ -68,7 +68,13 @@ type: text/vnd.tiddlywiki
     font-size: 0.9em;
     color: <<colour muted-foreground>>;
 }
-.tc-recipe-source { margin-right: 1.5em; }
+.tc-recipe-extra-field {
+    display: inline-block;
+    margin-right: 1.5em;
+}
+.tc-recipe-extra-field-caption {
+    font-weight: 500;
+}
 
 /* Recipe body layout */
 .tc-recipe-split {

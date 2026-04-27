@@ -1,0 +1,7 @@
+title: $:/community/recipes/procedures/extra-field-default
+tags: $:/tags/community/recipes/procedure
+type: text/vnd.tiddlywiki
+
+\procedure extra-field-default()
+<<field-value>>
+\end

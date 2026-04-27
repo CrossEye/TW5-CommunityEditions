@@ -1,0 +1,7 @@
+title: $:/community/recipes/extra-fields/yield
+tags: $:/tags/community/recipes/extra-field
+field-name: yield
+caption: Yield
+list-after: $:/community/recipes/extra-fields/servings
+type: text/vnd.tiddlywiki
+

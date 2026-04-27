@@ -1,0 +1,7 @@
+title: $:/community/recipes/extra-fields/servings
+tags: $:/tags/community/recipes/extra-field
+field-name: servings
+caption: Servings
+list-after: $:/community/recipes/extra-fields/source
+type: text/vnd.tiddlywiki
+
