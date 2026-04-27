@@ -34,6 +34,8 @@ Ingredients are written as inline wiki links.  Each link creates an ingredient t
 
 A recipe's `photo` field names a separate tiddler titled `<Recipe Title> (photo)`.  The photo tiddler holds either embedded image data or a `_canonical_uri` pointing to an external image.  Ingredient photos follow the same pattern.
 
+Recipes can also carry extra metadata fields like `servings`, `prep-time`, and `oven-temp` — whichever ones are set render in a strip above the body.  The registered list (and how each is displayed) is configurable in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/><$action-navigate $to="$:/ControlPanel"/>Recipes tab</$button> of the Control Panel.
+
 Edition-specific templates, styling, and logic all live under `$:/community/recipes/`.
 
 
