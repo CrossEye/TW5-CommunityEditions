@@ -1,0 +1,20 @@
+created: 20260427192425411
+list-before: $:/core/ui/EditTemplate/fields
+modified: 20260427192429715
+tags: $:/tags/EditTemplate
+title: $:/community/recipes/ui/EditTemplate/extra-fields-hint
+type: text/vnd.tiddlywiki
+
+<%if [all[current]tag[Recipe]] %>
+
+!!! Additional recipe fields
+
+Any of these fields you enter will appear in a strip above the recipe: <$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/extra-field]get[field-name]!is[blank]sort[]]" variable="fname" join=", ">//<<fname>>//</$list>.
+
+You can manage this list in the <$button class="tc-btn-invisible tc-tiddlylink">
+  <$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/>
+  <$action-navigate $to="$:/ControlPanel"/>
+  Recipe tab
+</$button> of the Control Panel.
+
+<% endif %>
