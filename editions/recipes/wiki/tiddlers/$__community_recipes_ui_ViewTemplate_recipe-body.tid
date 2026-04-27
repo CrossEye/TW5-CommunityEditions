@@ -6,7 +6,8 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
      ingreds={{{ [<currentTiddler>get[text]splitregexp[!! Ingredients]last[]splitregexp[!! ]first[]] }}}
      stepCount={{{ [<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]count[]] }}}
      aboutContent={{{ [<currentTiddler>get[text]splitregexp[!! About]last[]splitregexp[!! ]first[]trim[]] }}}
-     photoTiddler={{{ [<currentTiddler>get[photo]] }}}>
+     photoTiddler={{{ [<currentTiddler>get[photo]] }}}
+     cookMode={{{ [[$:/state/community/recipes/cooking-mode]get[text]] }}}>
 <$set name="stepIdx" tiddler=<<stepState>> field="text" emptyValue="1">
 <$set name="ingrVisible" tiddler=<<ingrState>> field="text" emptyValue="hide">
 
@@ -30,15 +31,24 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 </div>
 <div class="tc-recipe-split-right">
 <strong>Steps</strong>
+<%if [<cookMode>!is[blank]] %>
 <$list filter="[<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]]" variable="stepText" counter="stepNum">
 <$button class={{{ [<stepNum>match<stepIdx>then[tc-step tc-step-active tc-btn-invisible]else[tc-step tc-btn-invisible]] }}}>
 <$action-setfield $tiddler=<<stepState>> text=<<stepNum>>/>
 <span class="tc-step-num"><<stepNum>>.</span>&#32;<$transclude $variable="stepText" $mode="inline"/>
 </$button>
 </$list>
+<% else %>
+<ol class="tc-recipe-steps">
+<$list filter="[<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]]" variable="stepText">
+<li><$transclude $variable="stepText" $mode="inline"/></li>
+</$list>
+</ol>
+<% endif %>
 </div>
 </div>
 
+<%if [<cookMode>!is[blank]] %>
 <div class="tc-stepview-nav">
 <%if [<stepIdx>!match[1]] %>
 <$button>
@@ -61,6 +71,7 @@ Next
 <span></span>
 <% endif %>
 </div>
+<% endif %>
 
 </$set>
 </$set>
