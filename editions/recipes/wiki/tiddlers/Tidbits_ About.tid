@@ -6,7 +6,7 @@ tags: TableOfContents
 title: Tidbits: About
 type: text/vnd.tiddlywiki
 
-<% if [[$:/SiteTitle]get[text]!is[blank]] %>
+<% if [[$:/SiteTitle]get[text]!is[blank]] +[lowercase[]!match[tidbits]] %>
 {{$:/community/recipes/images/tidbits-logo}}
 <% endif %>
 

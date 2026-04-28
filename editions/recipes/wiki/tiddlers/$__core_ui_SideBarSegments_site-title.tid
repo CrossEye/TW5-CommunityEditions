@@ -4,7 +4,7 @@ tags: $:/tags/SideBarSegment
 title: $:/core/ui/SideBarSegments/site-title
 type: text/vnd.tiddlywiki
 
-<$list filter="[[$:/SiteTitle]get[text]!is[blank]]" emptyMessage="""<$transclude $tiddler="$:/community/recipes/images/tidbits-logo" width='200'/>""">
+<$list filter="[[$:/SiteTitle]get[text]!is[blank]] +[lowercase[]!match[tidbits]]" emptyMessage="""<$transclude $tiddler="$:/community/recipes/images/tidbits-logo" width='200'/>""">
   <$link to="$:/core/ui/TopBar/menu">
 <h1 class="tc-site-title"><$transclude $tiddler="$:/SiteTitle" mode="inline"/></h1>
   </$link>

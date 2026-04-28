@@ -1,6 +1,6 @@
 caption: Customizing
 created: 20260428041156196
-modified: 20260428041206185
+modified: 20260428111506400
 tags: [[Tidbits: About]]
 title: Tidbits: Customizing
 type: text/vnd.tiddlywiki
@@ -8,6 +8,8 @@ type: text/vnd.tiddlywiki
 Standard TiddlyWiki settings — site title, subtitle, animation speed, username, default tiddlers — live in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/core/ui/ControlPanel/Info"/><$action-setfield $tiddler="$:/state/tab--2112689675" text="$:/core/ui/ControlPanel/Basics"/><$action-navigate $to="$:/ControlPanel"/>Basics tab</$button> of the Control Panel's Info section.
 
 Setting [[$:/SiteTitle]] overrides the tidbits logo at the top of this page.  Setting [[$:/DefaultTiddlers]] picks which tiddlers open at startup — for example, you might remove this [[Tidbits: About]] page and instead show your favourites with `[tag[Favorite]]`, or just `[[TableOfContents]]`.
+
+Edition-specific templates, styling, and logic all live under `$:/community/recipes/`.
 
 The [[Recipe Box]] dashboard is built from cards.  To add one, create a tiddler tagged `$:/tags/community/recipes/recipe-box-card`, give it a `caption` field for the header, and write whatever wikitext you like in the body.  Position it relative to the existing cards using a `list-before` or `list-after` field set to one of the built-in card titles (e.g. `$:/community/recipes/recipe-box-card/favorites`).
 
