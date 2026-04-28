@@ -265,6 +265,9 @@ type: text/vnd.tiddlywiki
 }
 
 /* Recipe Box dashboard */
+.tc-recipe-box-actions {
+    margin: 0 0 1.25em;
+}
 .tc-recipe-box-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
