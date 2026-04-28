@@ -5,7 +5,9 @@
   "description": "TiddlyWiki community editions",
   "scripts": {
     "start": "tiddlywiki editions/recipes/wiki --listen host=0.0.0.0",
-    "build": "tiddlywiki editions/recipes/wiki --build index",
+    "prebuild": "node scripts/reset-storylist.js",
+    "build": "tiddlywiki editions/recipes/wiki --deletetiddlers \"[[$:/StoryList]]\" --build index",
+    "postbuild": "node scripts/reset-storylist.js",
     "fetch-recipe": "node .meta/sandbox/recipes/scripts/fetch-recipe.js",
     "build-collection": "node .meta/sandbox/recipes/scripts/build-collection.js"
   },
