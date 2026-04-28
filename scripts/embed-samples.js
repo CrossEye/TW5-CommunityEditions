@@ -55,7 +55,10 @@ function injectSamples(html, samples) {
 		throw new Error("Tiddler store is not a JSON array");
 	}
 	var merged = existing.concat(samples);
-	var rebuilt = JSON.stringify(merged);
+	// Escape `</` as `<\/` to keep `</script>` inside tiddler text from
+	// terminating the enclosing <script> tag.  Matches TW's own offline
+	// save encoding; default JSON.stringify does not escape forward slashes.
+	var rebuilt = JSON.stringify(merged).replace(/<\//g, "<\\/");
 	return html.slice(0, contentStart) + rebuilt + html.slice(closeIdx);
 }
 
