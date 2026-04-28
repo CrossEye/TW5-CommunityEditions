@@ -280,16 +280,64 @@ type: text/vnd.tiddlywiki
     padding: 1em 1.25em;
 }
 .tc-recipe-box-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
     margin: 0 0 0.6em;
     padding-bottom: 0.4em;
     font-size: 1.1em;
     font-weight: 600;
     border-bottom: 1px solid <<colour tiddler-border>>;
 }
+.tc-image-recipe-box-card {
+    width: 1.1em;
+    height: 1.1em;
+    flex-shrink: 0;
+    color: <<colour muted-foreground>>;
+}
 .tc-recipe-box-tag-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.3em;
+}
+.tc-recipe-box-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.6em;
+}
+.tc-recipe-box-tile {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.tc-recipe-box-tile:hover {
+    text-decoration: none;
+}
+.tc-recipe-box-tile-photo {
+    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 4px;
+    background: <<colour tiddler-background>>;
+}
+.tc-recipe-box-tile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.tc-recipe-box-tile-photo-placeholder {
+    border: 1px dashed <<colour tiddler-border>>;
+}
+.tc-recipe-box-tile-title {
+    display: block;
+    font-size: 0.85em;
+    margin-top: 0.35em;
+    text-align: center;
+    line-height: 1.25;
+}
+.tc-recipe-box-empty {
+    color: <<colour muted-foreground>>;
 }
 
 /* Cooking-mode active: hide distractions, boost legibility */

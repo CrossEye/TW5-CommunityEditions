@@ -9,9 +9,13 @@ type: text/vnd.tiddlywiki
 </div>
 <div class="tc-recipe-box-grid">
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/recipe-box-card]!is[draft]]">
-<$let cardCaption={{{ [{!!caption}!is[blank]] ~[{!!title}] }}}>
+<$let cardCaption={{{ [{!!caption}!is[blank]] ~[{!!title}] }}}
+     cardIcon={{{ [{!!icon}!is[blank]] }}}>
 <section class="tc-recipe-box-card">
-<h2 class="tc-recipe-box-card-header"><<cardCaption>></h2>
+<h2 class="tc-recipe-box-card-header">
+<$list filter="[<cardIcon>!is[blank]is[tiddler]]" variable="ignore"><$transclude $tiddler=<<cardIcon>>/></$list>
+<span><<cardCaption>></span>
+</h2>
 <$transclude $mode="block"/>
 </section>
 </$let>

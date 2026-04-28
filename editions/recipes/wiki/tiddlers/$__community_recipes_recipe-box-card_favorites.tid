@@ -1,10 +1,21 @@
 caption: Favorites
 created: 20260427220000001
+icon: $:/community/recipes/images/recipe-box-card/favorites
 modified: 20260428034942282
 tags: $:/tags/community/recipes/recipe-box-card
 title: $:/community/recipes/recipe-box-card/favorites
 type: text/vnd.tiddlywiki
 
-<ul><$list filter="[tag[Recipe]tag[Favorite]]" emptyMessage="//Mark a recipe Favorite to see it here.//">
-<li><$link/></li>
-</$list></ul>
+\whitespace trim
+<div class="tc-recipe-box-tiles">
+<$list filter="[tag[Recipe]tag[Favorite]]" emptyMessage="<div class='tc-recipe-box-empty'>//Mark a recipe Favorite to see it here.//</div>">
+<$let photo={{{ [<currentTiddler>get[photo]] }}}>
+<$link class="tc-recipe-box-tile">
+<$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'></span>">
+<span class="tc-recipe-box-tile-photo"><$transclude $tiddler=<<photo>> $mode="block"/></span>
+</$list>
+<span class="tc-recipe-box-tile-title"><<currentTiddler>></span>
+</$link>
+</$let>
+</$list>
+</div>
