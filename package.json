@@ -6,8 +6,8 @@
   "scripts": {
     "start": "tiddlywiki editions/recipes/wiki --listen host=0.0.0.0",
     "prebuild": "node scripts/reset-storylist.js",
-    "build": "tiddlywiki editions/recipes/wiki --deletetiddlers \"[[$:/StoryList]]\" --build index",
-    "postbuild": "node scripts/reset-storylist.js",
+    "build": "tiddlywiki editions/recipes/wiki --deletetiddlers \"[[$:/StoryList]]\" --build empty",
+    "postbuild": "node scripts/reset-storylist.js && node scripts/embed-samples.js",
     "fetch-recipe": "node .meta/sandbox/recipes/scripts/fetch-recipe.js",
     "build-collection": "node .meta/sandbox/recipes/scripts/build-collection.js"
   },

@@ -9,10 +9,10 @@
         "tiddlywiki/snowwhite"
     ],
     "build": {
-        "index": [
+        "empty": [
             "--render",
             "$:/plugins/tiddlywiki/tiddlyweb/save/offline",
-            "index.html",
+            "tidbits_empty.html",
             "text/plain"
         ],
         "static": [
