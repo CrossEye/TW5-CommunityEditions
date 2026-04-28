@@ -1,0 +1,11 @@
+caption: Categories
+created: 20260427220000001
+modified: 20260427220000001
+tags: $:/tags/community/recipes/recipe-box-card
+title: $:/community/recipes/recipe-box-card/categories
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<div class="tc-table-of-contents">
+<<toc-selective-expandable "Category" exclude:"[has[excludeTOC]]" >>
+</div>

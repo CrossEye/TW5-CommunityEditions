@@ -1,0 +1,10 @@
+caption: Popular Ingredients
+created: 20260427220000001
+modified: 20260428035836511
+tags: $:/tags/community/recipes/recipe-box-card
+title: $:/community/recipes/recipe-box-card/popular-ingredients
+type: text/vnd.tiddlywiki
+
+<ul><$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first[10]]" emptyMessage="//Add some Ingredients, and they will show here.//">
+<li><$link/></li>
+</$list></ul>

@@ -1,0 +1,16 @@
+created: 20260427220000001
+modified: 20260428035142510
+title: Recipe Box
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<div class="tc-recipe-box-grid">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/recipe-box-card]!is[draft]]">
+<$let cardCaption={{{ [{!!caption}!is[blank]] ~[{!!title}] }}}>
+<section class="tc-recipe-box-card">
+<h2 class="tc-recipe-box-card-header"><<cardCaption>></h2>
+<$transclude $mode="block"/>
+</section>
+</$let>
+</$list>
+</div>

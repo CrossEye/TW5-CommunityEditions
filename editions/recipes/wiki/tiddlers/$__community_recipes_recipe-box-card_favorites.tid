@@ -1,0 +1,10 @@
+caption: Favorites
+created: 20260427220000001
+modified: 20260428034942282
+tags: $:/tags/community/recipes/recipe-box-card
+title: $:/community/recipes/recipe-box-card/favorites
+type: text/vnd.tiddlywiki
+
+<ul><$list filter="[tag[Recipe]tag[Favorite]]" emptyMessage="//Mark a recipe Favorite to see it here.//">
+<li><$link/></li>
+</$list></ul>

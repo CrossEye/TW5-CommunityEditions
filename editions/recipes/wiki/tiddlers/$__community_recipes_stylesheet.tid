@@ -264,6 +264,31 @@ type: text/vnd.tiddlywiki
     border-color: <<colour primary>>;
 }
 
+/* Recipe Box dashboard */
+.tc-recipe-box-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25em;
+    margin-bottom: 1em;
+}
+.tc-recipe-box-card {
+    border: 1px solid <<colour tiddler-border>>;
+    border-radius: 4px;
+    padding: 1em 1.25em;
+}
+.tc-recipe-box-card-header {
+    margin: 0 0 0.6em;
+    padding-bottom: 0.4em;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-bottom: 1px solid <<colour tiddler-border>>;
+}
+.tc-recipe-box-tag-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3em;
+}
+
 /* Cooking-mode active: hide distractions, boost legibility */
 <$list filter="[[$:/state/community/recipes/cooking-mode]get[text]!is[blank]]">
 .tc-subtitle,

@@ -1,0 +1,13 @@
+caption: Tags
+created: 20260427220000001
+modified: 20260427220000001
+tags: $:/tags/community/recipes/recipe-box-card
+title: $:/community/recipes/recipe-box-card/tags
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<div class="tc-recipe-box-tag-pills">
+<$list filter="[tag[Recipe]tags[]!match[Recipe]!match[Favorite]!tag[Category]] :sort:number[tagging[]tag[Recipe]count[]] +[reverse[]]" emptyMessage="//Tags from your recipes will appear here.//">
+<$macrocall $name="tag" tag=<<currentTiddler>>/>
+</$list>
+</div>
