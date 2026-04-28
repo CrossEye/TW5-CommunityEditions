@@ -1,0 +1,69 @@
+title: $:/community/recipes/modules/phone-home.js
+type: application/javascript
+module-type: startup
+
+/*\
+Stub for the phone-home compatibility check described in the edition
+design criteria.  The (future) editions tool will receive a payload
+describing what the wiki bundles and what core/plugin versions it has
+been tested against, and respond with newer compatibility-tested
+versions the user may wish to update to.
+
+This module collects the payload and is wired to run at startup, but
+does not actually contact any server.  Activate by setting
+$:/community/recipes/config/phone-home-enabled to "yes" -- even then,
+this stub only logs the payload it would send.
+\*/
+
+"use strict";
+
+exports.name = "community-recipes-phone-home";
+exports.platforms = ["browser"];
+exports.after = ["startup"];
+exports.synchronous = true;
+
+var ENABLED_TITLE = "$:/community/recipes/config/phone-home-enabled";
+var COMPATIBILITY_TAG = "$:/tags/community/recipes/compatibility";
+
+function isEnabled() {
+	var t = $tw.wiki.getTiddler(ENABLED_TITLE);
+	return !!(t && t.fields.text && t.fields.text.trim() === "yes");
+}
+
+function buildPayload() {
+	var entries = $tw.wiki.getTiddlersWithTag(COMPATIBILITY_TAG);
+	var core = null;
+	var plugins = [];
+	entries.forEach(function(title) {
+		var t = $tw.wiki.getTiddler(title);
+		if(!t) { return; }
+		var f = t.fields;
+		if(f.target === "core") {
+			core = {
+				minVersion: f["min-version"] || null,
+				minVersionVerified: f["min-version-verified"] === "yes",
+				testedVersions: ($tw.utils.parseStringArray(f["tested-versions"] || "")) || []
+			};
+		} else if(f.target === "plugin") {
+			plugins.push({
+				pluginTitle: f["plugin-title"] || null,
+				bundledVersion: f["bundled-version"] || null,
+				testedVersions: ($tw.utils.parseStringArray(f["tested-versions"] || "")) || [],
+				declaredCoreRange: f["declared-core-range"] || null
+			});
+		}
+	});
+	return {
+		edition: "tidbits-recipes",
+		editionVersion: $tw.wiki.getTiddlerText("$:/community/recipes/version") || null,
+		twCoreVersion: $tw.version || null,
+		core: core,
+		plugins: plugins
+	};
+}
+
+exports.startup = function() {
+	if(!isEnabled()) { return; }
+	var payload = buildPayload();
+	console.info("[community/recipes] phone-home stub: payload would be sent here", payload);
+};

@@ -1,0 +1,11 @@
+title: $:/community/recipes/compatibility/tw-core
+tags: $:/tags/community/recipes/compatibility
+target: core
+min-version: 5.3.0
+min-version-verified: no
+tested-versions: 5.4.0
+
+The minimum TW core version is derived from syntax features the
+edition uses (`\procedure`, `\parameters`, conditional shortcut
+syntax `<% if %>`), all introduced in 5.3.0.  Empirical verification
+is deferred to Phase 11 (release prep).

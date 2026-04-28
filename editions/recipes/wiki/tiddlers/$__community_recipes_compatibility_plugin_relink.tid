@@ -1,0 +1,11 @@
+title: $:/community/recipes/compatibility/plugin/relink
+tags: $:/tags/community/recipes/compatibility
+target: plugin
+plugin-title: $:/plugins/flibbles/relink
+bundled-version: 2.5.3
+tested-versions: 2.5.3
+declared-core-range: 5.1.22 - 5.3.8
+
+Relink 2.5.3 declares compatibility through TW 5.3.8, but we test
+against 5.4.0 in practice with no observed issues.  Re-evaluate when
+either TW core or Relink ships a new version.

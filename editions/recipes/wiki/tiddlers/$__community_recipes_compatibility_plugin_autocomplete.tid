@@ -1,0 +1,7 @@
+title: $:/community/recipes/compatibility/plugin/autocomplete
+tags: $:/tags/community/recipes/compatibility
+target: plugin
+plugin-title: $:/plugins/EvidentlyCube/AutoComplete
+bundled-version: 1.0.24
+tested-versions: 1.0.24
+declared-core-range: >=5.2.2
