@@ -1,4 +1,4 @@
-caption: Popular Ingredients
+caption: Common Ingredients
 created: 20260427220000001
 icon: $:/community/recipes/images/recipe-box-card/ingredients
 modified: 20260428035836511
@@ -7,8 +7,9 @@ title: $:/community/recipes/recipe-box-card/popular-ingredients
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+<$let limit={{{ [<isActive>match[expanded]then[10]else[3]] }}}>
 <div class="tc-recipe-box-tiles">
-<$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first[10]]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
+<$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first<limit>]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
 <$let photo={{{ [<currentTiddler>get[photo]] }}}>
 <$link class="tc-recipe-box-tile">
 <$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'>{{$:/community/recipes/images/photo-placeholder}}</span>">
@@ -19,3 +20,4 @@ type: text/vnd.tiddlywiki
 </$let>
 </$list>
 </div>
+</$let>

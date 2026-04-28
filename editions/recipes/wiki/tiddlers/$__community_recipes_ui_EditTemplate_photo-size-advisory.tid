@@ -1,0 +1,20 @@
+title: $:/community/recipes/ui/EditTemplate/photo-size-advisory
+type: text/vnd.tiddlywiki
+
+<details class="tc-recipe-photo-advisory">
+<summary>⚠ ''Be very cautious of large photos'' — read more…</summary>
+<div class="tc-recipe-photo-advisory-body">
+
+Inlined uploads ("Upload image…") are stored directly in your wiki, so an oversized photo permanently grows the wiki file by its full size — we once embedded a 15 MB picture of //butter//.  ''1000 pixels wide is plenty'' for both the recipe view and cooking mode; anything more is wasted bytes.
+
+External URLs ("Paste image URL…") save your wiki size, but a giant remote image still slows the page noticeably while the browser fetches and downsamples it.  If you're linking to your own photos, your host may let you pick a width.
+
+You'll need the //direct image URL// — the one ending in `.jpg`, `.png`, etc. — not the share or album-page URL from your browser's address bar.  Right-click the image (or long-press on a phone) and choose "Copy image address" (Chrome/Edge) or "Copy image link" (Firefox/Safari).  Then:
+
+* ''Google Photos'' — append `=w1000` to the URL (e.g. `…googleusercontent.com/…=w1000`)
+* ''Flickr'' — the URL ends with a size suffix like `_h.jpg` or `_k.jpg`; change it to `_b.jpg` for ~1024 px wide
+
+If your host has no width control, save the photo locally, resize it to ~1000 px wide, and either upload it directly here or re-host the smaller copy.
+
+</div>
+</details>

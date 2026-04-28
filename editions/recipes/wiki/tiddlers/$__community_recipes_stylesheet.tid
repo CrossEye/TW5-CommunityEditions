@@ -181,6 +181,38 @@ type: text/vnd.tiddlywiki
 }
 
 /* Photo section in edit templates */
+.tc-recipe-photo-advisory {
+    margin: 0 0 0.8em;
+    padding: 0.5em 0.75em;
+    border-left: 3px solid <<colour primary>>;
+    background: <<colour table-header-background>>;
+    border-radius: 0 4px 4px 0;
+    font-size: 0.92em;
+}
+.tc-recipe-photo-advisory > summary {
+    cursor: pointer;
+    list-style: none;
+}
+.tc-recipe-photo-advisory > summary::-webkit-details-marker {
+    display: none;
+}
+.tc-recipe-photo-advisory > summary::before {
+    content: "▸";
+    display: inline-block;
+    width: 1em;
+    color: <<colour muted-foreground>>;
+    transition: transform 0.15s ease;
+}
+.tc-recipe-photo-advisory[open] > summary::before {
+    transform: rotate(90deg);
+}
+.tc-recipe-photo-advisory ul {
+    margin: 0.4em 0;
+    padding-left: 1.5em;
+}
+.tc-recipe-photo-advisory p:last-child {
+    margin-bottom: 0;
+}
 .tc-recipe-photo-edit-section {
     margin: 0 0 1em;
     padding: 0.75em 1em;
@@ -383,7 +415,7 @@ type: text/vnd.tiddlywiki
 }
 .tc-recipe-box-tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 0.6em;
 }
 .tc-recipe-box-tile {
