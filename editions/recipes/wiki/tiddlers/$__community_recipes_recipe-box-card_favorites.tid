@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 <$list filter="[tag[Recipe]tag[Favorite]]" emptyMessage="<div class='tc-recipe-box-empty'>//Mark a recipe Favorite to see it here.//</div>">
 <$let photo={{{ [<currentTiddler>get[photo]] }}}>
 <$link class="tc-recipe-box-tile">
-<$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'></span>">
+<$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'>{{$:/community/recipes/images/photo-placeholder}}</span>">
 <span class="tc-recipe-box-tile-photo"><$transclude $tiddler=<<photo>> $mode="block"/></span>
 </$list>
 <span class="tc-recipe-box-tile-title"><<currentTiddler>></span>

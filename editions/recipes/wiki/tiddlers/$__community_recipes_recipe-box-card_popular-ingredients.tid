@@ -6,6 +6,16 @@ tags: $:/tags/community/recipes/recipe-box-card
 title: $:/community/recipes/recipe-box-card/popular-ingredients
 type: text/vnd.tiddlywiki
 
-<ul><$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first[10]]" emptyMessage="//Add some Ingredients, and they will show here.//">
-<li><$link/></li>
-</$list></ul>
+\whitespace trim
+<div class="tc-recipe-box-tiles">
+<$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first[10]]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
+<$let photo={{{ [<currentTiddler>get[photo]] }}}>
+<$link class="tc-recipe-box-tile">
+<$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'>{{$:/community/recipes/images/photo-placeholder}}</span>">
+<span class="tc-recipe-box-tile-photo"><$transclude $tiddler=<<photo>> $mode="block"/></span>
+</$list>
+<span class="tc-recipe-box-tile-title"><<currentTiddler>></span>
+</$link>
+</$let>
+</$list>
+</div>

@@ -11,6 +11,6 @@ type: text/vnd.tiddlywiki
 <% endif %>
 
 <$list filter="[enlist{!!list}]">
-<h2>{{!!caption}}</h2>
+<h2><%if [<currentTiddler>has[icon]] %><span class="tc-tidbits-section-icon">{{!!icon}}</span>&#32;<% endif %>{{!!caption}}</h2>
 <$transclude $mode="block"/>
 </$list>

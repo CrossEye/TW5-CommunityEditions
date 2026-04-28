@@ -1,23 +1,33 @@
 created: 20260427220000001
-modified: 20260428145523573
+modified: 20260428035142510
 title: Recipe Box
 type: text/vnd.tiddlywiki
 
 \whitespace trim
 <div class="tc-recipe-box-actions">
-//Create a new Recipe//: &nbsp;{{$:/community/recipes/ui/Buttons/new-recipe}}
+<$button class="tc-btn-invisible tc-recipe-box-new-recipe" tooltip="Create a new recipe" aria-label="new recipe">
+<$action-sendmessage $message="tm-new-tiddler" tags="Recipe" text={{{ [[$:/community/recipes/templates/new-recipe]get[text]] }}}/>
+{{$:/community/recipes/images/new-recipe}}&#32;New Recipe
+</$button>
 </div>
-<div class="tc-recipe-box-grid">
-<$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/recipe-box-card]!is[draft]]">
-<$let cardCaption={{{ [{!!caption}!is[blank]] ~[{!!title}] }}}
-     cardIcon={{{ [{!!icon}!is[blank]] }}}>
-<section class="tc-recipe-box-card">
-<h2 class="tc-recipe-box-card-header">
+
+<$let activeCard={{{ [[$:/state/community/recipes/recipe-box/active]get[text]] ~[all[shadows+tiddlers]tag[$:/tags/community/recipes/recipe-box-card]!is[draft]first[]] }}}>
+<div class="tc-recipe-box">
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/recipe-box-card]!is[draft]]" variable="cardTitle">
+<$let cardCaption={{{ [<cardTitle>get[caption]!is[blank]] ~[<cardTitle>] }}}
+     cardIcon={{{ [<cardTitle>get[icon]!is[blank]] }}}
+     isActive={{{ [<cardTitle>match<activeCard>then[expanded]else[collapsed]] }}}>
+<section class={{{ [[tc-recipe-box-card]] [<isActive>addprefix[tc-recipe-box-card-]] +[join[ ]] }}}>
+<$button class="tc-recipe-box-card-header tc-btn-invisible" tooltip=<<cardCaption>>>
+<$action-setfield $tiddler="$:/state/community/recipes/recipe-box/active" text=<<cardTitle>>/>
 <$list filter="[<cardIcon>!is[blank]is[tiddler]]" variable="ignore"><$transclude $tiddler=<<cardIcon>>/></$list>
-<span><<cardCaption>></span>
-</h2>
-<$transclude $mode="block"/>
+<span class="tc-recipe-box-card-title"><<cardCaption>></span>
+</$button>
+<div class="tc-recipe-box-card-body">
+<$transclude $tiddler=<<cardTitle>> $mode="block"/>
+</div>
 </section>
 </$let>
 </$list>
 </div>
+</$let>
