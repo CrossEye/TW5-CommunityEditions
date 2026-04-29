@@ -1,0 +1,15 @@
+title: $:/community/recipes/images/tidbits/recipes
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<rect x="50" y="8" width="28" height="14" rx="3" fill="#c8905c"/>
+<rect x="20" y="20" width="88" height="96" rx="6" fill="#fffcf7" stroke="#e06820" stroke-width="4"/>
+<rect x="48" y="14" width="32" height="18" rx="3" fill="#e06820"/>
+<rect x="32" y="40" width="32" height="6" rx="1.5" fill="#e06820"/>
+<line x1="32" y1="54" x2="96" y2="54" stroke="#c8905c" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="32" y1="62" x2="86" y2="62" stroke="#c8905c" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="32" y="74" width="32" height="6" rx="1.5" fill="#e06820"/>
+<line x1="32" y1="88" x2="96" y2="88" stroke="#c8905c" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="32" y1="96" x2="80" y2="96" stroke="#c8905c" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="32" y="106" width="32" height="6" rx="1.5" fill="#e06820"/>
+</svg>

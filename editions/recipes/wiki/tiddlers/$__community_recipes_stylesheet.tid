@@ -4,6 +4,27 @@ tags: $:/tags/Stylesheet
 title: $:/community/recipes/stylesheet
 type: text/vnd.tiddlywiki
 
+/* Tidbits section icons (in About-page H2 headings) */
+.tc-tidbits-section-icon {
+    display: inline-block;
+    line-height: 1;
+}
+.tc-image-tidbits-icon {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: -0.18em;
+}
+/* In the standalone-tiddler titlebar, TW core puts `vertical-align:
+   middle` on the wrapper span, which shifts the icon up onto the line
+   midpoint and changes the reference frame for our `-0.18em` rule.
+   Match the About wrapper's behaviour so the same SVG rule produces
+   the same alignment in both contexts. */
+.tc-titlebar .tc-tiddler-title-icon {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline;
+}
+
 /* Recipe index tag filter */
 .tc-recipe-filter {
     margin-bottom: 1em;

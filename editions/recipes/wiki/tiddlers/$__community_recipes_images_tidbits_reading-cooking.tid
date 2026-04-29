@@ -1,0 +1,13 @@
+title: $:/community/recipes/images/tidbits/reading-cooking
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<path d="M 42 32 C 47 24 37 14 42 6" stroke="#c8905c" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M 64 34 C 69 26 59 16 64 8" stroke="#c8905c" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M 86 32 C 91 24 81 14 86 6" stroke="#c8905c" stroke-width="4" stroke-linecap="round" fill="none"/>
+<rect x="16" y="44" width="96" height="14" rx="3" fill="#e06820"/>
+<line x1="24" y1="51" x2="104" y2="51" stroke="#fffcf7" stroke-width="2" stroke-linecap="round"/>
+<path d="M 26 58 L 30 104 Q 30 114 40 114 L 88 114 Q 98 114 98 104 L 102 58 Z" fill="#fffcf7" stroke="#e06820" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 16 64 Q 6 64 6 74 Q 6 82 16 82" fill="none" stroke="#e06820" stroke-width="4" stroke-linecap="round"/>
+<path d="M 112 64 Q 122 64 122 74 Q 122 82 112 82" fill="none" stroke="#e06820" stroke-width="4" stroke-linecap="round"/>
+</svg>

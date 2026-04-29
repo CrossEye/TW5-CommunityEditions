@@ -1,0 +1,10 @@
+title: $:/community/recipes/images/tidbits/extra-fields
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<path d="M 88 24 Q 96 16 108 16" stroke="#c8905c" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+<path d="M 14 64 L 56 22 Q 60 18 66 18 L 102 18 Q 110 18 110 26 L 110 62 Q 110 68 106 72 L 64 114 Q 60 118 56 114 L 14 72 Q 10 68 14 64 Z" fill="#fffcf7" stroke="#e06820" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="86" cy="42" r="7" fill="#fffcf7" stroke="#e06820" stroke-width="3"/>
+<line x1="38" y1="74" x2="60" y2="96" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="50" y1="64" x2="76" y2="90" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+</svg>

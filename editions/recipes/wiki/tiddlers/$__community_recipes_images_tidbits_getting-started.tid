@@ -1,0 +1,13 @@
+title: $:/community/recipes/images/tidbits/getting-started
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<path d="M 44 70 L 26 92 L 26 102 L 44 96 Z" fill="#e06820" stroke="#e06820" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 84 70 L 102 92 L 102 102 L 84 96 Z" fill="#e06820" stroke="#e06820" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 64 12 Q 80 28 84 60 L 84 96 L 44 96 L 44 60 Q 48 28 64 12 Z" fill="#fffcf7" stroke="#e06820" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="64" cy="50" r="9" fill="#e06820"/>
+<circle cx="64" cy="50" r="4.5" fill="#fffcf7"/>
+<line x1="46" y1="80" x2="82" y2="80" stroke="#e06820" stroke-width="3" stroke-linecap="round"/>
+<path d="M 50 96 Q 56 116 64 122 Q 72 116 78 96 Z" fill="#e06820" stroke="#e06820" stroke-width="2" stroke-linejoin="round"/>
+<path d="M 56 100 Q 60 110 64 116 Q 68 110 72 100 Z" fill="#c8905c"/>
+</svg>

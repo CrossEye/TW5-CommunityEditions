@@ -1,0 +1,14 @@
+title: $:/community/recipes/images/tidbits/writing
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<g transform="rotate(-40 64 64)">
+<rect x="14" y="50" width="16" height="28" rx="3" fill="#e06820" stroke="#e06820" stroke-width="2"/>
+<rect x="30" y="50" width="10" height="28" fill="#c8905c"/>
+<line x1="30" y1="58" x2="40" y2="58" stroke="#fffcf7" stroke-width="1.5"/>
+<line x1="30" y1="70" x2="40" y2="70" stroke="#fffcf7" stroke-width="1.5"/>
+<rect x="40" y="50" width="60" height="28" fill="#fffcf7" stroke="#e06820" stroke-width="3.5"/>
+<path d="M 100 50 L 116 64 L 100 78 Z" fill="#c8905c" stroke="#e06820" stroke-width="3.5" stroke-linejoin="round"/>
+<path d="M 110 57 L 116 64 L 110 71 Z" fill="#2a2a2a"/>
+</g>
+</svg>

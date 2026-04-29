@@ -1,0 +1,13 @@
+title: $:/community/recipes/images/tidbits/photos
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<path d="M 44 28 L 50 18 Q 52 16 54 16 L 74 16 Q 76 16 78 18 L 84 28 Z" fill="#fffcf7" stroke="#e06820" stroke-width="3.5" stroke-linejoin="round"/>
+<rect x="14" y="28" width="100" height="76" rx="6" fill="#fffcf7" stroke="#e06820" stroke-width="4"/>
+<rect x="92" y="38" width="14" height="8" rx="1.5" fill="#e06820"/>
+<circle cx="24" cy="40" r="3.5" fill="#c8905c"/>
+<circle cx="64" cy="68" r="22" fill="#e06820"/>
+<circle cx="64" cy="68" r="14" fill="#fffcf7"/>
+<circle cx="64" cy="68" r="8" fill="#c8905c"/>
+<circle cx="60" cy="64" r="3" fill="#fffcf7"/>
+</svg>

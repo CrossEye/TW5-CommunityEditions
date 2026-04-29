@@ -1,0 +1,11 @@
+title: $:/community/recipes/images/tidbits/customizing
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<path d="M 30 30 Q 14 60 26 96 Q 40 120 70 116 Q 110 110 114 76 Q 116 50 90 38 Q 70 28 50 28 Q 36 28 30 30 Z" fill="#fffcf7" stroke="#e06820" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="84" cy="82" rx="12" ry="9" fill="none" stroke="#e06820" stroke-width="3"/>
+<circle cx="46" cy="50" r="9" fill="#e06820"/>
+<circle cx="72" cy="46" r="8" fill="#c8905c"/>
+<circle cx="38" cy="78" r="8" fill="#2a2a2a"/>
+<circle cx="100" cy="58" r="8" fill="#fffcf7" stroke="#e06820" stroke-width="2.5"/>
+</svg>

@@ -1,0 +1,16 @@
+title: $:/community/recipes/images/tidbits/intro
+tags: $:/tags/Image
+
+<svg xmlns="http://www.w3.org/2000/svg" class="tc-image-tidbits-icon" viewBox="0 0 128 128">
+<path d="M 14 28 Q 14 22 20 22 L 60 22 Q 64 22 64 28 L 64 106 Q 64 112 58 112 L 14 112 Z" fill="#fffcf7" stroke="#e06820" stroke-width="4" stroke-linejoin="round"/>
+<path d="M 114 28 Q 114 22 108 22 L 68 22 Q 64 22 64 28 L 64 106 Q 64 112 70 112 L 114 112 Z" fill="#fffcf7" stroke="#e06820" stroke-width="4" stroke-linejoin="round"/>
+<line x1="64" y1="22" x2="64" y2="112" stroke="#e06820" stroke-width="4"/>
+<line x1="22" y1="40" x2="56" y2="40" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="22" y1="56" x2="56" y2="56" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="22" y1="72" x2="48" y2="72" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="22" y1="88" x2="56" y2="88" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="72" y1="40" x2="106" y2="40" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="72" y1="56" x2="106" y2="56" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="72" y1="72" x2="94" y2="72" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+<line x1="72" y1="88" x2="106" y2="88" stroke="#c8905c" stroke-width="3" stroke-linecap="round"/>
+</svg>
