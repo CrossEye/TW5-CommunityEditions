@@ -12,6 +12,6 @@ This wiki contains example recipes and ingredients, each marked with a `demo: ye
 
 <%else%>
 
-This empty edition does not include any sample recipes or ingredients.  If you'd like some for reference, you can download them from [[the community editions site|https://recipes.community.example.com/sample-data.json]] (''warning'': temporary non-functioning placeholder) and drag the file onto the wiki.
+This empty edition does not include any sample recipes or ingredients.  If you'd like some for reference, browse the <a href={{$:/community/recipes/config/sample-data-url}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">available sample collections</a>, download one, and drag the JSON file onto the wiki.  //(Temporary location; will move when the editions site ships.)//
 
 <%endif%>

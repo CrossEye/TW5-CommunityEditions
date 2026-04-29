@@ -1,11 +1,13 @@
 /*
- * Produce tidbits.html by embedding sample tiddlers into tidbits_empty.html.
+ * Produce tidbits.html by embedding the default sample collection into
+ * tidbits_empty.html.
  *
- * The sample JSON files in editions/recipes/samples/ are each a JSON array
- * of tiddler objects.  We append them to the empty wiki's
- * tiddlywiki-tiddler-store script element (also a JSON array) and write
- * the result to tidbits.html.  Side-stepping a second TiddlyWiki build
- * avoids the filesystem-syncer save-back of every loaded sample.
+ * The default sample (DEFAULT_SAMPLE) is one JSON array of tiddler objects,
+ * appended to the empty wiki's tiddlywiki-tiddler-store script element.
+ * Other sample collections in editions/recipes/samples/ remain available as
+ * downloadable alternates (published via copy-to-docs.js) but are not
+ * embedded.  Side-stepping a second TiddlyWiki build avoids the
+ * filesystem-syncer save-back of every loaded sample.
  */
 
 "use strict";
@@ -15,28 +17,23 @@ var path = require("path");
 
 var OUTPUT_DIR = path.join("editions", "recipes", "wiki", "output");
 var SAMPLES_DIR = path.join("editions", "recipes", "samples");
+var DEFAULT_SAMPLE = "32-recipes-us.json";
 
 var EMPTY_PATH = path.join(OUTPUT_DIR, "tidbits_empty.html");
 var FULL_PATH = path.join(OUTPUT_DIR, "tidbits.html");
+var SAMPLE_PATH = path.join(SAMPLES_DIR, DEFAULT_SAMPLE);
 
 var STORE_OPEN = '<script class="tiddlywiki-tiddler-store" type="application/json">';
 var STORE_CLOSE = "</script>";
 
 function loadSamples() {
-	var files = fs.readdirSync(SAMPLES_DIR).filter(function(f) {
-		return f.endsWith(".json");
-	}).sort();
-	var all = [];
-	files.forEach(function(f) {
-		var raw = fs.readFileSync(path.join(SAMPLES_DIR, f), "utf8");
-		var arr = JSON.parse(raw);
-		if(!Array.isArray(arr)) {
-			throw new Error("Sample file is not a JSON array: " + f);
-		}
-		all = all.concat(arr);
-		console.log("  + " + f + " (" + arr.length + " tiddlers)");
-	});
-	return all;
+	var raw = fs.readFileSync(SAMPLE_PATH, "utf8");
+	var arr = JSON.parse(raw);
+	if(!Array.isArray(arr)) {
+		throw new Error("Sample file is not a JSON array: " + SAMPLE_PATH);
+	}
+	console.log("  + " + DEFAULT_SAMPLE + " (" + arr.length + " tiddlers)");
+	return arr;
 }
 
 function injectSamples(html, samples) {
@@ -62,9 +59,8 @@ function injectSamples(html, samples) {
 	return html.slice(0, contentStart) + rebuilt + html.slice(closeIdx);
 }
 
-console.log("Loading samples from " + SAMPLES_DIR);
+console.log("Loading default sample from " + SAMPLE_PATH);
 var samples = loadSamples();
-console.log("Loaded " + samples.length + " sample tiddlers total");
 
 console.log("Reading " + EMPTY_PATH);
 var html = fs.readFileSync(EMPTY_PATH, "utf8");
