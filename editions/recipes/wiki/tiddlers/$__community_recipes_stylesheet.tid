@@ -463,6 +463,40 @@ type: text/vnd.tiddlywiki
     color: <<colour muted-foreground>>;
 }
 
+/* Phone layout: drop the horizontal accordion, show every card in a
+   simple 2-column grid with its body always visible.  Triggers on
+   portrait phones (any width <=599px) and on phones in landscape
+   (<=932px combined with landscape orientation, which excludes iPads
+   and other tablets that would otherwise share the wider width). */
+@media (max-width: 599px),
+       (max-width: 932px) and (orientation: landscape) {
+    .tc-recipe-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        min-height: 0;
+    }
+    .tc-recipe-box-card,
+    .tc-recipe-box-card-collapsed,
+    .tc-recipe-box-card-expanded {
+        flex: initial;
+        max-width: none;
+        min-width: 0;
+    }
+    .tc-recipe-box-card-collapsed .tc-recipe-box-card-body {
+        overflow: visible;
+    }
+    .tc-recipe-box-card-collapsed .tc-recipe-box-card-header {
+        cursor: default;
+    }
+    .tc-recipe-box-card-collapsed:hover {
+        border-color: <<colour table-border>>;
+    }
+    .tc-recipe-box-card-collapsed .tc-recipe-box-card-header::after {
+        content: none;
+    }
+}
+
 /* Cooking-mode active: hide distractions, boost legibility */
 <$list filter="[[$:/state/community/recipes/cooking-mode]get[text]!is[blank]]">
 .tc-subtitle,
