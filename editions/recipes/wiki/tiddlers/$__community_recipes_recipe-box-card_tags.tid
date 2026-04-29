@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 \whitespace trim
 <div class="tc-recipe-box-tag-pills">
-<$list filter="[tag[Recipe]tags[]!match[Recipe]!match[Favorite]!tag[Category]] :sort:number[tagging[]tag[Recipe]count[]] +[reverse[]]" emptyMessage="//Tags from your recipes will appear here.//">
+<$list filter="[tag[Recipe]tags[]!match[Recipe]!match[Favorite]!tag[Category]] :sort:number[tagging[]tag[Recipe]count[]] +[reverse[]]" emptyMessage="<div class='tc-recipe-box-empty'>//Tags from your recipes will appear here.//</div>">
 <$macrocall $name="tag" tag=<<currentTiddler>>/>
 </$list>
 </div>

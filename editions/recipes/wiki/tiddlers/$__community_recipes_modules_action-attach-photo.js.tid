@@ -56,6 +56,7 @@ ActionAttachPhotoWidget.prototype.invokeAction = function(triggeringWidget, even
 			self.wiki.addTiddler(new $tw.Tiddler({
 				title: photoTitle,
 				type: file.type,
+				tags: "Photo",
 				text: base64
 			}));
 			if(stateTitle) {

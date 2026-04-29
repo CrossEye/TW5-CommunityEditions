@@ -1,10 +1,10 @@
 caption: Extra fields
 created: 20260428111428816
 icon: 🏷️
-modified: 20260428111431520
+modified: 20260429051758798
 tags: [[Tidbits: Conventions]]
 title: Tidbits: Extra fields
 type: text/vnd.tiddlywiki
 
-Recipes can carry extra metadata fields like `servings`, `prep-time`, and `oven-temp` — whichever ones are set render in a strip above the body.  The registered list (and how each is displayed) is configurable in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/><$action-navigate $to="$:/ControlPanel"/>Recipes tab</$button> of the Control Panel.
+Recipes can carry extra metadata fields like `servings`, `prep-time`, and `oven-temp` — whichever ones are set render in a strip above the body.  The registered list (and how each is displayed) is configurable in the <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/><$action-navigate $to="$:/ControlPanel"/>Recipes tab</$button> of the Control Panel.  Adding fields beyond this list is always fine — that's the TiddlyWiki way.  Only the registered ones appear in the strip.
 

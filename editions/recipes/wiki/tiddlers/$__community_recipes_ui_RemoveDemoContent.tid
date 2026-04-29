@@ -62,6 +62,16 @@ type: text/vnd.tiddlywiki
 <$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="no"/>
 </$list>
 \end
+\define check-all-misc()
+<$list filter="[field:demo[yes]is[system]]" variable="t">
+<$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="yes"/>
+</$list>
+\end
+\define uncheck-all-misc()
+<$list filter="[field:demo[yes]is[system]]" variable="t">
+<$action-setfield $tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} text="no"/>
+</$list>
+\end
 
 !! Remove these Recipes
 
@@ -124,6 +134,29 @@ You may also choose to remove the sample categories:
 </tbody>
 </table>
 
+<$list filter="[field:demo[yes]is[system]limit[1]]" variable="ignore">
+
+!! Miscellaneous
+
+Settings or other system tiddlers that came in with the sample content.
+
+<table class="tc-remove-demo-table">
+<thead><tr>
+<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/misc" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-misc>> uncheckactions=<<uncheck-all-misc>>/></th>
+<th style="padding:4px 12px">Tiddler</th>
+</tr></thead>
+<tbody>
+<$list filter="[field:demo[yes]is[system]sort[title]]" variable="t">
+<tr>
+<td style="text-align:center"><$checkbox tiddler={{{ [[$:/state/community/recipes/remove-demo/]addsuffix<t>] }}} field="text" checked="yes" unchecked="no" default="yes"/></td>
+<td><$link to=<<t>>/></td>
+</tr>
+</$list>
+</tbody>
+</table>
+
+</$list>
+
 ---
 
 <$button class="tc-btn-default">
@@ -132,6 +165,7 @@ You may also choose to remove the sample categories:
 <$action-deletetiddler $filter="[field:demo[yes]tag[Ingredient]] -[prefix[$:/state/community/recipes/remove-demo/]field:text[no]removeprefix[$:/state/community/recipes/remove-demo/]] +[get[photo]!is[blank]] -[prefix[$:/state/community/recipes/remove-demo/]field:text[no]removeprefix[$:/state/community/recipes/remove-demo/]]"/>
 <$action-deletetiddler $filter="[field:demo[yes]tag[Ingredient]] -[prefix[$:/state/community/recipes/remove-demo/]field:text[no]removeprefix[$:/state/community/recipes/remove-demo/]]"/>
 <$action-deletetiddler $filter="[prefix[$:/state/community/recipes/remove-demo/]field:text[yes]removeprefix[$:/state/community/recipes/remove-demo/]] +[tag[Category]]"/>
+<$action-deletetiddler $filter="[field:demo[yes]is[system]] -[prefix[$:/state/community/recipes/remove-demo/]field:text[no]removeprefix[$:/state/community/recipes/remove-demo/]]"/>
 <$action-deletetiddler $filter="[prefix[$:/state/community/recipes/remove-demo/]] [prefix[$:/state/community/recipes/remove-demo-section/]]"/>
 <$action-sendmessage $message="tm-close-tiddler" $param="$:/community/recipes/ui/RemoveDemoContent"/>
 Remove Selected Items

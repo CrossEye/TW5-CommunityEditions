@@ -1,0 +1,19 @@
+tags: $:/tags/Global
+title: $:/community/recipes/macros/photo-attribution-body
+
+\procedure photo-attribution-body()
+\whitespace trim
+<summary>Attribution</summary>
+<div class="tc-recipe-photo-form-field">
+<label>Photographer</label>
+<$edit-text tiddler=<<photographerState>> field="text" placeholder="Name or credit" default="" tag="input"/>
+</div>
+<div class="tc-recipe-photo-form-field">
+<label>Photo source</label>
+<$edit-text tiddler=<<photoSourceState>> field="text" placeholder="URL or publication" default="" tag="input"/>
+</div>
+<div class="tc-recipe-photo-form-field">
+<label>Source name</label>
+<$edit-text tiddler=<<sourceNameState>> field="text" placeholder="e.g. Unsplash, TheMealDB" default="" tag="input"/>
+</div>
+\end

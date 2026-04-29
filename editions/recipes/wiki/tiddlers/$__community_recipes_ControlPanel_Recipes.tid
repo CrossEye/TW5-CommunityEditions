@@ -7,6 +7,16 @@ type: text/vnd.tiddlywiki
 
 Configure how the recipe edition behaves.
 
+!! Photos
+
+Photos add visual richness, but sourcing and attributing public images takes effort.  Pick the option that matches how you plan to work — edit forms and the Recipe Box dashboard adapt accordingly.  Recipe and ingredient view templates always display any photos already attached.
+
+<div class="tc-recipe-photo-mode-options">
+<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="none" default="own"> Don't use photos</$radio></div>
+<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="own" default="own"> Use my own photos (no attribution required)</$radio></div>
+<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="attributed" default="own"> Use public photos with attribution</$radio></div>
+</div>
+
 !! Extra fields
 
 These fields appear in the metadata strip at the top of each recipe view, and are routed to a placeholder-aware editor in the field list when you author a recipe.  Edit a row to change its caption, placeholder hint, or display template; remove a row to drop the field from the strip and the editor cascade.

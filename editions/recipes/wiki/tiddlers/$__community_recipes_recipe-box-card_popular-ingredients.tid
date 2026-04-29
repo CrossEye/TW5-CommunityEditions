@@ -7,7 +7,9 @@ title: $:/community/recipes/recipe-box-card/popular-ingredients
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$let limit={{{ [<isActive>match[expanded]then[10]else[3]] }}}>
+<$let photosMode={{{ [[$:/config/community/recipes/photos]get[text]!is[blank]] ~[[own]] }}}
+     limit={{{ [<isActive>match[expanded]then[10]else[3]] }}}>
+<%if [<photosMode>!match[none]] %>
 <div class="tc-recipe-box-tiles">
 <$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first<limit>]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
 <$let photo={{{ [<currentTiddler>get[photo]] }}}>
@@ -20,4 +22,13 @@ type: text/vnd.tiddlywiki
 </$let>
 </$list>
 </div>
+<%else%>
+<$list variable="ignore" filter="[tag[Ingredient]first[]]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
+<ul class="tc-recipe-box-link-list">
+<$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first<limit>]">
+<li><$link to=<<currentTiddler>>><<currentTiddler>></$link></li>
+</$list>
+</ul>
+</$list>
+<%endif%>
 </$let>

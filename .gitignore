@@ -3,4 +3,5 @@ package-lock.json
 editions/*/wiki/output/
 editions/*/wiki/tiddlers/$__Import.tid
 editions/*/wiki/tiddlers/$__StoryList*.tid
+editions/*/wiki/tiddlers/$__community_*_version.tid
 editions/*/wiki/tiddlers/$__palette.tid

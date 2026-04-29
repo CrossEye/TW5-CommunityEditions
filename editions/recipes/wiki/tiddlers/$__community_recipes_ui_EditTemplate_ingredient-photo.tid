@@ -5,7 +5,8 @@ type: text/vnd.tiddlywiki
 
 \whitespace trim
 <% if [all[current]tag[Ingredient]] %>
-<$let draftTitle=<<currentTiddler>>
+<$let photosMode={{{ [[$:/config/community/recipes/photos]get[text]!is[blank]] ~[[own]] }}}
+      draftTitle=<<currentTiddler>>
       canonicalTitle={{{ [<currentTiddler>get[draft.of]else<currentTiddler>] }}}
       photoTitle={{{ [<currentTiddler>get[photo]] }}}
       newPhotoTitle={{{ [<canonicalTitle>addsuffix[ (photo)]] }}}
@@ -18,6 +19,7 @@ type: text/vnd.tiddlywiki
       sourceNameState={{{ [<formBase>addsuffix[photo-source-name]] }}}
       formOpen={{{ [<openState>get[text]] }}}
       formWorkingPhoto={{{ [<workingPhotoState>get[text]] }}}>
+<%if [<photosMode>!match[none]] [<photoTitle>!is[blank]] %>
 <div class="tc-recipe-photo-edit-section">
 <strong>Photo</strong>
 <%if [<formOpen>!is[blank]] %>
@@ -31,18 +33,11 @@ type: text/vnd.tiddlywiki
 <span class="tc-recipe-photo-or">or</span>
 <$edit-text tiddler=<<urlState>> field="text" placeholder="Paste image URL…" default="" tag="input"/>
 </div>
-<div class="tc-recipe-photo-form-field">
-<label>Photographer</label>
-<$edit-text tiddler=<<photographerState>> field="text" placeholder="Name or credit" default="" tag="input"/>
-</div>
-<div class="tc-recipe-photo-form-field">
-<label>Photo source</label>
-<$edit-text tiddler=<<photoSourceState>> field="text" placeholder="URL or publication" default="" tag="input"/>
-</div>
-<div class="tc-recipe-photo-form-field">
-<label>Source name</label>
-<$edit-text tiddler=<<sourceNameState>> field="text" placeholder="e.g. Unsplash, TheMealDB" default="" tag="input"/>
-</div>
+<%if [<photosMode>match[attributed]] %>
+<details class="tc-recipe-photo-form-attribution" open><<photo-attribution-body>></details>
+<%else%>
+<details class="tc-recipe-photo-form-attribution"><<photo-attribution-body>></details>
+<%endif%>
 <div class="tc-recipe-photo-form-actions">
 <$button>
 <$action-deletetiddler $filter="[prefix<formBase>]"/>
@@ -57,7 +52,7 @@ Cancel
 <$action-setfield $tiddler=<<draftTitle>> photo=<<formWorkingPhoto>>/>
 <%else%>
 <%if [<urlState>get[text]!is[blank]] %>
-<$action-setfield $tiddler=<<newPhotoTitle>> _canonical_uri={{{ [<urlState>get[text]] }}} type="image/jpeg" photographer={{{ [<photographerState>get[text]] }}} photo-source={{{ [<photoSourceState>get[text]] }}} photo-source-name={{{ [<sourceNameState>get[text]] }}}/>
+<$action-setfield $tiddler=<<newPhotoTitle>> _canonical_uri={{{ [<urlState>get[text]] }}} type="image/jpeg" tags="Photo" photographer={{{ [<photographerState>get[text]] }}} photo-source={{{ [<photoSourceState>get[text]] }}} photo-source-name={{{ [<sourceNameState>get[text]] }}}/>
 <$action-setfield $tiddler=<<draftTitle>> photo=<<newPhotoTitle>>/>
 <%endif%>
 <%endif%>
@@ -95,5 +90,6 @@ Add photo…
 <%endif%>
 <%endif%>
 </div>
+<%endif%>
 </$let>
 <% endif %>

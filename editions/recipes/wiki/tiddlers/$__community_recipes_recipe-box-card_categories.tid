@@ -7,6 +7,8 @@ title: $:/community/recipes/recipe-box-card/categories
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+<$list filter="[tag[Category]first[]]" variable="ignore" emptyMessage="<div class='tc-recipe-box-empty'>//Add a Category-tagged tiddler to see it here.//</div>">
 <div class="tc-table-of-contents">
 <<toc-selective-expandable "Category" exclude:"[has[excludeTOC]]" >>
 </div>
+</$list>

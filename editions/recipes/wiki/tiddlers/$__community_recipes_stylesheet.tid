@@ -290,6 +290,38 @@ type: text/vnd.tiddlywiki
     margin-top: 0.75em;
     justify-content: flex-end;
 }
+.tc-recipe-photo-form-attribution {
+    margin: 0.75em 0 0;
+    padding: 0.5em 0 0;
+    border-top: 1px solid <<colour table-border>>;
+}
+.tc-recipe-photo-form-attribution > summary {
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.9em;
+    user-select: none;
+}
+.tc-recipe-photo-form-attribution > summary::-webkit-details-marker {
+    display: none;
+}
+.tc-recipe-photo-form-attribution > summary::before {
+    content: "\25B8"; /* ▸ */
+    display: inline-block;
+    width: 1em;
+    transition: transform 0.15s ease;
+}
+.tc-recipe-photo-form-attribution[open] > summary::before {
+    transform: rotate(90deg);
+}
+.tc-recipe-photo-form-attribution[open] > summary {
+    margin-bottom: 0.5em;
+}
+.tc-recipe-photo-mode-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    margin: 0.5em 0 1em;
+}
 .tc-recipe-photo-save-btn {
     background: <<colour primary>>;
     color: <<colour page-background>>;
@@ -461,6 +493,11 @@ type: text/vnd.tiddlywiki
 }
 .tc-recipe-box-empty {
     color: <<colour muted-foreground>>;
+}
+.tc-recipe-box-link-list {
+    margin: 0;
+    padding-left: 1.2em;
+    font-size: 0.95em;
 }
 
 /* Phone layout: drop the horizontal accordion, show every card in a
