@@ -1,10 +1,10 @@
 caption: Compatibility
 tags:
 title: $:/community/recipes/compatibility
-tw-core: 5.4.0
+tw-core: 5.3.6
 relink: 2.5.3
 type: text/vnd.tiddlywiki
 
 | Component | Version |h
-| TiddlyWiki core | 5.4.0 |
+| TiddlyWiki core | 5.3.6 |
 | flibbles/relink | 2.5.3 |

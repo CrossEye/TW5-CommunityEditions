@@ -12,6 +12,6 @@ Setting [[$:/SiteTitle]] overrides the tidbits logo at the top of this page.  Se
 
 Edition-specific templates, styling, and logic all live under `$:/community/recipes/`.
 
-The [[Recipe Box]] dashboard is built from cards.  To add one, create a tiddler tagged `$:/tags/community/recipes/recipe-box-card`, give it a `caption` field for the header, and write whatever wikitext you like in the body.  Position it relative to the existing cards using a `list-before` or `list-after` field set to one of the built-in card titles (e.g. `$:/community/recipes/recipe-box-card/favorites`).
+The [[Recipe Box]] dashboard is built from cards.  To add one, create a tiddler tagged `$:/tags/community/recipes/recipe-box-card`, give it a `caption` field, and write whatever wikitext you like.  Use `list-before` or `list-after` against an existing card title (e.g. `$:/community/recipes/recipe-box-card/favorites`) to position it.
 
-For deeper changes, the entire edition's CSS lives in `$:/community/recipes/stylesheet`, and the view, edit, and button templates live under `$:/community/recipes/ui/`.  Relink (rename safety) and AutoComplete (write-time suggestions) are bundled — drop in additional plugins using TiddlyWiki's standard plugin import.
+For deeper changes, edition CSS lives in `$:/community/recipes/stylesheet`; view, edit, and button templates live under `$:/community/recipes/ui/`.  Relink (rename safety) and AutoComplete (write-time suggestions) are bundled — drop in additional plugins using TiddlyWiki's standard plugin import.

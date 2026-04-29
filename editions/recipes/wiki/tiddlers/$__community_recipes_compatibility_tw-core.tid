@@ -1,11 +1,15 @@
 title: $:/community/recipes/compatibility/tw-core
 tags: $:/tags/community/recipes/compatibility
 target: core
-min-version: 5.3.0
-min-version-verified: no
-tested-versions: 5.4.0
+min-version: 5.3.6
+min-version-verified: yes
+tested-versions: 5.3.6
 
-The minimum TW core version is derived from syntax features the
-edition uses (`\procedure`, `\parameters`, conditional shortcut
-syntax `<% if %>`), all introduced in 5.3.0.  Empirical verification
-is deferred to Phase 11 (release prep).
+Empirical floor: 5.3.6.  Phase 9 static analysis estimated 5.3.0 from
+the syntax features used (`\procedure`, `\parameters`, `<% if %>`),
+but Phase 11 testing found 5.3.0 produces an artifact that fails to
+render correctly; 5.3.6 works.  The exact 5.3.x release where the
+fix landed was not bisected — for an edition that embeds its TW core
+in the release artifact, the min-version is consumed by the editions
+tool's phone-home check, not by end users picking a core to install
+against.

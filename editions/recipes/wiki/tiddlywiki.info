@@ -1,5 +1,5 @@
 {
-    "description": "Basic client-server edition",
+    "description": "Tidbits — TiddlyWiki community recipe edition",
     "plugins": [
         "tiddlywiki/tiddlyweb",
         "tiddlywiki/filesystem"
