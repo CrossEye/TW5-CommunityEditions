@@ -1,6 +1,6 @@
 caption: All Recipes
 created: 20260426151803482
-modified: 20260426151815955
+modified: 20260429060353275
 tags: TableOfContents
 title: Recipe
 type: text/vnd.tiddlywiki
@@ -16,12 +16,12 @@ type: text/vnd.tiddlywiki
 </$list>
 </div>
 <%if [<activeTag>match[]] %>
-<$list filter="[tag[Recipe]!is[system]sort[title]]" emptyMessage="No recipes yet.  Use the ''New Recipe'' button to add your first.">
-* <$link/>
-</$list>
+<ul><$list filter="[tag[Recipe]!is[system]sort[title]]" emptyMessage="No recipes yet.  Use the ''New Recipe'' button to add your first.">
+<li><$link/></li>
+</$list></ul>
 <% else %>
-<$list filter="[tag[Recipe]!is[system]tag<activeTag>sort[title]]" emptyMessage={{{ [<activeTag>addprefix[No recipes tagged ']addsuffix['.]] }}}>
-* <$link/>
-</$list>
+<ul><$list filter="[tag[Recipe]!is[system]tag<activeTag>sort[title]]" emptyMessage={{{ [<activeTag>addprefix[No recipes tagged ']addsuffix['.]] }}}>
+<li><$link/></li>
+</$list></ul>
 <% endif %>
 </$let>

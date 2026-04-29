@@ -1,5 +1,7 @@
 caption: Edition Contents
+created: 20260429062034872
 icon: 📦
+modified: 20260429062101896
 tags: [[Tidbits: About]]
 title: Tidbits: Edition Contents
 type: text/vnd.tiddlywiki
@@ -10,6 +12,6 @@ This wiki contains example recipes and ingredients, each marked with a `demo: ye
 
 <%else%>
 
-This empty edition does not include any sample recipes or ingredients.  If you'd like some for reference, you can download them from [[the community editions site|https://recipes.community.example.com/sample-data.json]] and drag the file onto the wiki.
+This empty edition does not include any sample recipes or ingredients.  If you'd like some for reference, you can download them from [[the community editions site|https://recipes.community.example.com/sample-data.json]] (''warning'': temporary non-functioning placeholder) and drag the file onto the wiki.
 
 <%endif%>

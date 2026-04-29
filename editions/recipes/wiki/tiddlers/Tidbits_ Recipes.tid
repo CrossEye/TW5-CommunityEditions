@@ -1,6 +1,8 @@
 caption: Recipes
+created: 20260429061112287
 icon: 📜
-tags: [[Tidbits: Conventions]]
+modified: 20260429061501051
+tags: [[Tidbits: About]]
 title: Tidbits: Recipes
 type: text/vnd.tiddlywiki
 
@@ -23,4 +25,3 @@ The story, context, or notes.
 
 Tidbits looks for these headings to lay things out.  A recipe that ignores the convention still renders — it just loses the split layout and step navigation.
 
-Ingredients are written as inline wiki links.  Each link creates an ingredient tiddler implicitly; the backlinks then tell you which recipes use it.  Canonical ingredient tiddlers carry the `Ingredient` tag and an extended description, and may list lowercase or plural variants in an `aliases` field — so `[[garlic]]` in a recipe still lets you navigate to the canonical `Garlic` page even when the linked title is missing.

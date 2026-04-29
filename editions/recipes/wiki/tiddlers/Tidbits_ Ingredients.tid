@@ -1,0 +1,9 @@
+caption: Ingredients
+created: 20260429061405986
+icon: 🥦
+modified: 20260429061716642
+tags: [[Tidbits: About]]
+title: Tidbits: Ingredients
+type: text/vnd.tiddlywiki
+
+Ingredients are written as inline wiki links.  Each link creates an ingredient tiddler implicitly; the backlinks then tell you which recipes use it.  Canonical ingredient tiddlers carry the `Ingredient` tag and an extended description, and may list lowercase or plural variants in an `aliases` field — so `[[garlic]]` in a recipe still lets you navigate to the canonical `Garlic` page even when the linked title is missing.
