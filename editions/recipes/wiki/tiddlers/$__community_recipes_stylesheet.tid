@@ -97,6 +97,21 @@ type: text/vnd.tiddlywiki
     font-weight: 500;
 }
 
+/* Extra-fields table on the Tidbits Control Panel tab — placeholder
+   column rendered to match the input-placeholder visual treatment;
+   row-action buttons get a subtle hover affordance. */
+.tc-recipe-extra-field-placeholder-cell {
+    color: <<colour muted-foreground>>;
+}
+.tc-recipe-extra-field-action {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.1em 0.4em;
+}
+.tc-recipe-extra-field-action:hover {
+    border-color: <<colour primary>>;
+}
+
 /* Recipe body layout */
 .tc-recipe-split {
     clear: both;

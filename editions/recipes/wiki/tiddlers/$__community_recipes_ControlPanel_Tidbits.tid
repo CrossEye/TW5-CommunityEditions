@@ -1,15 +1,23 @@
-caption: Recipes
+caption: Tidbits
 created: 20260429062355472
 modified: 20260429062517726
 tags: $:/tags/ControlPanel
-title: $:/community/recipes/ControlPanel/Recipes
+title: $:/community/recipes/ControlPanel/Tidbits
 type: text/vnd.tiddlywiki
 
 //Configure how the recipe edition behaves.//
 
 ----------
 
-!! Photos
+<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/filename}}</span>&#32;Filename</h2>
+
+The default name for the file when you save a copy of this wiki via //Save changes//.
+
+<$edit-text tiddler="$:/config/SaveWikiButton/Filename" tag="input" class="tc-edit-texteditor"/>
+
+----------
+
+<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/photos}}</span>&#32;Photos</h2>
 
 Photos add visual richness, but sourcing and attributing public images takes effort.  Pick the option that matches how you plan to work — edit forms and the Recipe Box dashboard adapt accordingly.  Recipes and ingredients always display any photos that are attached, regardless of mode.
 
@@ -21,7 +29,7 @@ Photos add visual richness, but sourcing and attributing public images takes eff
 
 ----------
 
-!! Extra fields
+<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/extra-fields}}</span>&#32;Extra fields</h2>
 
 These fields appear in the metadata strip at the top of each recipe view, and are routed to a placeholder-aware editor in the field list when you author a recipe.  Edit a row to change its caption, placeholder hint, or display template; remove a row to drop the field from the strip and the editor cascade.
 
@@ -34,14 +42,14 @@ These fields appear in the metadata strip at the top of each recipe view, and ar
 <tr>
 <td><$text text={{{ [<extraField>get[field-name]] }}}/></td>
 <td><$text text={{{ [<extraField>get[caption]] }}}/></td>
-<td><$text text={{{ [<extraField>get[placeholder]] }}}/></td>
+<td class="tc-recipe-extra-field-placeholder-cell"><$text text={{{ [<extraField>get[placeholder]] }}}/></td>
 <td>
-<$button class="tc-btn-invisible">
+<$button class="tc-btn-invisible tc-recipe-extra-field-action">
 <$action-sendmessage $message="tm-edit-tiddler" $param=<<extraField>>/>
 edit
 </$button>
 &nbsp;
-<$button class="tc-btn-invisible">
+<$button class="tc-btn-invisible tc-recipe-extra-field-action">
 <$action-deletetiddler $tiddler=<<extraField>>/>
 remove
 </$button>

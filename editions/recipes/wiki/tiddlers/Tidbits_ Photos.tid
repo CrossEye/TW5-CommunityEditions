@@ -8,6 +8,6 @@ type: text/vnd.tiddlywiki
 
 A recipe's or ingredient's `photo` field names a separate tiddler titled `<Title> (photo)`.  The photo tiddler holds either embedded image data or a `_canonical_uri` pointing to an external image.
 
-Photos add visual richness, but sourcing and attributing public images takes effort.  The <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Recipes"/><$action-navigate $to="$:/ControlPanel"/>Recipes tab</$button> of the Control Panel allows you to choose whether to show photos, and if so, whether to include attributions.
+Photos add visual richness, but sourcing and attributing public images takes effort.  The <$button class="tc-btn-invisible tc-tiddlylink"><$action-setfield $tiddler="$:/state/tab-1749438307" text="$:/community/recipes/ControlPanel/Tidbits"/><$action-navigate $to="$:/ControlPanel"/>Tidbits tab</$button> of the Control Panel allows you to choose whether to show photos, and if so, whether to include attributions.
 
 Recipes and ingredients always display any photos that are attached, regardless of mode.
