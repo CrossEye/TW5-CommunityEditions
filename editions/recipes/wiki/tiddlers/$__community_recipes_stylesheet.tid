@@ -4,6 +4,13 @@ tags: $:/tags/Stylesheet
 title: $:/community/recipes/stylesheet
 type: text/vnd.tiddlywiki
 
+/* Tidbits logo — text strokes pick up the palette's foreground so the
+   logo stays readable on dark and light palettes alike.  The orange
+   dots and the final 's' remain hardcoded as brand colour. */
+.tc-image-tidbits-logo {
+    color: <<colour foreground>>;
+}
+
 /* Tidbits section icons (in About-page H2 headings) */
 .tc-tidbits-section-icon {
     display: inline-block;

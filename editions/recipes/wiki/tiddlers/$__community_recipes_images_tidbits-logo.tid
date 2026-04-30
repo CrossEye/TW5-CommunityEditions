@@ -6,7 +6,7 @@ type: text/vnd.tiddlywiki
 
 \parameters (width:"360")
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="155 15 590 225" width=<<width>> class="tc-image-tidbits-logo">
-<g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="200" font-weight="700" fill="#2a2a2a" text-anchor="middle">
+<g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="200" font-weight="700" fill="currentColor" text-anchor="middle">
 <text x="205" y="220">t</text>
 <text x="265" y="220">&#x131;</text>
 <text x="345" y="220">d</text>
