@@ -5,6 +5,6 @@ tw-core: 5.3.6
 relink: 2.5.3
 type: text/vnd.tiddlywiki
 
-| Component | Version |h
-| TiddlyWiki core | 5.3.6 |
-| flibbles/relink | 2.5.3 |
+| <<t Compatibility/Header/Component>> | <<t Compatibility/Header/Version>> |h
+| <<t Compatibility/Row/TWCore>> | 5.3.6 |
+| <<t Compatibility/Row/Relink>> | 2.5.3 |

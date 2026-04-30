@@ -8,7 +8,7 @@ title: $:/community/recipes/macros/photo-caption
       sourceName={{{ [<photo>get[photo-source-name]] }}}>
 <%if [<photographer>!is[blank]] %>
 <div class="tc-recipe-photo-caption">
-<%if [<sourceName>!is[blank]] %><<photographer>>&#32;on&#32;<a class="tc-tiddlylink-external" href=<<photoSource>> target="_blank" rel="noopener noreferrer"><<sourceName>></a><%elseif [<photoSource>!is[blank]] %><a class="tc-tiddlylink-external" href=<<photoSource>> target="_blank" rel="noopener noreferrer"><<photographer>></a><%else%><<photographer>><%endif%>
+<%if [<sourceName>!is[blank]] %><<photographer>>&#32;<<t PhotoCaption/On>>&#32;<a class="tc-tiddlylink-external" href=<<photoSource>> target="_blank" rel="noopener noreferrer"><<sourceName>></a><%elseif [<photoSource>!is[blank]] %><a class="tc-tiddlylink-external" href=<<photoSource>> target="_blank" rel="noopener noreferrer"><<photographer>></a><%else%><<photographer>><%endif%>
 </div>
 <%endif%>
 </$let>

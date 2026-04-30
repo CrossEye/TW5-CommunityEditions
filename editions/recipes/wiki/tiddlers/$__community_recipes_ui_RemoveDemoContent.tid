@@ -73,13 +73,13 @@ type: text/vnd.tiddlywiki
 </$list>
 \end
 
-!! Remove these Recipes
+!! <<t RemoveDemoContent/Recipes/Heading>>
 
 <table class="tc-remove-demo-table">
 <thead><tr>
-<th style="padding:4px 12px">Name</th>
-<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipes" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipes>> uncheckactions=<<uncheck-all-recipes>>/> Recipe</th>
-<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipe-photos" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipe-photos>> uncheckactions=<<uncheck-all-recipe-photos>>/> Photo</th>
+<th style="padding:4px 12px"><<t RemoveDemoContent/Header/Name>></th>
+<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipes" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipes>> uncheckactions=<<uncheck-all-recipes>>/> <<t RemoveDemoContent/Header/Recipe>></th>
+<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/recipe-photos" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-recipe-photos>> uncheckactions=<<uncheck-all-recipe-photos>>/> <<t RemoveDemoContent/Header/Photo>></th>
 </tr></thead>
 <tbody>
 <$list filter="[field:demo[yes]tag[Recipe]sort[title]]" variable="recipeTitle">
@@ -94,13 +94,13 @@ type: text/vnd.tiddlywiki
 
 <$list filter="[field:demo[yes]tag[Ingredient]limit[1]]" variable="ignore">
 
-!! Remove these Ingredients
+!! <<t RemoveDemoContent/Ingredients/Heading>>
 
 <table class="tc-remove-demo-table">
 <thead><tr>
-<th style="padding:4px 12px">Name</th>
-<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredients" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredients>> uncheckactions=<<uncheck-all-ingredients>>/> Ingredient</th>
-<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredient-photos" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredient-photos>> uncheckactions=<<uncheck-all-ingredient-photos>>/> Photo</th>
+<th style="padding:4px 12px"><<t RemoveDemoContent/Header/Name>></th>
+<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredients" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredients>> uncheckactions=<<uncheck-all-ingredients>>/> <<t RemoveDemoContent/Header/Ingredient>></th>
+<th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/ingredient-photos" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-ingredient-photos>> uncheckactions=<<uncheck-all-ingredient-photos>>/> <<t RemoveDemoContent/Header/Photo>></th>
 </tr></thead>
 <tbody>
 <$list filter="[field:demo[yes]tag[Ingredient]sort[title]]" variable="t">
@@ -115,14 +115,14 @@ type: text/vnd.tiddlywiki
 
 </$list>
 
-You may also choose to remove the sample categories:
+<<t RemoveDemoContent/Categories/Lead>>
 
-!! Remove these Categories
+!! <<t RemoveDemoContent/Categories/Heading>>
 
 <table class="tc-remove-demo-table">
 <thead><tr>
 <th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/categories" field="text" checked="yes" unchecked="no" default="no" checkactions=<<check-all-categories>> uncheckactions=<<uncheck-all-categories>>/></th>
-<th style="padding:4px 12px">Category</th>
+<th style="padding:4px 12px"><<t RemoveDemoContent/Header/Category>></th>
 </tr></thead>
 <tbody>
 <$list filter="[tag[Category]sort[title]]" variable="catTitle">
@@ -136,14 +136,14 @@ You may also choose to remove the sample categories:
 
 <$list filter="[field:demo[yes]is[system]limit[1]]" variable="ignore">
 
-!! Miscellaneous
+!! <<t RemoveDemoContent/Misc/Heading>>
 
-Settings or other system tiddlers that came in with the sample content.
+<<t RemoveDemoContent/Misc/Description>>
 
 <table class="tc-remove-demo-table">
 <thead><tr>
 <th style="text-align:center; padding:4px 12px"><$checkbox tiddler="$:/state/community/recipes/remove-demo-section/misc" field="text" checked="yes" unchecked="no" default="yes" checkactions=<<check-all-misc>> uncheckactions=<<uncheck-all-misc>>/></th>
-<th style="padding:4px 12px">Tiddler</th>
+<th style="padding:4px 12px"><<t RemoveDemoContent/Header/Tiddler>></th>
 </tr></thead>
 <tbody>
 <$list filter="[field:demo[yes]is[system]sort[title]]" variable="t">
@@ -168,5 +168,5 @@ Settings or other system tiddlers that came in with the sample content.
 <$action-deletetiddler $filter="[field:demo[yes]is[system]] -[prefix[$:/state/community/recipes/remove-demo/]field:text[no]removeprefix[$:/state/community/recipes/remove-demo/]]"/>
 <$action-deletetiddler $filter="[prefix[$:/state/community/recipes/remove-demo/]] [prefix[$:/state/community/recipes/remove-demo-section/]]"/>
 <$action-sendmessage $message="tm-close-tiddler" $param="$:/community/recipes/ui/RemoveDemoContent"/>
-Remove Selected Items
+<<t RemoveDemoContent/SubmitButton>>
 </$button>

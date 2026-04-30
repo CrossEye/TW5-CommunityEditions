@@ -5,37 +5,37 @@ tags: $:/tags/ControlPanel
 title: $:/community/recipes/ControlPanel/Tidbits
 type: text/vnd.tiddlywiki
 
-//Configure how the recipe edition behaves.//
+//<<t ControlPanel/Intro>>//
 
 ----------
 
-<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/filename}}</span>&#32;Filename</h2>
+<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/filename}}</span>&#32;<<t ControlPanel/Filename/Heading>></h2>
 
-The default name for the file when you save a copy of this wiki via //Save changes//.
+{{$:/community/recipes/language/ControlPanel/Filename/Description}}
 
 <$edit-text tiddler="$:/config/SaveWikiButton/Filename" tag="input" class="tc-edit-texteditor"/>
 
 ----------
 
-<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/photos}}</span>&#32;Photos</h2>
+<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/photos}}</span>&#32;<<t ControlPanel/Photos/Heading>></h2>
 
-Photos add visual richness, but sourcing and attributing public images takes effort.  Pick the option that matches how you plan to work — edit forms and the Recipe Box dashboard adapt accordingly.  Recipes and ingredients always display any photos that are attached, regardless of mode.
+{{$:/community/recipes/language/ControlPanel/Photos/Description}}
 
 <div class="tc-recipe-photo-mode-options">
-<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="none" default="own"> Don't use photos</$radio></div>
-<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="own" default="own"> Use my own photos (no attribution required)</$radio></div>
-<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="attributed" default="own"> Use public photos with attribution</$radio></div>
+<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="none" default="own"> <<t ControlPanel/Photos/None>></$radio></div>
+<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="own" default="own"> <<t ControlPanel/Photos/Own>></$radio></div>
+<div><$radio tiddler="$:/config/community/recipes/photos" field="text" value="attributed" default="own"> <<t ControlPanel/Photos/Attributed>></$radio></div>
 </div>
 
 ----------
 
-<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/extra-fields}}</span>&#32;Extra fields</h2>
+<h2><span class="tc-tidbits-section-icon">{{$:/community/recipes/images/tidbits/extra-fields}}</span>&#32;<<t ControlPanel/ExtraFields/Heading>></h2>
 
-These fields appear in the metadata strip at the top of each recipe view, and are routed to a placeholder-aware editor in the field list when you author a recipe.  Edit a row to change its caption, placeholder hint, or display template; remove a row to drop the field from the strip and the editor cascade.
+{{$:/community/recipes/language/ControlPanel/ExtraFields/Description}}
 
 <table class="tc-recipe-extra-fields-table">
 <thead>
-<tr><th>Field name</th><th>Caption</th><th>Placeholder</th><th></th></tr>
+<tr><th><<t ControlPanel/ExtraFields/Header/FieldName>></th><th><<t ControlPanel/ExtraFields/Header/Caption>></th><th><<t ControlPanel/ExtraFields/Header/Placeholder>></th><th></th></tr>
 </thead>
 <tbody>
 <$list filter="[all[shadows+tiddlers]tag[$:/tags/community/recipes/extra-field]]" variable="extraField">
@@ -46,12 +46,12 @@ These fields appear in the metadata strip at the top of each recipe view, and ar
 <td>
 <$button class="tc-btn-invisible tc-recipe-extra-field-action">
 <$action-sendmessage $message="tm-edit-tiddler" $param=<<extraField>>/>
-edit
+<<t ControlPanel/ExtraFields/EditAction>>
 </$button>
 &nbsp;
 <$button class="tc-btn-invisible tc-recipe-extra-field-action">
 <$action-deletetiddler $tiddler=<<extraField>>/>
-remove
+<<t ControlPanel/ExtraFields/RemoveAction>>
 </$button>
 </td>
 </tr>
@@ -61,5 +61,5 @@ remove
 
 <$button>
 <$action-sendmessage $message="tm-new-tiddler" title="$:/community/recipes/extra-fields/new-field" tags="$:/tags/community/recipes/extra-field" field-name="" caption="" placeholder=""/>
-Add a new field
+<<t ControlPanel/ExtraFields/AddButton>>
 </$button>

@@ -1,3 +1,4 @@
+caption: Recipe Box
 created: 20260427220000001
 modified: 20260428035142510
 title: Recipe Box
@@ -5,9 +6,9 @@ type: text/vnd.tiddlywiki
 
 \whitespace trim
 <div class="tc-recipe-box-actions">
-<$button class="tc-btn-invisible tc-recipe-box-new-recipe" tooltip="Create a new recipe" aria-label="new recipe">
+<$button class="tc-btn-invisible tc-recipe-box-new-recipe" tooltip=<<t RecipeBox/NewRecipe/Tooltip>> aria-label=<<t RecipeBox/NewRecipe/AriaLabel>>>
 <$action-sendmessage $message="tm-new-tiddler" tags="Recipe" text={{{ [[$:/community/recipes/templates/new-recipe]get[text]] }}}/>
-{{$:/community/recipes/images/new-recipe}}&#32;New Recipe
+{{$:/community/recipes/images/new-recipe}}&#32;<<t RecipeBox/NewRecipe/Label>>
 </$button>
 </div>
 

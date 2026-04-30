@@ -1,0 +1,119 @@
+{
+  "_meta": "First-pass French translation by Claude (Anthropic). Suitable as a working draft; needs review by a native French speaker before being treated as authoritative.  Captions on tiddlers with complex bodies (Recipe / Ingredient / TableOfContents / Recipe Box) are not auto-overridden by this pack — translators wishing to localise those edit each caption field by hand once.",
+
+  "_tiddlers": [
+    {"title": "Breakfast", "tags": "TableOfContents Category", "caption": "Petit-déjeuner", "type": "text/vnd.tiddlywiki"},
+    {"title": "Main", "tags": "TableOfContents Category", "caption": "Plat principal", "type": "text/vnd.tiddlywiki"},
+    {"title": "Salad", "tags": "TableOfContents Category", "caption": "Salade", "type": "text/vnd.tiddlywiki"},
+    {"title": "Side", "tags": "TableOfContents Category", "caption": "Accompagnement", "type": "text/vnd.tiddlywiki"},
+    {"title": "Dessert", "tags": "TableOfContents Category", "caption": "Dessert", "type": "text/vnd.tiddlywiki"}
+  ],
+
+  "RecipeBody/Ingredients": "Ingrédients",
+  "RecipeBody/Steps": "Étapes",
+  "RecipeBody/StepNav/Previous": "Précédent",
+  "RecipeBody/StepNav/Next": "Suivant",
+  "RecipeBody/IngredientsToggle": "Ingrédients",
+
+  "Ingredient/AlsoKnownAs": "Aussi connu sous :",
+  "Ingredient/RecipesUsing": "Recettes utilisant",
+  "Ingredient/UsedIn": "Utilisé dans :",
+  "Ingredient/AliasOf": "Alias de",
+
+  "EditPhoto/Heading": "Photo",
+  "EditPhoto/UploadTooltip": "Téléverser une image depuis votre appareil",
+  "EditPhoto/UploadButton": "Téléverser une image…",
+  "EditPhoto/Or": "ou",
+  "EditPhoto/UrlPlaceholder": "Coller l’URL de l’image…",
+  "EditPhoto/Cancel": "Annuler",
+  "EditPhoto/Save": "Enregistrer",
+  "EditPhoto/ChangePhoto": "Changer la photo",
+  "EditPhoto/RemovePhoto": "Supprimer la photo",
+  "EditPhoto/AddPhoto": "Ajouter une photo…",
+
+  "EditTemplate/ExtraFieldsHint/Heading": "Champs supplémentaires de la recette",
+  "EditTemplate/ExtraFieldsHint/IntroFormat": "Les champs suivants apparaîtront dans un bandeau en haut de la recette : <<fields>>.",
+  "EditTemplate/ExtraFieldsHint/ManageHint": "Vous pouvez gérer cette liste dans l’<$button class=\"tc-btn-invisible tc-tiddlylink\"><$action-setfield $tiddler=\"$:/state/tab-1749438307\" text=\"$:/community/recipes/ControlPanel/Tidbits\"/><$action-navigate $to=\"$:/ControlPanel\"/><<t EditTemplate/ExtraFieldsHint/ManageLinkText>></$button> du Panneau de Contrôle.",
+  "EditTemplate/ExtraFieldsHint/ManageLinkText": "onglet Tidbits",
+
+  "Buttons/CookingMode/EnterTooltip": "Entrer en mode cuisine",
+  "Buttons/CookingMode/EnterAriaLabel": "entrer en mode cuisine",
+  "Buttons/CookingMode/ExitTooltip": "Quitter le mode cuisine",
+  "Buttons/CookingMode/ExitAriaLabel": "quitter le mode cuisine",
+
+  "Buttons/NewRecipe/Tooltip": "Nouvelle recette",
+  "Buttons/NewRecipe/AriaLabel": "nouvelle recette",
+
+  "RecipeBox/NewRecipe/Tooltip": "Créer une nouvelle recette",
+  "RecipeBox/NewRecipe/AriaLabel": "nouvelle recette",
+  "RecipeBox/NewRecipe/Label": "Nouvelle recette",
+
+  "RecipeBoxCard/Categories/Caption": "Catégories",
+  "RecipeBoxCard/Categories/Empty": "Ajoutez un tiddler étiqueté Category pour le voir apparaître ici.",
+
+  "RecipeBoxCard/Favorites/Caption": "Favoris",
+  "RecipeBoxCard/Favorites/Empty": "Marquez une recette comme Favorite pour la voir ici.",
+
+  "RecipeBoxCard/PopularIngredients/Caption": "Ingrédients courants",
+  "RecipeBoxCard/PopularIngredients/Empty": "Ajoutez des Ingrédients pour les voir apparaître ici.",
+
+  "RecipeBoxCard/Tags/Caption": "Étiquettes",
+  "RecipeBoxCard/Tags/Empty": "Les étiquettes de vos recettes apparaîtront ici.",
+
+  "AllRecipes/EmptyAll": "Aucune recette pour l’instant.  Utilisez le bouton ''Nouvelle recette'' pour ajouter la première.",
+  "AllRecipes/EmptyTaggedFormat": "Aucune recette étiquetée « <<tag>> ».",
+
+  "PhotoAttribution/Summary": "Attribution",
+  "PhotoAttribution/PhotographerLabel": "Photographe",
+  "PhotoAttribution/PhotographerPlaceholder": "Nom ou crédit",
+  "PhotoAttribution/PhotoSourceLabel": "Source de la photo",
+  "PhotoAttribution/PhotoSourcePlaceholder": "URL ou publication",
+  "PhotoAttribution/SourceNameLabel": "Nom de la source",
+  "PhotoAttribution/SourceNamePlaceholder": "p. ex. Unsplash, TheMealDB",
+
+  "PhotoCaption/On": "sur",
+
+  "Procedures/HoursAndMinutes/Minute": "minute",
+  "Procedures/HoursAndMinutes/Minutes": "minutes",
+  "Procedures/HoursAndMinutes/Hour": "heure",
+  "Procedures/HoursAndMinutes/Hours": "heures",
+
+  "ControlPanel/Intro": "Configurer le comportement de l’édition recettes.",
+  "ControlPanel/Filename/Heading": "Nom du fichier",
+  "ControlPanel/Filename/Description": "Le nom par défaut du fichier lorsque vous enregistrez une copie de ce wiki via //Enregistrer les modifications//.",
+  "ControlPanel/Photos/Heading": "Photos",
+  "ControlPanel/Photos/Description": "Les photos ajoutent de la richesse visuelle, mais sourcer et attribuer des images publiques demande du travail.  Choisissez l’option qui correspond à votre façon de travailler — les formulaires d’édition et le tableau de bord Recipe Box s’adaptent en conséquence.  Les recettes et les ingrédients affichent toujours les photos qui leur sont attachées, quel que soit le mode.",
+  "ControlPanel/Photos/None": "Ne pas utiliser de photos",
+  "ControlPanel/Photos/Own": "Utiliser mes propres photos (aucune attribution requise)",
+  "ControlPanel/Photos/Attributed": "Utiliser des photos publiques avec attribution",
+  "ControlPanel/ExtraFields/Heading": "Champs supplémentaires",
+  "ControlPanel/ExtraFields/Description": "Ces champs apparaissent dans le bandeau de métadonnées en haut de chaque recette, et sont routés vers un éditeur prenant en charge les indices lors de l’ajout d’un champ à une recette.  Modifiez une ligne pour changer son libellé, son indice ou son modèle d’affichage ; supprimez une ligne pour retirer le champ du bandeau et de la cascade d’éditeurs.",
+  "ControlPanel/ExtraFields/Header/FieldName": "Nom du champ",
+  "ControlPanel/ExtraFields/Header/Caption": "Libellé",
+  "ControlPanel/ExtraFields/Header/Placeholder": "Indice",
+  "ControlPanel/ExtraFields/EditAction": "modifier",
+  "ControlPanel/ExtraFields/RemoveAction": "supprimer",
+  "ControlPanel/ExtraFields/AddButton": "Ajouter un champ",
+
+  "RemoveDemoContent/Caption": "Supprimer le contenu d’exemple",
+  "RemoveDemoContent/Recipes/Heading": "Supprimer ces recettes",
+  "RemoveDemoContent/Header/Name": "Nom",
+  "RemoveDemoContent/Header/Recipe": "Recette",
+  "RemoveDemoContent/Header/Photo": "Photo",
+  "RemoveDemoContent/Ingredients/Heading": "Supprimer ces ingrédients",
+  "RemoveDemoContent/Header/Ingredient": "Ingrédient",
+  "RemoveDemoContent/Categories/Lead": "Vous pouvez aussi choisir de supprimer les catégories d’exemple :",
+  "RemoveDemoContent/Categories/Heading": "Supprimer ces catégories",
+  "RemoveDemoContent/Header/Category": "Catégorie",
+  "RemoveDemoContent/Misc/Heading": "Divers",
+  "RemoveDemoContent/Misc/Description": "Paramètres ou autres tiddlers système accompagnant le contenu d’exemple.",
+  "RemoveDemoContent/Header/Tiddler": "Tiddler",
+  "RemoveDemoContent/SubmitButton": "Supprimer les éléments sélectionnés",
+
+  "SiteSubtitle/CommunityRecipeEdition": "Édition Recettes Communautaires",
+
+  "Compatibility/Header/Component": "Composant",
+  "Compatibility/Header/Version": "Version",
+  "Compatibility/Row/TWCore": "Cœur TiddlyWiki",
+  "Compatibility/Row/Relink": "flibbles/relink"
+}

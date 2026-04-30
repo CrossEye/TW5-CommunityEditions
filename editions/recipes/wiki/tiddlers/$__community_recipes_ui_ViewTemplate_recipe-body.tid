@@ -27,11 +27,11 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 
 <div class="tc-recipe-split">
 <div class={{{ [<ingrVisible>match[show]then[tc-recipe-split-left tc-recipe-ingr-panel tc-recipe-ingr-visible]else[tc-recipe-split-left tc-recipe-ingr-panel]] }}}>
-<strong>Ingredients</strong>
+<strong><<t RecipeBody/Ingredients>></strong>
 <$transclude $variable="ingreds" $mode="block"/>
 </div>
 <div class="tc-recipe-split-right">
-<strong>Steps</strong>
+<strong><<t RecipeBody/Steps>></strong>
 <%if [<cookMode>!is[blank]] %>
 <$list filter="[<currentTiddler>get[text]splitregexp[!! Steps]last[]splitregexp[!! ]first[]splitregexp[\r?\n]regexp[^# ]removeprefix[# ]trim[]]" variable="stepText" counter="stepNum">
 <$button class={{{ [<stepNum>match<stepIdx>then[tc-step tc-step-active tc-btn-invisible]else[tc-step tc-btn-invisible]] }}}>
@@ -54,19 +54,19 @@ title: $:/community/recipes/ui/ViewTemplate/recipe-body
 <%if [<stepIdx>!match[1]] %>
 <$button>
 <$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>subtract[1]] }}}/>
-Previous
+<<t RecipeBody/StepNav/Previous>>
 </$button>
 <% else %>
 <span></span>
 <% endif %>
 <$button class="tc-btn-invisible tc-recipe-ingr-toggle">
 <$action-setfield $tiddler=<<ingrState>> text={{{ [<ingrVisible>match[show]then[hide]else[show]] }}}/>
-<%if [<ingrVisible>match[show]] %>▴&#32;Ingredients<% else %>▾&#32;Ingredients<% endif %>
+<%if [<ingrVisible>match[show]] %>▴&#32;<<t RecipeBody/IngredientsToggle>><% else %>▾&#32;<<t RecipeBody/IngredientsToggle>><% endif %>
 </$button>
 <%if [<stepIdx>!match<stepCount>] %>
 <$button>
 <$action-setfield $tiddler=<<stepState>> text={{{ [<stepIdx>add[1]] }}}/>
-Next
+<<t RecipeBody/StepNav/Next>>
 </$button>
 <% else %>
 <span></span>

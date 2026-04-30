@@ -1,10 +1,10 @@
 list-before: $:/core/ui/EditTemplate/body
 tags: $:/tags/EditTemplate
-title: $:/community/recipes/ui/EditTemplate/recipe-photo
+title: $:/community/recipes/ui/EditTemplate/photo
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<% if [all[current]tag[Recipe]] %>
+<% if [all[current]tag[Recipe]] [all[current]tag[Ingredient]] %>
 <$let photosMode={{{ [[$:/config/community/recipes/photos]get[text]!is[blank]] ~[[own]] }}}
       draftTitle=<<currentTiddler>>
       canonicalTitle={{{ [<currentTiddler>get[draft.of]else<currentTiddler>] }}}
@@ -21,7 +21,7 @@ type: text/vnd.tiddlywiki
       formWorkingPhoto={{{ [<workingPhotoState>get[text]] }}}>
 <%if [<photosMode>!match[none]] [<photoTitle>!is[blank]] %>
 <div class="tc-recipe-photo-edit-section">
-<strong>Photo</strong>
+<strong><<t EditPhoto/Heading>></strong>
 <%if [<formOpen>!is[blank]] %>
 <div class="tc-recipe-photo-form">
 {{$:/community/recipes/ui/EditTemplate/photo-size-advisory}}
@@ -29,9 +29,9 @@ type: text/vnd.tiddlywiki
 <div class="tc-recipe-photo-form-preview"><$transclude $tiddler=<<formWorkingPhoto>> $mode="block"/></div>
 <%endif%>
 <div class="tc-recipe-photo-form-image-row">
-<$button tooltip="Upload an image from your device"><$action-attach-photo $photo=<<newPhotoTitle>> $state=<<workingPhotoState>>/>Upload image…</$button>
-<span class="tc-recipe-photo-or">or</span>
-<$edit-text tiddler=<<urlState>> field="text" placeholder="Paste image URL…" default="" tag="input"/>
+<$button tooltip=<<t EditPhoto/UploadTooltip>>><$action-attach-photo $photo=<<newPhotoTitle>> $state=<<workingPhotoState>>/><<t EditPhoto/UploadButton>></$button>
+<span class="tc-recipe-photo-or"><<t EditPhoto/Or>></span>
+<$edit-text tiddler=<<urlState>> field="text" placeholder=<<t EditPhoto/UrlPlaceholder>> default="" tag="input"/>
 </div>
 <%if [<photosMode>match[attributed]] %>
 <details class="tc-recipe-photo-form-attribution" open><<photo-attribution-body>></details>
@@ -41,7 +41,7 @@ type: text/vnd.tiddlywiki
 <div class="tc-recipe-photo-form-actions">
 <$button>
 <$action-deletetiddler $filter="[prefix<formBase>]"/>
-Cancel
+<<t EditPhoto/Cancel>>
 </$button>
 <$button class="tc-recipe-photo-save-btn">
 <%if [<formWorkingPhoto>!is[blank]] %>
@@ -57,7 +57,7 @@ Cancel
 <%endif%>
 <%endif%>
 <$action-deletetiddler $filter="[prefix<formBase>]"/>
-Save
+<<t EditPhoto/Save>>
 </$button>
 </div>
 </div>
@@ -74,18 +74,18 @@ Save
 <$action-setfield $tiddler=<<photoSourceState>> text={{{ [<photoTitle>get[photo-source]] }}}/>
 <$action-setfield $tiddler=<<sourceNameState>> text={{{ [<photoTitle>get[photo-source-name]] }}}/>
 <$action-setfield $tiddler=<<urlState>> text={{{ [<photoTitle>get[_canonical_uri]] }}}/>
-Change photo
+<<t EditPhoto/ChangePhoto>>
 </$button>
 <$button>
 <$action-deletefield $tiddler=<<draftTitle>> $field="photo"/>
-Remove photo
+<<t EditPhoto/RemovePhoto>>
 </$button>
 </div>
 </div>
 <%else%>
 <$button>
 <$action-setfield $tiddler=<<openState>> text="yes"/>
-Add photo…
+<<t EditPhoto/AddPhoto>>
 </$button>
 <%endif%>
 <%endif%>

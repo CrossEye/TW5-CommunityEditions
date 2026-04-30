@@ -8,11 +8,11 @@ type: text/vnd.tiddlywiki
       h={{{ [<total>divide[60]floor[]] }}}
       m={{{ [<total>remainder[60]] }}}>
 <%if [<h>match[0]] %>
-<<m>>&nbsp;minute<%if [<m>!match[1]] %>s<%endif%>
+<<m>>&nbsp;<%if [<m>!match[1]] %><<t Procedures/HoursAndMinutes/Minutes>><%else%><<t Procedures/HoursAndMinutes/Minute>><%endif%>
 <%else%>
-<<h>>&nbsp;hour<%if [<h>!match[1]] %>s<%endif%>
+<<h>>&nbsp;<%if [<h>!match[1]] %><<t Procedures/HoursAndMinutes/Hours>><%else%><<t Procedures/HoursAndMinutes/Hour>><%endif%>
 <%if [<m>!match[0]] %>
-&nbsp;<<m>>&nbsp;minute<%if [<m>!match[1]] %>s<%endif%>
+&nbsp;<<m>>&nbsp;<%if [<m>!match[1]] %><<t Procedures/HoursAndMinutes/Minutes>><%else%><<t Procedures/HoursAndMinutes/Minute>><%endif%>
 <%endif%>
 <%endif%>
 </$let>

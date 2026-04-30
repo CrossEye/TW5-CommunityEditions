@@ -11,7 +11,7 @@ type: text/vnd.tiddlywiki
 <% if [<currentTiddler>tag[Recipe]] [[$:/state/community/recipes/cooking-mode]get[text]!is[blank]] %>
 <$let cookState={{{ [[$:/state/community/recipes/cooking-mode]get[text]] }}}>
 <%if [<cookState>!is[blank]] %>
-<$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Exit cooking mode" aria-label="exit cooking mode">
+<$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip=<<t Buttons/CookingMode/ExitTooltip>> aria-label=<<t Buttons/CookingMode/ExitAriaLabel>>>
 <$action-setfield $tiddler="$:/state/sidebar"
   text={{{ [[$:/state/community/recipes/cooking-save/sidebar]get[text]else[yes]] }}}/>
 <%if [<currentTiddler>match<cookState>] %>
@@ -25,7 +25,7 @@ type: text/vnd.tiddlywiki
 {{$:/community/recipes/images/cooking-mode-off-icon}}
 </$button>
 <% else %>
-<$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip="Enter cooking mode" aria-label="enter cooking mode">
+<$button class={{{ [<tv-config-toolbar-class>addsuffix[ tc-recipe-cooking-mode-btn]] }}} tooltip=<<t Buttons/CookingMode/EnterTooltip>> aria-label=<<t Buttons/CookingMode/EnterAriaLabel>>>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-save/sidebar"
   text={{{ [[$:/state/sidebar]get[text]else[yes]] }}}/>
 <$action-setfield $tiddler="$:/state/community/recipes/cooking-save/story"

@@ -15,3 +15,7 @@ Edition-specific templates, styling, and logic all live under `$:/community/reci
 The [[Recipe Box]] dashboard is built from cards.  To add one, create a tiddler tagged `$:/tags/community/recipes/recipe-box-card`, give it a `caption` field, and write whatever wikitext you like.  Use `list-before` or `list-after` against an existing card title (e.g. `$:/community/recipes/recipe-box-card/favorites`) to position it.
 
 For deeper changes, edition CSS lives in `$:/community/recipes/stylesheet`; view, edit, and button templates live under `$:/community/recipes/ui/`.  Relink (rename safety) and AutoComplete (write-time suggestions) are bundled — drop in additional plugins using TiddlyWiki's standard plugin import.
+
+!!! Translating
+
+Tidbits' user-visible English text lives under `$:/community/recipes/language/`.  Drop a JSON pack of override tiddlers under that prefix onto your wiki to localise — see the sample <a href={{{ [[$:/community/recipes/config/sample-data-url]get[text]addsuffix[fr-FR/lang.json]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer">French pack</a>.  A few things stay English by design in this pass: tag names (`Recipe`, `Ingredient`, `Category`, `Favorite`) and recipe-body section headings (`!! About`, `!! Ingredients`, `!! Steps`).  Add a `caption` field to a tag tiddler to localise its display, or rename via Relink for a deeper switch.

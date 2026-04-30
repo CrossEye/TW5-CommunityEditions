@@ -9,9 +9,10 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 <$let photosMode={{{ [[$:/config/community/recipes/photos]get[text]!is[blank]] ~[[own]] }}}
      limit={{{ [<isActive>match[expanded]then[10]else[3]] }}}>
+<%if [tag[Ingredient]] %>
 <%if [<photosMode>!match[none]] %>
 <div class="tc-recipe-box-tiles">
-<$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first<limit>]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
+<$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first<limit>]">
 <$let photo={{{ [<currentTiddler>get[photo]] }}}>
 <$link class="tc-recipe-box-tile">
 <$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'>{{$:/community/recipes/images/photo-placeholder}}</span>">
@@ -23,12 +24,13 @@ type: text/vnd.tiddlywiki
 </$list>
 </div>
 <%else%>
-<$list variable="ignore" filter="[tag[Ingredient]first[]]" emptyMessage="<div class='tc-recipe-box-empty'>//Add some Ingredients, and they will show here.//</div>">
 <ul class="tc-recipe-box-link-list">
 <$list filter="[tag[Ingredient]] :sort:number[backlinks[]tag[Recipe]count[]] +[reverse[]first<limit>]">
 <li><$link to=<<currentTiddler>>><<currentTiddler>></$link></li>
 </$list>
 </ul>
-</$list>
+<%endif%>
+<%else%>
+<div class="tc-recipe-box-empty">//<<t RecipeBoxCard/PopularIngredients/Empty>>//</div>
 <%endif%>
 </$let>

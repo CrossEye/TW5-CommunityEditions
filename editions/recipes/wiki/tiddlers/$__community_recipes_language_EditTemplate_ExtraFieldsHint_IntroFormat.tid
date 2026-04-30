@@ -1,0 +1,4 @@
+title: $:/community/recipes/language/EditTemplate/ExtraFieldsHint/IntroFormat
+type: text/vnd.tiddlywiki
+
+Any of these fields you enter will appear in a strip above the recipe: <<fields>>.

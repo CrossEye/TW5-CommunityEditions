@@ -1,0 +1,8 @@
+title: $:/community/recipes/procedures/t
+tags: $:/tags/Global
+type: text/vnd.tiddlywiki
+
+\procedure t(key)
+\whitespace trim
+<$transclude $tiddler={{{ [[$:/community/recipes/language/]addsuffix<key>] }}} $mode="inline"/>
+\end

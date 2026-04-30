@@ -17,11 +17,12 @@ var path = require("path");
 
 var OUTPUT_DIR = path.join("editions", "recipes", "wiki", "output");
 var SAMPLES_DIR = path.join("editions", "recipes", "samples");
+var DEFAULT_LOCALE = "en-US";
 var DEFAULT_SAMPLE = "32-recipes-us.json";
 
 var EMPTY_PATH = path.join(OUTPUT_DIR, "tidbits_empty.html");
 var FULL_PATH = path.join(OUTPUT_DIR, "tidbits.html");
-var SAMPLE_PATH = path.join(SAMPLES_DIR, DEFAULT_SAMPLE);
+var SAMPLE_PATH = path.join(SAMPLES_DIR, DEFAULT_LOCALE, DEFAULT_SAMPLE);
 
 var STORE_OPEN = '<script class="tiddlywiki-tiddler-store" type="application/json">';
 var STORE_CLOSE = "</script>";

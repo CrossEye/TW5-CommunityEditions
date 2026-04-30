@@ -9,9 +9,10 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 <$let photosMode={{{ [[$:/config/community/recipes/photos]get[text]!is[blank]] ~[[own]] }}}
      limit={{{ [<isActive>match[expanded]then[999]else[3]] }}}>
+<%if [tag[Recipe]tag[Favorite]] %>
 <%if [<photosMode>!match[none]] %>
 <div class="tc-recipe-box-tiles">
-<$list filter="[tag[Recipe]tag[Favorite]first<limit>]" emptyMessage="<div class='tc-recipe-box-empty'>//Mark a recipe Favorite to see it here.//</div>">
+<$list filter="[tag[Recipe]tag[Favorite]first<limit>]">
 <$let photo={{{ [<currentTiddler>get[photo]] }}}>
 <$link class="tc-recipe-box-tile">
 <$list filter="[<photo>!is[blank]]" variable="ignore" emptyMessage="<span class='tc-recipe-box-tile-photo tc-recipe-box-tile-photo-placeholder'>{{$:/community/recipes/images/photo-placeholder}}</span>">
@@ -23,12 +24,13 @@ type: text/vnd.tiddlywiki
 </$list>
 </div>
 <%else%>
-<$list variable="ignore" filter="[tag[Recipe]tag[Favorite]first[]]" emptyMessage="<div class='tc-recipe-box-empty'>//Mark a recipe Favorite to see it here.//</div>">
 <ul class="tc-recipe-box-link-list">
 <$list filter="[tag[Recipe]tag[Favorite]first<limit>]">
 <li><$link to=<<currentTiddler>>><<currentTiddler>></$link></li>
 </$list>
 </ul>
-</$list>
+<%endif%>
+<%else%>
+<div class="tc-recipe-box-empty">//<<t RecipeBoxCard/Favorites/Empty>>//</div>
 <%endif%>
 </$let>

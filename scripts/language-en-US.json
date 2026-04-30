@@ -1,0 +1,109 @@
+{
+  "RecipeBody/Ingredients": "Ingredients",
+  "RecipeBody/Steps": "Steps",
+  "RecipeBody/StepNav/Previous": "Previous",
+  "RecipeBody/StepNav/Next": "Next",
+  "RecipeBody/IngredientsToggle": "Ingredients",
+
+  "Ingredient/AlsoKnownAs": "Also known as:",
+  "Ingredient/RecipesUsing": "Recipes using",
+  "Ingredient/UsedIn": "Used in:",
+  "Ingredient/AliasOf": "Alias of",
+
+  "EditPhoto/Heading": "Photo",
+  "EditPhoto/UploadTooltip": "Upload an image from your device",
+  "EditPhoto/UploadButton": "Upload image…",
+  "EditPhoto/Or": "or",
+  "EditPhoto/UrlPlaceholder": "Paste image URL…",
+  "EditPhoto/Cancel": "Cancel",
+  "EditPhoto/Save": "Save",
+  "EditPhoto/ChangePhoto": "Change photo",
+  "EditPhoto/RemovePhoto": "Remove photo",
+  "EditPhoto/AddPhoto": "Add photo…",
+
+  "EditTemplate/ExtraFieldsHint/Heading": "Additional recipe fields",
+  "EditTemplate/ExtraFieldsHint/IntroFormat": "Any of these fields you enter will appear in a strip above the recipe: <<fields>>.",
+  "EditTemplate/ExtraFieldsHint/ManageHint": "You can manage this list in the <$button class=\"tc-btn-invisible tc-tiddlylink\"><$action-setfield $tiddler=\"$:/state/tab-1749438307\" text=\"$:/community/recipes/ControlPanel/Tidbits\"/><$action-navigate $to=\"$:/ControlPanel\"/><<t EditTemplate/ExtraFieldsHint/ManageLinkText>></$button> of the Control Panel.",
+  "EditTemplate/ExtraFieldsHint/ManageLinkText": "Tidbits tab",
+
+  "Buttons/CookingMode/EnterTooltip": "Enter cooking mode",
+  "Buttons/CookingMode/EnterAriaLabel": "enter cooking mode",
+  "Buttons/CookingMode/ExitTooltip": "Exit cooking mode",
+  "Buttons/CookingMode/ExitAriaLabel": "exit cooking mode",
+
+  "Buttons/NewRecipe/Tooltip": "New recipe",
+  "Buttons/NewRecipe/AriaLabel": "new recipe",
+
+  "RecipeBox/NewRecipe/Tooltip": "Create a new recipe",
+  "RecipeBox/NewRecipe/AriaLabel": "new recipe",
+  "RecipeBox/NewRecipe/Label": "New Recipe",
+
+  "RecipeBoxCard/Categories/Caption": "Categories",
+  "RecipeBoxCard/Categories/Empty": "Add a Category-tagged tiddler to see it here.",
+
+  "RecipeBoxCard/Favorites/Caption": "Favorites",
+  "RecipeBoxCard/Favorites/Empty": "Mark a recipe Favorite to see it here.",
+
+  "RecipeBoxCard/PopularIngredients/Caption": "Common Ingredients",
+  "RecipeBoxCard/PopularIngredients/Empty": "Add some Ingredients, and they will show here.",
+
+  "RecipeBoxCard/Tags/Caption": "Tags",
+  "RecipeBoxCard/Tags/Empty": "Tags from your recipes will appear here.",
+
+  "AllRecipes/EmptyAll": "No recipes yet.  Use the ''New Recipe'' button to add your first.",
+  "AllRecipes/EmptyTaggedFormat": "No recipes tagged '<<tag>>'.",
+
+  "PhotoAttribution/Summary": "Attribution",
+  "PhotoAttribution/PhotographerLabel": "Photographer",
+  "PhotoAttribution/PhotographerPlaceholder": "Name or credit",
+  "PhotoAttribution/PhotoSourceLabel": "Photo source",
+  "PhotoAttribution/PhotoSourcePlaceholder": "URL or publication",
+  "PhotoAttribution/SourceNameLabel": "Source name",
+  "PhotoAttribution/SourceNamePlaceholder": "e.g. Unsplash, TheMealDB",
+
+  "PhotoCaption/On": "on",
+
+  "Procedures/HoursAndMinutes/Minute": "minute",
+  "Procedures/HoursAndMinutes/Minutes": "minutes",
+  "Procedures/HoursAndMinutes/Hour": "hour",
+  "Procedures/HoursAndMinutes/Hours": "hours",
+
+  "ControlPanel/Intro": "Configure how the recipe edition behaves.",
+  "ControlPanel/Filename/Heading": "Filename",
+  "ControlPanel/Filename/Description": "The default name for the file when you save a copy of this wiki via //Save changes//.",
+  "ControlPanel/Photos/Heading": "Photos",
+  "ControlPanel/Photos/Description": "Photos add visual richness, but sourcing and attributing public images takes effort.  Pick the option that matches how you plan to work — edit forms and the Recipe Box dashboard adapt accordingly.  Recipes and ingredients always display any photos that are attached, regardless of mode.",
+  "ControlPanel/Photos/None": "Don't use photos",
+  "ControlPanel/Photos/Own": "Use my own photos (no attribution required)",
+  "ControlPanel/Photos/Attributed": "Use public photos with attribution",
+  "ControlPanel/ExtraFields/Heading": "Extra fields",
+  "ControlPanel/ExtraFields/Description": "These fields appear in the metadata strip at the top of each recipe view, and are routed to a placeholder-aware editor in the field list when you author a recipe.  Edit a row to change its caption, placeholder hint, or display template; remove a row to drop the field from the strip and the editor cascade.",
+  "ControlPanel/ExtraFields/Header/FieldName": "Field name",
+  "ControlPanel/ExtraFields/Header/Caption": "Caption",
+  "ControlPanel/ExtraFields/Header/Placeholder": "Placeholder",
+  "ControlPanel/ExtraFields/EditAction": "edit",
+  "ControlPanel/ExtraFields/RemoveAction": "remove",
+  "ControlPanel/ExtraFields/AddButton": "Add a new field",
+
+  "RemoveDemoContent/Caption": "Remove Sample Content",
+  "RemoveDemoContent/Recipes/Heading": "Remove these Recipes",
+  "RemoveDemoContent/Header/Name": "Name",
+  "RemoveDemoContent/Header/Recipe": "Recipe",
+  "RemoveDemoContent/Header/Photo": "Photo",
+  "RemoveDemoContent/Ingredients/Heading": "Remove these Ingredients",
+  "RemoveDemoContent/Header/Ingredient": "Ingredient",
+  "RemoveDemoContent/Categories/Lead": "You may also choose to remove the sample categories:",
+  "RemoveDemoContent/Categories/Heading": "Remove these Categories",
+  "RemoveDemoContent/Header/Category": "Category",
+  "RemoveDemoContent/Misc/Heading": "Miscellaneous",
+  "RemoveDemoContent/Misc/Description": "Settings or other system tiddlers that came in with the sample content.",
+  "RemoveDemoContent/Header/Tiddler": "Tiddler",
+  "RemoveDemoContent/SubmitButton": "Remove Selected Items",
+
+  "SiteSubtitle/CommunityRecipeEdition": "Community Recipe Edition",
+
+  "Compatibility/Header/Component": "Component",
+  "Compatibility/Header/Version": "Version",
+  "Compatibility/Row/TWCore": "TiddlyWiki core",
+  "Compatibility/Row/Relink": "flibbles/relink"
+}

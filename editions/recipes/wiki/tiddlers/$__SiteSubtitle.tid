@@ -3,4 +3,4 @@ modified: 20260428155843892
 title: $:/SiteSubtitle
 type: text/vnd.tiddlywiki
 
-Community Recipe Edition <span style="color:#e06820;">v{{$:/community/recipes/version}}</span>
+<<t SiteSubtitle/CommunityRecipeEdition>> <span style="color:#e06820;">v{{$:/community/recipes/version}}</span>

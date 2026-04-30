@@ -1,0 +1,477 @@
+[
+  {
+    "title": "Breakfast",
+    "tags": "TableOfContents Category",
+    "caption": "Petit-déjeuner",
+    "type": "text/vnd.tiddlywiki"
+  },
+  {
+    "title": "Main",
+    "tags": "TableOfContents Category",
+    "caption": "Plat principal",
+    "type": "text/vnd.tiddlywiki"
+  },
+  {
+    "title": "Salad",
+    "tags": "TableOfContents Category",
+    "caption": "Salade",
+    "type": "text/vnd.tiddlywiki"
+  },
+  {
+    "title": "Side",
+    "tags": "TableOfContents Category",
+    "caption": "Accompagnement",
+    "type": "text/vnd.tiddlywiki"
+  },
+  {
+    "title": "Dessert",
+    "tags": "TableOfContents Category",
+    "caption": "Dessert",
+    "type": "text/vnd.tiddlywiki"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBody/Ingredients",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ingrédients"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBody/Steps",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Étapes"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBody/StepNav/Previous",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Précédent"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBody/StepNav/Next",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Suivant"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBody/IngredientsToggle",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ingrédients"
+  },
+  {
+    "title": "$:/community/recipes/language/Ingredient/AlsoKnownAs",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Aussi connu sous :"
+  },
+  {
+    "title": "$:/community/recipes/language/Ingredient/RecipesUsing",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Recettes utilisant"
+  },
+  {
+    "title": "$:/community/recipes/language/Ingredient/UsedIn",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Utilisé dans :"
+  },
+  {
+    "title": "$:/community/recipes/language/Ingredient/AliasOf",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Alias de"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Photo"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/UploadTooltip",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Téléverser une image depuis votre appareil"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/UploadButton",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Téléverser une image…"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/Or",
+    "type": "text/vnd.tiddlywiki",
+    "text": "ou"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/UrlPlaceholder",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Coller l’URL de l’image…"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/Cancel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Annuler"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/Save",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Enregistrer"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/ChangePhoto",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Changer la photo"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/RemovePhoto",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Supprimer la photo"
+  },
+  {
+    "title": "$:/community/recipes/language/EditPhoto/AddPhoto",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ajouter une photo…"
+  },
+  {
+    "title": "$:/community/recipes/language/EditTemplate/ExtraFieldsHint/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Champs supplémentaires de la recette"
+  },
+  {
+    "title": "$:/community/recipes/language/EditTemplate/ExtraFieldsHint/IntroFormat",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Les champs suivants apparaîtront dans un bandeau en haut de la recette : <<fields>>."
+  },
+  {
+    "title": "$:/community/recipes/language/EditTemplate/ExtraFieldsHint/ManageHint",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Vous pouvez gérer cette liste dans l’<$button class=\"tc-btn-invisible tc-tiddlylink\"><$action-setfield $tiddler=\"$:/state/tab-1749438307\" text=\"$:/community/recipes/ControlPanel/Tidbits\"/><$action-navigate $to=\"$:/ControlPanel\"/><<t EditTemplate/ExtraFieldsHint/ManageLinkText>></$button> du Panneau de Contrôle."
+  },
+  {
+    "title": "$:/community/recipes/language/EditTemplate/ExtraFieldsHint/ManageLinkText",
+    "type": "text/vnd.tiddlywiki",
+    "text": "onglet Tidbits"
+  },
+  {
+    "title": "$:/community/recipes/language/Buttons/CookingMode/EnterTooltip",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Entrer en mode cuisine"
+  },
+  {
+    "title": "$:/community/recipes/language/Buttons/CookingMode/EnterAriaLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "entrer en mode cuisine"
+  },
+  {
+    "title": "$:/community/recipes/language/Buttons/CookingMode/ExitTooltip",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Quitter le mode cuisine"
+  },
+  {
+    "title": "$:/community/recipes/language/Buttons/CookingMode/ExitAriaLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "quitter le mode cuisine"
+  },
+  {
+    "title": "$:/community/recipes/language/Buttons/NewRecipe/Tooltip",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nouvelle recette"
+  },
+  {
+    "title": "$:/community/recipes/language/Buttons/NewRecipe/AriaLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "nouvelle recette"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBox/NewRecipe/Tooltip",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Créer une nouvelle recette"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBox/NewRecipe/AriaLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "nouvelle recette"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBox/NewRecipe/Label",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nouvelle recette"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/Categories/Caption",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Catégories"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/Categories/Empty",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ajoutez un tiddler étiqueté Category pour le voir apparaître ici."
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/Favorites/Caption",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Favoris"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/Favorites/Empty",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Marquez une recette comme Favorite pour la voir ici."
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/PopularIngredients/Caption",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ingrédients courants"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/PopularIngredients/Empty",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ajoutez des Ingrédients pour les voir apparaître ici."
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/Tags/Caption",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Étiquettes"
+  },
+  {
+    "title": "$:/community/recipes/language/RecipeBoxCard/Tags/Empty",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Les étiquettes de vos recettes apparaîtront ici."
+  },
+  {
+    "title": "$:/community/recipes/language/AllRecipes/EmptyAll",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Aucune recette pour l’instant.  Utilisez le bouton ''Nouvelle recette'' pour ajouter la première."
+  },
+  {
+    "title": "$:/community/recipes/language/AllRecipes/EmptyTaggedFormat",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Aucune recette étiquetée « <<tag>> »."
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/Summary",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Attribution"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/PhotographerLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Photographe"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/PhotographerPlaceholder",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nom ou crédit"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/PhotoSourceLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Source de la photo"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/PhotoSourcePlaceholder",
+    "type": "text/vnd.tiddlywiki",
+    "text": "URL ou publication"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/SourceNameLabel",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nom de la source"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoAttribution/SourceNamePlaceholder",
+    "type": "text/vnd.tiddlywiki",
+    "text": "p. ex. Unsplash, TheMealDB"
+  },
+  {
+    "title": "$:/community/recipes/language/PhotoCaption/On",
+    "type": "text/vnd.tiddlywiki",
+    "text": "sur"
+  },
+  {
+    "title": "$:/community/recipes/language/Procedures/HoursAndMinutes/Minute",
+    "type": "text/vnd.tiddlywiki",
+    "text": "minute"
+  },
+  {
+    "title": "$:/community/recipes/language/Procedures/HoursAndMinutes/Minutes",
+    "type": "text/vnd.tiddlywiki",
+    "text": "minutes"
+  },
+  {
+    "title": "$:/community/recipes/language/Procedures/HoursAndMinutes/Hour",
+    "type": "text/vnd.tiddlywiki",
+    "text": "heure"
+  },
+  {
+    "title": "$:/community/recipes/language/Procedures/HoursAndMinutes/Hours",
+    "type": "text/vnd.tiddlywiki",
+    "text": "heures"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Intro",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Configurer le comportement de l’édition recettes."
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Filename/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nom du fichier"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Filename/Description",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Le nom par défaut du fichier lorsque vous enregistrez une copie de ce wiki via //Enregistrer les modifications//."
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Photos/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Photos"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Photos/Description",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Les photos ajoutent de la richesse visuelle, mais sourcer et attribuer des images publiques demande du travail.  Choisissez l’option qui correspond à votre façon de travailler — les formulaires d’édition et le tableau de bord Recipe Box s’adaptent en conséquence.  Les recettes et les ingrédients affichent toujours les photos qui leur sont attachées, quel que soit le mode."
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Photos/None",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ne pas utiliser de photos"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Photos/Own",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Utiliser mes propres photos (aucune attribution requise)"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/Photos/Attributed",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Utiliser des photos publiques avec attribution"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Champs supplémentaires"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/Description",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ces champs apparaissent dans le bandeau de métadonnées en haut de chaque recette, et sont routés vers un éditeur prenant en charge les indices lors de l’ajout d’un champ à une recette.  Modifiez une ligne pour changer son libellé, son indice ou son modèle d’affichage ; supprimez une ligne pour retirer le champ du bandeau et de la cascade d’éditeurs."
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/Header/FieldName",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nom du champ"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/Header/Caption",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Libellé"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/Header/Placeholder",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Indice"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/EditAction",
+    "type": "text/vnd.tiddlywiki",
+    "text": "modifier"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/RemoveAction",
+    "type": "text/vnd.tiddlywiki",
+    "text": "supprimer"
+  },
+  {
+    "title": "$:/community/recipes/language/ControlPanel/ExtraFields/AddButton",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ajouter un champ"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Caption",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Supprimer le contenu d’exemple"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Recipes/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Supprimer ces recettes"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Header/Name",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Nom"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Header/Recipe",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Recette"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Header/Photo",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Photo"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Ingredients/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Supprimer ces ingrédients"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Header/Ingredient",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Ingrédient"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Categories/Lead",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Vous pouvez aussi choisir de supprimer les catégories d’exemple :"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Categories/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Supprimer ces catégories"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Header/Category",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Catégorie"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Misc/Heading",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Divers"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Misc/Description",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Paramètres ou autres tiddlers système accompagnant le contenu d’exemple."
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/Header/Tiddler",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Tiddler"
+  },
+  {
+    "title": "$:/community/recipes/language/RemoveDemoContent/SubmitButton",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Supprimer les éléments sélectionnés"
+  },
+  {
+    "title": "$:/community/recipes/language/SiteSubtitle/CommunityRecipeEdition",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Édition Recettes Communautaires"
+  },
+  {
+    "title": "$:/community/recipes/language/Compatibility/Header/Component",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Composant"
+  },
+  {
+    "title": "$:/community/recipes/language/Compatibility/Header/Version",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Version"
+  },
+  {
+    "title": "$:/community/recipes/language/Compatibility/Row/TWCore",
+    "type": "text/vnd.tiddlywiki",
+    "text": "Cœur TiddlyWiki"
+  },
+  {
+    "title": "$:/community/recipes/language/Compatibility/Row/Relink",
+    "type": "text/vnd.tiddlywiki",
+    "text": "flibbles/relink"
+  }
+]

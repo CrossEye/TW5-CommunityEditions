@@ -1,0 +1,4 @@
+title: $:/community/recipes/language/ControlPanel/ExtraFields/Description
+type: text/vnd.tiddlywiki
+
+These fields appear in the metadata strip at the top of each recipe view, and are routed to a placeholder-aware editor in the field list when you author a recipe.  Edit a row to change its caption, placeholder hint, or display template; remove a row to drop the field from the strip and the editor cascade.

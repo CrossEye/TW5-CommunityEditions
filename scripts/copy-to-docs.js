@@ -4,9 +4,9 @@
  * docs/ is served at the root of the GH Pages site.  Layout for the recipe
  * edition is fixed by the URL convention:
  *
- *   docs/recipes/empty/index.html   <- tidbits_empty.html
- *   docs/recipes/full/index.html    <- tidbits.html
- *   docs/recipes/samples/<name>.json
+ *   docs/recipes/empty/index.html        <- tidbits_empty.html
+ *   docs/recipes/full/index.html         <- tidbits.html
+ *   docs/recipes/samples/<locale>/*.json <- mirror of editions/recipes/samples/
  *
  * This script copies the latest build artifacts into that layout.  Static
  * landing pages (docs/index.html, docs/recipes/index.html, etc.) are
@@ -37,18 +37,23 @@ function copyFile(from, to) {
 	console.log("  " + from + " -> " + to);
 }
 
-function copySamples() {
-	var dst = path.join(DOCS_RECIPES, "samples");
+function copyTree(src, dst) {
 	ensureDir(dst);
-	var files = fs.readdirSync(SAMPLES_DIR).filter(function(f) {
-		return f.endsWith(".json");
-	}).sort();
-	files.forEach(function(f) {
-		copyFile(path.join(SAMPLES_DIR, f), path.join(dst, f));
+	var entries = fs.readdirSync(src, { withFileTypes: true }).sort(function(a, b) {
+		return a.name.localeCompare(b.name);
+	});
+	entries.forEach(function(e) {
+		var s = path.join(src, e.name);
+		var d = path.join(dst, e.name);
+		if(e.isDirectory()) {
+			copyTree(s, d);
+		} else if(e.isFile() && e.name.endsWith(".json")) {
+			copyFile(s, d);
+		}
 	});
 }
 
 console.log("Publishing to " + DOCS_RECIPES);
 COPIES.forEach(function(c) { copyFile(c.from, c.to); });
-copySamples();
+copyTree(SAMPLES_DIR, path.join(DOCS_RECIPES, "samples"));
 console.log("Done");

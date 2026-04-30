@@ -16,12 +16,20 @@ type: text/vnd.tiddlywiki
 </$list>
 </div>
 <%if [<activeTag>match[]] %>
-<ul><$list filter="[tag[Recipe]!is[system]sort[title]]" emptyMessage="No recipes yet.  Use the ''New Recipe'' button to add your first.">
+<%if [tag[Recipe]!is[system]] %>
+<ul><$list filter="[tag[Recipe]!is[system]sort[title]]">
 <li><$link/></li>
 </$list></ul>
+<%else%>
+<<t AllRecipes/EmptyAll>>
+<%endif%>
 <% else %>
-<ul><$list filter="[tag[Recipe]!is[system]tag<activeTag>sort[title]]" emptyMessage={{{ [<activeTag>addprefix[No recipes tagged ']addsuffix['.]] }}}>
+<%if [tag[Recipe]!is[system]tag<activeTag>] %>
+<ul><$list filter="[tag[Recipe]!is[system]tag<activeTag>sort[title]]">
 <li><$link/></li>
 </$list></ul>
+<%else%>
+<$let tag=<<activeTag>>><<t AllRecipes/EmptyTaggedFormat>></$let>
+<%endif%>
 <% endif %>
 </$let>

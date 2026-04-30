@@ -10,13 +10,13 @@ type: text/vnd.tiddlywiki
 <% if [<currentTiddler>has[aliases]] %>
 <hr/>
 <div class="tc-ingredient-aliases">
-Also known as:&nbsp;<$list filter="[<currentTiddler>get[aliases]enlist-input[]sort[]]" join=", "><$link/></$list>
+<<t Ingredient/AlsoKnownAs>>&nbsp;<$list filter="[<currentTiddler>get[aliases]enlist-input[]sort[]]" join=", "><$link/></$list>
 </div>
 <% endif %>
 <% if [<currentTiddler>backlinks[]tag[Recipe]] [<currentTiddler>get[aliases]enlist-input[]backlinks[]tag[Recipe]] %>
 <hr/>
 <div class="tc-recipe-ingredient-uses">
-<h3>Recipes using <span class="ingredient">&nbsp;<$view field="title"/></span>:</h3>
+<h3><<t Ingredient/RecipesUsing>> <span class="ingredient">&nbsp;<$view field="title"/></span>:</h3>
 <ul>
 <$list filter="[<currentTiddler>backlinks[]tag[Recipe]] [<currentTiddler>get[aliases]enlist-input[]backlinks[]tag[Recipe]] +[sort[title]]">
 <li><$link/></li>
@@ -28,12 +28,12 @@ Also known as:&nbsp;<$list filter="[<currentTiddler>get[aliases]enlist-input[]so
 <% if [all[current]!tag[Ingredient]] %>
 <% if [<currentTiddler>!is[tiddler]] %>
 <$list filter="[tag[Ingredient]contains:aliases<currentTiddler>first[]]">
-<h3>Alias of &nbsp; <$link/></h3>
+<h3><<t Ingredient/AliasOf>> &nbsp; <$link/></h3>
 </$list>
 <% endif %>
 <% if [<currentTiddler>backlinks[]tag[Recipe]] %>
 <div class="tc-recipe-ingredient-uses">
-<h3>Used in:</h3>
+<h3><<t Ingredient/UsedIn>></h3>
 <ul>
 <$list filter="[<currentTiddler>backlinks[]tag[Recipe]sort[title]]">
 <li><$link/></li>

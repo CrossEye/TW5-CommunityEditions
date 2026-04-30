@@ -8,7 +8,7 @@ title: $:/community/recipes/ui/Buttons/new-recipe
 type: text/vnd.tiddlywiki
 
 \whitespace trim
-<$button class="tc-btn-invisible" tooltip="New recipe" aria-label="new recipe">
+<$button class="tc-btn-invisible" tooltip=<<t Buttons/NewRecipe/Tooltip>> aria-label=<<t Buttons/NewRecipe/AriaLabel>>>
 <$action-sendmessage $message="tm-new-tiddler" tags="Recipe" text={{{ [[$:/community/recipes/templates/new-recipe]get[text]] }}}/>
 {{$:/community/recipes/images/new-recipe}}
 </$button>

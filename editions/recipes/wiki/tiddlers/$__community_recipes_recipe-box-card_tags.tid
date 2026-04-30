@@ -7,8 +7,12 @@ title: $:/community/recipes/recipe-box-card/tags
 type: text/vnd.tiddlywiki
 
 \whitespace trim
+<%if [tag[Recipe]tags[]!match[Recipe]!match[Favorite]!tag[Category]] %>
 <div class="tc-recipe-box-tag-pills">
-<$list filter="[tag[Recipe]tags[]!match[Recipe]!match[Favorite]!tag[Category]] :sort:number[tagging[]tag[Recipe]count[]] +[reverse[]]" emptyMessage="<div class='tc-recipe-box-empty'>//Tags from your recipes will appear here.//</div>">
+<$list filter="[tag[Recipe]tags[]!match[Recipe]!match[Favorite]!tag[Category]] :sort:number[tagging[]tag[Recipe]count[]] +[reverse[]]">
 <$macrocall $name="tag" tag=<<currentTiddler>>/>
 </$list>
 </div>
+<%else%>
+<div class="tc-recipe-box-empty">//<<t RecipeBoxCard/Tags/Empty>>//</div>
+<%endif%>
