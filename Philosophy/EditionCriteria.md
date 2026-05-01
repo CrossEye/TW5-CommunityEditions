@@ -1,7 +1,7 @@
 Edition Criteria
 ================
 
-An edition:
+A community edition:
 
   - **must serve a useful and relatively common purpose.**  The test is whether
     a stranger would immediately recognize the need ("oh, I've wanted that").
