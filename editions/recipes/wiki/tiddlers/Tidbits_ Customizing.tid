@@ -8,6 +8,8 @@ Standard TiddlyWiki settings — site title, subtitle, animation speed, username
 
 Setting [[$:/SiteTitle]] overrides the tidbits logo at the top of this page.  Setting [[$:/DefaultTiddlers]] picks which tiddlers open at startup — for example, you might remove this [[Tidbits: About]] page and instead show your favourites with `[tag[Favorite]]`, or just `[[TableOfContents]]`.  To change the default file name for downloading your wiki, edit [[Filename|$:/config/SaveWikiButton/Filename]].
 
+Tidbits ships two custom palettes — //Tidbits Dark// (the default) and //Tidbits Light// — alongside TiddlyWiki's built-in selection.  Switch via the Control Panel's Appearance tab.
+
 Edition-specific templates, styling, and logic all live under `$:/community/recipes/`.
 
 The [[Recipe Box]] dashboard is built from cards.  To add one, create a tiddler tagged `$:/tags/community/recipes/recipe-box-card`, give it a `caption` field, and write whatever wikitext you like.  Use `list-before` or `list-after` against an existing card title (e.g. `$:/community/recipes/recipe-box-card/favorites`) to position it.
