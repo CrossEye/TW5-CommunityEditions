@@ -1,8 +1,6 @@
 caption: Cooking Mode
-created: 20260428113215319
 description: Enter or exit focused cooking mode
 list-before: $:/core/ui/Buttons/close
-modified: 20260428122500394
 tags: $:/tags/ViewToolbar
 title: $:/community/recipes/ui/Buttons/cooking-mode
 type: text/vnd.tiddlywiki

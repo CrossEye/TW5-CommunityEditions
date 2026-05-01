@@ -1,8 +1,6 @@
 caption: Cook time
-created: 20260427172151010
 field-name: cook-time
 list-after: $:/community/recipes/extra-fields/prep-time
-modified: 20260427172154675
 placeholder: 40 minutes -or- 1 h, 30 m
 tags: $:/tags/community/recipes/extra-field
 title: $:/community/recipes/extra-fields/cook-time

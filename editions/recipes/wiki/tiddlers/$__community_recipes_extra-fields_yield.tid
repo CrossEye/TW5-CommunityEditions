@@ -1,8 +1,6 @@
 caption: Yield
-created: 20260427163958638
 field-name: yield
 list-after: $:/community/recipes/extra-fields/servings
-modified: 20260427163958638
 placeholder: 12 cookies
 tags: $:/tags/community/recipes/extra-field
 title: $:/community/recipes/extra-fields/yield

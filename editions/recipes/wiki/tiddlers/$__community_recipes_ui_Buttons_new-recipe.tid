@@ -1,8 +1,6 @@
 caption: New Recipe
-created: 20260426215651740
 description: Create a new recipe
 list-after: $:/core/ui/Buttons/home
-modified: 20260428134640889
 tags: $:/tags/PageControls
 title: $:/community/recipes/ui/Buttons/new-recipe
 type: text/vnd.tiddlywiki
