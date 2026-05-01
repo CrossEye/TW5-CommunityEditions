@@ -14,6 +14,10 @@ that tracks plugin compatibility across versions, and a steadily
 growing catalog of editions covering common domains.  This repo
 is the starting point.
 
+The properties we want every community edition to have are
+distilled into a working list of [edition criteria][ec] — proposed
+guidelines, open to revision.
+
 
 Editions
 --------
@@ -45,6 +49,7 @@ Building
     npm run build          # produces docs/recipes/{empty,full}/index.html
 
 
+  [ec]: Philosophy/EditionCriteria.md
   [rs]: editions/recipes/
   [t1]: https://talk.tiddlywiki.org/t/8593
   [tw]: https://tiddlywiki.com/
