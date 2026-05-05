@@ -9,9 +9,11 @@ A community edition:
     literature may be fascinating, but is not going to be reused by very many
     people.
 
-  - **should have a clear, narrow scope** and resist feature creep.  It is
-    better to do one thing well and keep a "futures" list than to grow into a
-    sprawling tool.
+  - **should have a clear, narrow scope and a complexity ceiling.**  Resist
+    feature creep — better to do one thing well and keep a "futures" list than
+    to grow into a sprawling tool.  A motivated new user should be able to
+    understand the whole edition in a single sitting; roughly 1,000 words of
+    explanation should suffice.
 
   - **should work out of the box** without the user needing to configure
     anything before it is useful — good defaults, sensible structure, ready to
@@ -27,19 +29,17 @@ A community edition:
     a JSON bundle that can be added to an empty version, so that there are two
     artifacts delivered: a complete empty edition and the JSON sample content.
 
-  - **should have a complexity ceiling.**  A motivated new user should be able
-    to understand the whole edition in a single sitting — roughly 1,000 words of
-    explanation should suffice.
-
   - **should make common customizations easy.**  Theming via the palette;
     user-facing text in a small set of well-named tiddlers rather than scattered
     hardcoded strings; sensible structure for adding fields or tags.  It should
     remain localization-friendly:  No hardcoded UI strings or colors; structure
     clean enough that someone could translate without surgery.
 
-  - **should showcase idiomatic TiddlyWiki.**  While it is primarily functional,
-    it should also be educational — demonstrating patterns a new user could
-    learn from and adapt.
+  - **should showcase idiomatic, modern TiddlyWiki.**  While primarily
+    functional, it should also be educational — demonstrating patterns a new
+    user could learn from and adapt.  Prefer modern techniques and tools (e.g.
+    `<% if %>` over a `<$list>` or `<$reveal>` used for the same purpose),
+    without going out of the way to promote them.
 
   - **should be maintainable.**  Prefer core TW mechanisms and established
     community plugins over custom wikitext, so fewer things break when TW itself
@@ -48,10 +48,6 @@ A community edition:
   - **should follow TW namespace conventions.**  Edition-specific tiddlers under
     a logical prefix (e.g. `$:/community/recipes/`); palette colors instead of
     hardcoded CSS values.
-
-  - **should prefer modern TW techniques and tools, but should not go out of its
-    way to promote them.**  For instance, choose `<% if %>` over a `<$list>` or
-    `<$reveal>` used for the same purpose.
 
   - **should be deployment-agnostic** where practical: single-file HTML
     for simplicity, but nothing that would break in a Node.js or server

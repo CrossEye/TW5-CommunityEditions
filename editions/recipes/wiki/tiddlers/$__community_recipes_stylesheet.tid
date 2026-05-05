@@ -575,6 +575,15 @@ type: text/vnd.tiddlywiki
     }
 }
 
+/* Cooking-mode button: small visual emphasis on mobile, where toolbar
+   buttons are easy to overlook.  Picks up the brand-orange primary
+   so the button pops slightly without being structurally different. */
+@media (max-width: 599px) {
+    .tc-recipe-cooking-mode-btn {
+        color: <<colour primary>>;
+    }
+}
+
 /* Cooking-mode active: hide distractions, boost legibility */
 <$list filter="[[$:/state/community/recipes/cooking-mode]get[text]!is[blank]]">
 .tc-subtitle,

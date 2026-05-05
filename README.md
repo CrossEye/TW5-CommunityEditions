@@ -49,6 +49,15 @@ Building
     npm run build          # produces docs/recipes/{empty,full}/index.html
 
 
+URL stability
+-------------
+
+The sample-collection URLs above are intended as stable simple-fetch
+endpoints for external tooling — Tiddlyhost templates, future
+editions-management tooling, and similar consumers.  If a URL
+relocates, an equivalent simple-fetch endpoint will be preserved.
+
+
   [ec]: Philosophy/EditionCriteria.md
   [rs]: editions/recipes/
   [t1]: https://talk.tiddlywiki.org/t/8593

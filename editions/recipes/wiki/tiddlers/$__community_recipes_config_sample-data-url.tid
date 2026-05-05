@@ -1,4 +1,5 @@
 title: $:/community/recipes/config/sample-data-url
+description: Stable sample-data URL.  External tooling (e.g. Tiddlyhost templates) can rely on this as a simple-fetch endpoint; relocations preserve the contract.
 type: text/vnd.tiddlywiki
 
 https://crosseye.github.io/TW5-CommunityEditions/recipes/samples/
